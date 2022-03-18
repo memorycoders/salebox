@@ -1,0 +1,106 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  strong {
+    flex-shrink: 0;
+    flex-basis: 50%;
+  }
+}
+
+.main {
+  margin-top: 20px;
+}
+.mainContent {
+  scrollbar-width: thin !important;
+  height: 500px;
+  overflow-y: auto;
+}
+.listItem {
+  display: flex;
+  min-height: 40px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #c0c1c2;
+  padding-left: 4px;
+  font-size: 10px;
+  &.Title {
+    font-weight: bold;
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: var(--border-color);
+    margin-bottom: 2px;
+    min-height: 28px;
+  }
+}
+
+.import {
+  padding: 2px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 10%;
+  /* justify-content: center; */
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.title {
+  padding: 2px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 20%;
+  /* justify-content: center; */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  word-break: break-all;
+}
+
+.time {
+  padding: 2px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 10%;
+  /* justify-content: center; */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  word-break: break-all;
+}
+
+.focus {
+  padding: 2px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 20%;
+  /* justify-content: center; */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  word-break: break-all;
+}
+.suggested {
+  padding: 2px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 20%;
+  /* justify-content: center; */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  word-break: break-all;
+}
+
+.btnWith {
+  max-width: 100px;
+}

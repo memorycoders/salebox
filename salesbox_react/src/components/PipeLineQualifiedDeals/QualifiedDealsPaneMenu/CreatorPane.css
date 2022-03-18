@@ -1,0 +1,76 @@
+.avatar {
+  flex-shrink: 0;
+  flex-grow: 0;
+  padding: 0 8px;
+}
+
+.creatorPaneContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.shared {
+  margin-top: -45px;
+  font-weight: 600;
+}
+
+.info {
+  flex-shrink: 0;
+  flex-grow: 1;
+  padding: 0 8px;
+  width: 20px;
+}
+
+.shortInfor {
+  font-size: var(--normal-text);
+  color: #5d5e5e;
+  word-break: break-all;
+}
+
+.blank {
+  display: none;
+}
+
+.shortInfor:hover {
+  color: #3d90db;
+}
+
+.creatorName {
+  font-weight: 600;
+  font-size: var(--memium-text);
+}
+
+.creatorNameFirst {
+  font-weight: 800;
+  color: #ef8367;
+  font-size: var(--memium-text);
+}
+
+.moreInfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.flipCardBack {
+  width: 60px;
+  height: 60px;
+  background-color: #eb6953;
+  border-radius: 50%;
+}
+.container {
+  position: relative;
+  margin-left: 5px;
+  text-align: center;
+  color: red;
+}
+.nameOfImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #eeeeee;
+  text-transform: uppercase;
+  font-weight: 900;
+}

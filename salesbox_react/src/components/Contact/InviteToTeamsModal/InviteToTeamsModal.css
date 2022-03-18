@@ -1,0 +1,47 @@
+.tableActions {
+  border: none !important;
+  margin-top: 10px;
+  max-height: 70% !important;
+  overflow-y: auto;
+
+  td {
+    font-size: var(--normal-text);
+    padding: 1em !important;
+    cursor: pointer;
+  }
+  td:hover {
+    background-color: #eeeeee;
+  }
+}
+
+.selectedRow {
+  background-color: #eeeeee;
+}
+.itemRow {
+  display: flex;
+  justify-content: space-between;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 5px;
+  left: 150px;
+  width: 250px;
+}
+.modal {
+  max-height: 70% !important;
+}
+.content {
+  max-height: 70% !important;
+  overflow-y: hidden;
+}
+.tableNotScrool {
+  max-height: 300px !important;
+  overflow-y: hidden !important;
+}
+.tableScroll {
+  max-height: 300px !important;
+  overflow-y: scroll !important;
+}

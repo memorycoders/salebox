@@ -1,0 +1,433 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+      media="screen"
+      title="fontawesome"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet" />
+    <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/sb-icon.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/variables.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+
+    <script src="../../Scripts/jquery.fabric.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery-ui.js" type="text/javascript"></script>
+
+    <script src="../app.js" type="text/javascript"></script>
+    <script src="../logic/globaladdin.js" type="text/javascript"></script>
+    <script src="../addcontact.js" type="text/javascript"></script>
+  </head>
+  <style>
+    .dropdown-menu {
+      width: 100% !important;
+    }
+  </style>
+  <body class="">
+    <!-- <a href="../ComposeEmail.html" class=""><div class="backButton">
+  <i class="fa fa-2x fa-angle-left" title="back" aria-hidden="true"></i>
+</div></a> -->
+    <div id="salesbox-plugin" class="container-fluid">
+      <div class="panel panel-default add-panel">
+        <div class="panel-heading" style="margin-top: -20px;">
+          <div class="heading-wrapper"></div>
+        </div>
+
+        <div class="backheader backHeaderBg blueText">
+          <a href="../composeemail.html" class="back-button">
+            <div class="formBack">
+              <i class="fa  fa-angle-left" title="back" aria-hidden="true"></i>
+            </div>
+            Back
+          </a>
+        </div>
+
+        <div class="formheader greyTitleBg greyTitle borderBottom">
+          Add Contact
+        </div>
+        <div class="panel-body">
+          <form method="POST" action="#" class="form-flex">
+            <div class="form-group">
+              <div class="col-sm-4">
+                <label for="account" class="control-label">Company</label>
+              </div>
+              <div class="col-sm-8">
+                <div>
+                  <div class="dropdown">
+                    <div data-toggle="dropdown">
+                      <div class="input-content has-suffix">
+                        <input type="text" class="form-control" id="account" placeholder="" />
+                      </div>
+                      <span class="input-group-suffix">
+                        <i class="fa fa-angle-down"></i>
+                      </span>
+                    </div>
+                    <ul
+                      id="account-dropdown-menu"
+                      class="dropdown-menu dropdown-menu-right"
+                      style="width:10rem;overflow:auto;"
+                    >
+                      <li style="padding:0rem;">
+                        <div class="scrollingDiv dropdown-fix-height">
+                          <table class="table" id="accountlist"></table>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-4">
+                <label for="firstname" class="control-label">First name</label>
+              </div>
+              <div class="col-sm-8">
+                <div>
+                  <input type="text" class="form-control" id="firstname" placeholder="required" />
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-4">
+                <label for="lastname" class="control-label">Last name</label>
+              </div>
+              <div class="col-sm-8">
+                <div class="control-input">
+                  <input type="text" class="form-control" id="lastname" placeholder="required" />
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-4">
+                <label
+                  for="behaviour"
+                  class="control-label"
+                  style="width: 110px;line-height: 16px;padding: 0 0 3px!important;"
+                  >Behaviour profile</label
+                >
+              </div>
+              <div class="col-sm-8">
+                <div class="">
+                  <div class="dropdown">
+                    <div data-toggle="dropdown">
+                      <div class="input-content has-suffix">
+                        <input type="text" class="form-control" id="behaviour" placeholder="" readonly />
+                      </div>
+                      <span class="input-group-suffix">
+                        <i class="fa fa-angle-down"></i>
+                      </span>
+                    </div>
+                    <ul class="dropdown-menu dropdown-menu-right" id="behaviourlist">
+                      <li>
+                        <a href="javascript:void(0)" class="has-bubble">
+                          <span class="bubble square background-profile-blue"></span>
+                          <p>Blue</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="has-bubble">
+                          <span class="bubble square background-profile-green"></span>
+                          <p>Green</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="has-bubble">
+                          <span class="bubble square background-profile-red"></span>
+                          <p>Red</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="has-bubble">
+                          <span class="bubble square background-profile-yellow"></span>
+                          <p>Yellow</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-4">
+                <label for="phone" class="control-label">Phone</label>
+              </div>
+              <div class="col-sm-8">
+                <div>
+                  <div>
+                    <div class="input-content has-suffix" id="phonebox">
+                      <input type="text" class="form-control" id="phone" placeholder="Phone Number" />
+                    </div>
+                  </div>
+                  <div class="addmore_icon" id="addmore_phone">
+                    +
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-4">
+                <label for="email" class="control-label">Email</label>
+              </div>
+              <div class="col-sm-8">
+                <div>
+                  <div>
+                    <div class="input-content has-suffix" id="emailbox">
+                      <input type="email" class="form-control" id="email" />
+                    </div>
+                  </div>
+                  <div class="addmore_icon" id="addmore_email">
+                    +
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-4">
+                <label for="street" class="control-label">Street</label>
+              </div>
+              <div class="col-sm-8">
+                <div class="control-input">
+                  <input type="text" class="form-control" id="street" />
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-4">
+                <label for="zip" class="control-label">Zipcode</label>
+              </div>
+              <div class="col-sm-8">
+                <div class="control-input">
+                  <input type="text" class="form-control" id="zip" />
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-4">
+                <label for="city" class="control-label">City</label>
+              </div>
+              <div class="col-sm-8">
+                <div class="control-input">
+                  <input type="text" class="form-control" id="city" />
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-4">
+                <label for="state" class="control-label" style="width: 80px;">Region/State</label>
+              </div>
+              <div class="col-sm-8">
+                <div class="control-input">
+                  <input type="text" class="form-control" id="state" />
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-4">
+                <label for="country" class="control-label">Country</label>
+              </div>
+              <div class="col-sm-8">
+                <div class="">
+                  <div class="dropdown">
+                    <div data-toggle="dropdown">
+                      <div class="input-content has-suffix">
+                        <input type="text" class="form-control" id="country" placeholder="" readonly />
+                      </div>
+                      <span class="input-group-suffix">
+                        <i class="fa fa-angle-down"></i>
+                      </span>
+                    </div>
+                    <ul
+                      class="dropdown-menu dropdown-menu-right"
+                      style="height:200px;width:10rem;overflow:auto"
+                      id="countrylist"
+                    >
+                      <li>
+                        <div>
+                          <span class="input-group-prefix">
+                            <i class="fa fa-search" style="top : 9% !important;"></i>
+                          </span>
+                          <div class="input-content has-prefix">
+                            <input type="text" placeholder="Search" id="txt-country-search" />
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-4">
+                <label for="title" class="control-label">Title</label>
+              </div>
+              <div class="col-sm-8">
+                <div class="control-input">
+                  <input type="text" class="form-control" id="title" />
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-4">
+                <label for="type" class="control-label">Type</label>
+              </div>
+              <div class="col-sm-8">
+                <div>
+                  <div class="dropdown">
+                    <div data-toggle="dropdown">
+                      <div class="input-content has-suffix">
+                        <input type="text" class="form-control" id="type" placeholder="" readonly />
+                      </div>
+                      <span class="input-group-suffix">
+                        <i class="fa fa-angle-down"></i>
+                      </span>
+                    </div>
+                    <ul
+                      class="dropdown-menu dropdown-menu-right"
+                      id="typelist"
+                      style="width:10rem;height:200px;overflow:auto"
+                    ></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-4">
+                <label for="industry" class="control-label">Industry</label>
+              </div>
+              <div class="col-sm-8">
+                <div>
+                  <div class="dropdown">
+                    <div data-toggle="dropdown">
+                      <div class="input-content has-suffix">
+                        <input type="text" class="form-control" id="industry" placeholder="" readonly />
+                      </div>
+                      <span class="input-group-suffix">
+                        <i class="fa fa-angle-down"></i>
+                      </span>
+                    </div>
+                    <ul
+                      class="dropdown-menu dropdown-menu-right"
+                      style="width:10rem;overflow:hidden;height:10rem;overflow-x:hidden;overflow-y:scroll;"
+                    >
+                      <li style="padding:0rem;">
+                        <div class="scrollingDiv dropdown-fix-height">
+                          <table class="table" id="industrylist"></table>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-4">
+                <label for="relation" class="control-label">Relation</label>
+              </div>
+              <div class="col-sm-8">
+                <div>
+                  <div class="dropdown">
+                    <div data-toggle="dropdown">
+                      <div class="input-content has-suffix">
+                        <input type="text" class="form-control" id="relation" placeholder="" readonly />
+                      </div>
+                      <span class="input-group-suffix">
+                        <i class="fa fa-angle-down"></i>
+                      </span>
+                    </div>
+                    <ul
+                      class="dropdown-menu dropdown-menu-right"
+                      style="width:10rem;overflow:hidden;height:10rem;overflow-x:hidden;overflow-y:scroll;"
+                    >
+                      <li style="padding:0rem;">
+                        <div class="scrollingDiv dropdown-fix-height">
+                          <table class="table" id="relationlist"></table>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-4">
+                <label for="relationship" class="control-label">Relationship</label>
+              </div>
+              <div class="col-sm-8">
+                <div>
+                  <div class="dropdown">
+                    <div data-toggle="dropdown">
+                      <div class="input-content has-suffix">
+                        <input type="text" class="form-control" id="relationship" placeholder="" readonly />
+                      </div>
+                      <span class="input-group-suffix">
+                        <i class="fa fa-angle-down"></i>
+                      </span>
+                    </div>
+                    <ul class="dropdown-menu dropdown-menu-right" id="relationshiplist">
+                      <li>
+                        <a href="javascript:void(0)" class="has-bubble">
+                          <span class="bubble circle background-relationship-green"></span>
+                          <p>Good</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="has-bubble">
+                          <span class="bubble circle background-relationship-yellow"></span>
+                          <p>Neutral</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="has-bubble">
+                          <span class="bubble circle background-relationship-red"></span>
+                          <p>Bad</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-logout loginbutton">
+              <a id="add-to-prospector" href="#" class="loginbutton">Done</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#salesbox-plugin').css({
+          height: $(window).height() - $('#salesbox-plugin').offset().top,
+        });
+        $(window).on('resize', function() {
+          $('#salesbox-plugin').css({
+            height: $(window).height() - $('#salesbox-plugin').offset().top,
+          });
+        });
+      });
+      $('#addmore_phone').click(function() {
+        $('#phonebox').append(
+          '<div class="inputfieldbox"><input type="text" class="form-control" placeholder="phone Number" /><div class="remove_btn">X</div></div>'
+        );
+        // alert("added");
+      });
+      $('#addmore_email').click(function() {
+        $('#emailbox').append(
+          '<div class="inputfieldbox"><input type="text" class="form-control" placeholder="e-mail id" /><div class="remove_btn">X</div></div>'
+        );
+        // alert("added");
+      });
+      $(document).on('click', '.remove_btn', function() {
+        $(this)
+          .parent()
+          .remove();
+      });
+    </script>
+  </body>
+</html>

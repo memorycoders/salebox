@@ -1,0 +1,35 @@
+.progress {
+  padding: 8px;
+  text-align: center;
+}
+
+.prospectPanButton {
+  height: 24px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #f8c168 !important;
+}
+
+.prospectPaneTable {
+  border: none !important;
+  
+  td {
+    font-size: var(--normal-text);
+    padding: 0.7em 0.7em;
+  }
+}
+
+.textBold {
+  font-weight: 600;
+  text-align: right !important;
+}
+
+
+.faClock:before {
+      content: "\e915";
+}

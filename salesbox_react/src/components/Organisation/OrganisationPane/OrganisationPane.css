@@ -1,0 +1,35 @@
+@import 'variables.css';
+
+.pane {
+  display: flex;
+}
+.avatarContainer {
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgba(200, 200, 200, 0.5);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatar {
+  padding: calc(var(--default-padding) / 2);
+  flex-grow: 0;
+  flex-shrink: 0;
+
+}
+.contactDetails {
+  flex-grow: 1;
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  & a {
+    color: inherit;
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+}

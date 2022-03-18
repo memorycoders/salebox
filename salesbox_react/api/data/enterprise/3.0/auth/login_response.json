@@ -1,0 +1,118 @@
+{
+  "userDTO": {  // Sub-Accounts
+    "uuid": "d95c72f0-34fd-4b1a-9157-3546bdaa501a",
+    "username": "letronghiep1985@gmail.com",
+    "password": null,
+    "active": true,
+    "manager": true,
+    "delete": null,
+    "isMainContact": true,
+    "pendingId": null,
+    "unitId": "909f719f-91d9-4910-a30d-e49560c8cbd7",
+    "token": "e98d590a-3268-4403-9ac7-81f1d9b4bfe9",
+    "firstLogin": false,
+    "discProfile": "NONE",
+    "huntingFarmingRatio": 50,
+    "firstName": "Hiep",
+    "lastName": "Le",
+    "email": "letronghiep1985@gmail.com",
+    "mainEmailType": null,
+    "phone": "84985088476",
+    "mainPhoneType": null,
+    "numberActiveTasks": null,
+    "medianDealTime": 0,
+    "medianDealSize": 0.0,
+    "medianLeadTime": 0,
+    "openId": null,
+    "maestranoUserId": null,
+    "sharedPercent": null,
+    "street": null,
+    "zipCode": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "title": null,
+    "industry": null,
+    "minutesPerPick": 5.0,
+    "minutesPerCall": 10.0,
+    "hoursPerMeeting": 1.0,
+    "callsPerMeeting": 5.0,
+    "picksPerCall": 5.0,
+    "meetingPerDeal": 5.0,
+    "travellingTimePerMeeting": 0.0,
+    "hoursPerQuote": 2.0,
+    "hoursPerContract": 2.0,
+    "additionalEmailList": [
+
+    ],
+    "additionalPhoneList": [
+
+    ],
+    "sharedContactId": "b8d7ed29-719a-41c0-a524-cffe60dd3f63",
+    "avatar": null,
+    "permissionVersion": 0,
+    "inviteeId": null,
+    "enterpriseId": "14ab6cd4-88e5-4dcf-ac66-a1b7d11d4110",
+    "subscriptionInfoDTO": null,
+    "permission": {
+      "uuid": "d95c72f0-34fd-4b1a-9157-3546bdaa501a",
+      "permission": {
+        "own_unit": {
+          "read": true,
+          "write": true,
+          "delete": true
+        },
+        "own_objects": {
+          "read": true,
+          "write": true,
+          "delete": true
+        },
+        "all_company": {
+          "read": true,
+          "write": true,
+          "delete": true
+        },
+        "admin": true
+      },
+      "firstName": "Hiep",
+      "lastName": "Le",
+      "active": true,
+      "manager": true,
+      "unitName": null,
+      "unitId": "909f719f-91d9-4910-a30d-e49560c8cbd7"
+    },
+    "sameUuidInUnit": [
+      "d95c72f0-34fd-4b1a-9157-3546bdaa501a"
+    ]
+  },
+  "companyName": "The Internet",
+  "sharedOrganisationId": "6486a9e9-dbae-4f2f-903a-b711f7f518dd",
+  "enterpriseId": "14ab6cd4-88e5-4dcf-ac66-a1b7d11d4110",
+  "numberPaidLicense": 0,
+  "read": "OWN_UNIT",
+  "write": "OWN_UNIT",
+  "delete": "OWN_UNIT",
+  "admin": "ALL_COMPANY",
+  "enterpriseType": "PREMIUM",
+  "enterprisePackageType": "ULTIMATE_MONTHLY",
+  "relationMode": "ON",
+  "firstLogin": false,
+  "street": null,
+  "zipCode": null,
+  "city": null,
+  "state": null,
+  "country": "Viet Nam",
+  "languageCode": "en",
+  "helpMode": "ON",
+  "companyAvatarId": null,
+  "createdDate": 1542596147006,
+  "numberActiveUser": 1,
+  "isFromAppDirect": null,
+  "isSubscribedAmazon": false,
+  "needToMigrateDocument": false,
+  "extraPackage": [
+
+  ],
+  "fromAppDirect": null,
+  "subscribedAmazon": false
+}

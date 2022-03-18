@@ -1,0 +1,30 @@
+.list {
+  overflow-y: hidden !important;
+  outline: none;
+  width: 100% !important;
+  font-size: 11px !important;
+}
+
+.list:hover {
+  overflow-y: overlay !important;
+}
+
+.timelineItem {
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+}
+
+.timelineLeft {
+    margin-right: 5px;
+}
+
+.title {
+    font-weight: 700;
+}
+
+.timelineRight {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}

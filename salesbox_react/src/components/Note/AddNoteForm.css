@@ -1,0 +1,19 @@
+.noteContainerInput {
+    margin: 0px !important;
+     .field {
+        margin: 0px !important;
+    }
+}
+
+.ui.form .field {
+     margin: 0px !important;
+}
+
+.noteInput {
+    height: 120px;
+   
+}
+.noteMaxLength {
+    display: flex;
+    justify-content: flex-end;
+}

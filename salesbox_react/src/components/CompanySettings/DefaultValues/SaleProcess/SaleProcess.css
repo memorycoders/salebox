@@ -1,0 +1,187 @@
+@import "variables.css";
+
+:global(.ui.compact.table tr).row  :global(td) {
+  padding: 0px;
+  font-size: 11px!important ;
+}
+
+:global(.ui.table).table :global(thead th).striped {
+  /* background-color: #DDDDDD; */
+  background-color: #f0f0f0;
+}
+
+:global(.ui.table).table :global(tfoot tr) {
+  border-style: solid none none none;
+  border-width: 1px;
+  border-color:#f3f4f4;
+}
+
+:global(.ui.table).table :global(tfoot th).striped {
+  background-color:#f0f0f0;
+}
+
+:global(.ui.table).table :global(tfoot th) {
+  font-size: 1rem;
+  font-weight:  700;
+   background-color:#f0f0f0 !important;
+}
+
+.headerTable{
+  font-size: 11px !important;
+  background-color: #f0f0f0 !important;
+  th {
+    border-bottom: inherit !important;
+  }
+}
+
+.bgMore,
+.notSetasDone,
+.setDone,
+.btn {
+  height: var(--list-icon-size);
+  width: var(--list-icon-size);
+  min-height: var(--list-icon-size);
+  min-width: var(--list-icon-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #f3f4f4;
+  cursor: pointer;
+}
+
+.btnAdd {
+  background-color: #a9ce31;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+  div {
+    background: url('../../../../../public/add_white.svg');
+    height: 11px;
+    background-size: 100% 100%;
+    width: 11px;
+    min-height: 11px;
+    min-width: 11px;
+  }
+}
+
+.notSetasDone {
+  background-color: #f3f4f4;
+   /* margin-right: 7px; */
+  div {
+    background: url('../../../../../public/Check.svg');
+    height: 11px;
+    background-size: 100% 100%;
+    width: 11px;
+    min-height: 11px;
+    min-width: 11px;
+  }
+}
+
+.setDone {
+  background-color: #4f6672;
+  /* margin-right: 7px; */
+  div {
+    background: url('../../../../../public/CheckHistory.svg');
+    height: 11px;
+    background-size: 100% 100%;
+    width: 11px;
+    min-height: 11px;
+    min-width: 11px;
+  }
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+}
+
+.textLeft {
+  justify-content: flex-start !important;
+}
+
+.textCenter {
+  text-align: center !important;
+}
+
+.actionIcon{
+  display: flex;
+  justify-content: space-between;
+}
+
+.listItem {
+  display: flex;
+  min-height: 40px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #f1f1f1;
+  padding-left: 4px;
+  font-size:  var(--normal-text);;
+  cursor: pointer;
+  outline: none;
+  &.Title {
+    font-weight: bold;
+
+    &:hover {
+      background-color: transparent !important;
+    }
+
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: var(--border-color);
+    margin-bottom: 2px;
+    min-height: 28px;
+  }
+
+  &&:hover {
+    background-color: #f0f0f0 !important;
+  }
+}
+
+.using {
+  padding: 2px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.ourProcess {
+  padding: 2px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.actionBtn {
+  padding: 2px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.addIconSize {
+  width: 15px;
+  height: 15px;
+}
+.itemHeader {
+  display: flex;
+  min-height: 40px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  font-size:  var(--normal-text);;
+  outline: none;
+}
+
+.titleHeader {
+  font-weight: bold;
+}

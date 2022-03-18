@@ -1,0 +1,46 @@
+/* .containerListUser {
+  max-height: 70vh;
+  overflow: hidden;
+}
+.containerListUser:hover {
+  overflow: hidden overlay;
+} */
+.notSetasDone,
+.setDone,
+.btn {
+  height: var(--list-icon-size);
+  width: var(--list-icon-size);
+  min-height: var(--list-icon-size);
+  min-width: var(--list-icon-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #f3f4f4;
+  cursor: pointer;
+}
+.notSetasDone {
+  background-color: #f3f4f4;
+  /* margin-right: 7px; */
+  div {
+    background: url('../../../../../public/Check.svg');
+    height: 11px;
+    background-size: 100% 100%;
+    width: 11px;
+    min-height: 11px;
+    min-width: 11px;
+  }
+}
+
+.setDone {
+  background-color: #1a3848;
+  /* margin-right: 7px; */
+  div {
+    background: url('../../../../../public/CheckHistory.svg');
+    height: 11px;
+    background-size: 100% 100%;
+    width: 11px;
+    min-height: 11px;
+    min-width: 11px;
+  }
+}

@@ -1,0 +1,107 @@
+@import 'variables.css';
+
+.loader {
+  text-align: center;
+  padding: var(--default-padding);
+}
+.borderRadius input {
+  border-radius: 4px !important;
+}
+.borderRadius>div {
+  width: 100%;
+}
+.borderRadius input {
+  padding: .58857143em 1.1em .5857143em 1em !important;
+}
+._relative {
+  position: relative;
+  height: 100% !important;
+  border: 1px solid #dedede;
+  border-radius: 4px !important;
+  width: 100% !important;
+}
+._positionDefault {
+  position: initial !important;
+
+}
+._tag {
+  position: absolute;
+  z-index: 2;
+  margin: 6px;
+}
+
+._tagDetail {
+  position: absolute;
+  z-index: 2;
+}
+
+._label {
+  position: absolute;
+  top: 50%;
+  height: 80%;
+  left: 2px;
+  display: flex !important;
+  align-items: center !important;
+  font-size: var(--normal-text);
+  transform: translateY(-50%);
+}
+
+.detailTagLabelContainer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.detailTagLabel {
+  font-size: var(--normal-text) !important;
+  display: inline-block;
+  margin: 2px !important;
+}
+
+.detailSearch {
+  width: 100% !important;
+}
+
+.detailSearch input {
+  width: 100%;
+  border: none !important;
+}
+
+.searchDrailContainer {
+  border: 1px solid #dedede;
+  width: 100%;
+  border-radius: 4px !important;
+
+}
+
+.searchDrailContainer .results {
+ max-height: 200px !important;
+}
+
+.searchContainer {
+  display: flex;
+  font-size: var(--normal-text);
+  align-items: center;
+  span {
+    margin-left: 3px;
+  }
+
+  input {
+    padding-left: 2px;
+  }
+}
+
+ .error {
+    font-size: 9px;
+    color: var(--red);
+    /* position: absolute; */
+    /* bottom: -14px; */
+    display: inline-block;
+    max-width: 100%;
+    padding-top: 5px;
+    /* right: 0px; */
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+  }

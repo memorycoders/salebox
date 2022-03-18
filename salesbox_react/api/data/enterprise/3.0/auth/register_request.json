@@ -1,0 +1,19 @@
+{
+  "numberOfLicense": "50",
+  "companyDTO": {
+    "name": "",
+    "country": "Viet Nam",
+    "phone": "84985088476",
+    "email": "o3284914@nwytg.net"
+  },
+  "userDTO": {
+    "password": "e10adc3949ba59abbe56e057f20f883e",
+    "firstName": "o3284914",
+    "lastName": "ABC",
+    "email": "o3284914@nwytg.net",
+    "phone": "84985088476",
+    "discProfile": "NONE",
+    "huntingFarmingRatio": 50
+  },
+  "languageCode": "vi"
+}

@@ -1,0 +1,152 @@
+
+.previewCVContainer {
+    padding: 20px 100px;
+}
+.previewCV {
+
+    color: rgb(111, 111, 111);
+}
+.PCHeader {
+    display: table;
+    width: 100%;
+}
+.PCHLeft {
+    width: 70%;
+    float: left;
+    margin-bottom: 30px;
+}
+.PCHLeft span {
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
+
+.PCHRight {
+    width: 30%;
+    float: right;
+    text-align: right;
+}
+.PCInfoName {
+    display: flex;
+    flex-direction: row;
+}
+.PCAvatar {
+    width: 150px;
+    height: 150px;
+    min-width: 150px;
+    float: left;
+}
+.PCAvatar img {
+    border-radius: 150px;
+    width: 100%;
+    height: 100%;
+}
+.PCName {
+    align-self: flex-end;
+    margin-left: 20px;
+    color: rgb(94, 94, 94);
+}
+.PCName div:first-child {
+    font-weight: bold;
+    font-size: 20px;
+}
+.PCName div:last-child {
+    font-size: 15px;
+}
+.PCDesc {
+    margin: 10px 0;
+    display: flex;
+    white-space: pre-wrap;
+}
+.PCERDesc {
+    white-space: pre-wrap;
+}
+
+.PCDesc div:first-child {
+    width: 70%;
+}
+.PCTitle {
+    font-weight: bold;
+    color: rgb(94, 94, 94);
+}
+.PCListCompetences {
+    margin-left: 5%;
+}
+.PCListCompetences ul {
+    list-style: none;
+    padding: 0;
+}
+.PCListCompetences li {
+    padding-left: 1em;
+    text-indent: -.7em;
+}
+.PCListCompetences li::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-right: 5px;
+    background: #000; /* or whatever color you prefer */
+}
+.PCGroupHeader {
+    font-weight: bold;
+    font-size: 15px;
+    border-bottom: 1px solid;
+    width: 70%;
+    margin-bottom: 20px;
+    color: rgb(94, 94, 94);
+}
+
+.PCEFTitle {
+    font-weight: bold;
+    font-size: 15px;
+}
+.PCEFTime {
+    color: gray;
+}
+.PCEFDesc {
+    color: gray;
+    white-space: pre-wrap;
+}
+.PCEContainer {
+    display: flex;
+    margin: 10px 0;
+    break-inside: avoid-page;
+}
+.PCHeaderGroup {
+    font-weight: bold;
+    font-size: 15px;
+    border-bottom: 1px solid;
+    margin: 20px 0;
+
+}
+.PCELeft {
+    width: 30%;
+}
+.PCERight {
+    width: 70%;
+}
+.PCERTitle {
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(94, 94, 94);
+}
+.PCEF {
+    margin: 5px 0;
+    break-inside: avoid-page;
+}
+.PCERListSpecial span{
+    background: rgb(241, 241, 241);
+    padding: 5px 10px;
+    margin: 5px 5px 0 0;
+    display: inline-block;
+    border-radius: 10px;
+    color: rgb(108, 108, 108);
+}
+.PCTable {
+    color: rgb(108, 108, 108) !important;
+}
+/* .PCTable table { page-break-inside:auto } */
+.PCEmployees {
+    break-inside: avoid-page;
+}

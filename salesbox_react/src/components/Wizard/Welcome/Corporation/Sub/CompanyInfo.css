@@ -1,0 +1,55 @@
+@import 'variables.css';
+
+.root {
+
+}
+
+.welcome {
+
+}
+
+.header {
+  background: #f0f0f0 !important;
+  border-bottom: 0px !important;
+  /*text-align: right;*/
+  display: flex !important;
+  justify-content: space-between;
+}
+
+.content {
+  /*background: #14313d !important;*/
+  background: #f0f0f0 !important;
+  height: 500px;
+  width: 360px;
+  /*font-size: 14px !important;*/
+  font-size: var(--normal-text) !important;
+
+}
+
+.content p {
+  /*font-size: 16px;*/
+  font-size: var(--memium-text) !important;
+
+}
+
+.form {
+  /* height: calc(100% - 40px); */
+}
+
+.formActionField {
+  /* height: 200px; */
+  text-align: right;
+}
+
+.action {
+  /*background: #14313d !important;*/
+  background: #f0f0f0 !important;
+  border-top: none !important ;
+}
+.button{
+  background-color: #11313C !important;
+}
+.contentBorderBottom {
+  border-bottom-left-radius: .28571429rem;
+  border-bottom-right-radius: .28571429rem;
+}

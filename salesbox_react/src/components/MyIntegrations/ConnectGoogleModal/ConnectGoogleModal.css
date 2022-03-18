@@ -1,0 +1,27 @@
+@import 'variables.css';
+
+.errorMessage {
+  color: #ed684e !important;
+  font-size: 11px !important;
+}
+.formRow {
+  display: flex;
+}
+.formLabel {
+  font-weight: 700 !important;
+}
+.labelDiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 15%;
+  margin-left: 8px;
+}
+.required {
+  color: red;
+  margin-bottom: 15px;
+  margin-left: 4px;
+}
+.inputDiv{
+  width: 85%;
+}

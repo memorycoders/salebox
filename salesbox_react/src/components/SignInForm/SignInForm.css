@@ -1,0 +1,104 @@
+.root {
+}
+.title {
+    color: #173849;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title button {
+    color: #173849 !important;
+    background-color: transparent !important;
+    border: 1px solid #173849 !important;
+    border-radius: 5px !important;
+    padding: 10px 15px !important;
+    font-size: 14px !important;
+}
+
+.title h2{
+    font-size: 24px;
+    margin: 0px;
+}
+
+.formSignIn label {
+    font-size: 14px !important;
+    font-weight: normal !important;
+}
+
+.footerBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.formSignIn .box:before, .formSignIn label:before {
+    border-color: rgba(23, 56, 73, 0.75) !important;
+    height: 16px !important;
+    width: 16px !important;
+}
+
+.formSignIn .box:after, .formSignIn label:after {
+    color: #173849 !important;
+    height: 16px !important;
+    width: 16px !important;
+}
+
+.formSignIn .button {
+    border-radius: 7px !important;
+}
+
+.loginBtn {
+    background-color: #173849 !important;
+    border-radius: 5px !important;
+    padding: 10px 15px !important;
+    color: #fff !important;
+    font-weight: normal !important;
+    font-size: 14px !important;
+}
+
+.signUpBtn {
+    border-radius: 5px !important;
+    padding: 10px 15px !important;
+    font-size: 14px !important;
+}
+
+.forgotPass {
+    color: #173849;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.remember {
+    margin: 0px !important;
+}
+
+.formSignIn input{
+    border-radius: 4px !important;
+}
+.errorLogin {
+    color: #ed684e;
+    text-align: center;
+    font-size: calc(var(--font-size-base) - 2px);
+}
+.successLogin {
+    color: #2c662d;;
+    text-align: center;
+    font-size: calc(var(--font-size-base) - 2px);
+}
+.rememberMe {
+    width: 16px;
+    height: 16px;
+    content: '';
+    background: #ffffff;
+    border-radius: 0.25rem;
+    border-color: rgba(23, 56, 73, 0.75) !important;
+    transition: border 0.1s ease, opacity 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.rememberMeDiv {
+    display: flex;
+    align-items: center;
+}

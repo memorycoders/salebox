@@ -1,0 +1,21 @@
+{
+  "measurementTypeDTOList": [{
+    "uuid": "c5d5669c-9eb0-4319-bac6-01c9884704a2",
+    "name": "FortNox"
+  }, {
+    "uuid": "45817285-aeb3-4b3e-ab52-37e0e4c75108",
+    "name": "Laptop"
+  }, {
+    "uuid": "87331ff3-f5fb-4e0b-ae68-11aa5ec4a866",
+    "name": "Services"
+  }, {
+    "uuid": "20961775-03ce-4baf-9cc6-56000dfd8404",
+    "name": "Smartphone"
+  }, {
+    "uuid": "d93ff1cf-c62f-4926-8c72-abb8f06bcf6e",
+    "name": "Subscription"
+  }, {
+    "uuid": "0306542a-62d1-481b-aa6f-3067a3dc175f",
+    "name": "TP_Type"
+  }]
+}

@@ -1,0 +1,285 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+      media="screen"
+      title="fontawesome"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet" />
+    <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/sb-icon.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/variables.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery.fabric.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery-ui.js" type="text/javascript"></script>
+
+    <script src="../app.js" type="text/javascript"></script>
+    <script src="../logic/globaladdin.js" type="text/javascript"></script>
+    <script src="../addlead.js" type="text/javascript"></script>
+  </head>
+  <body class="">
+    <!-- <a href="../ComposeEmail.html" class=""><div class="backButton">
+    <i class="fa fa-2x fa-chevron-circle-left" title="back" aria-hidden="true"></i>
+  </div></a> -->
+    <div id="salesbox-plugin" class="container-fluid">
+      <div class="panel panel-default add-panel">
+        <div class="panel-heading" style="margin-top: -20px;">
+          <div class="heading-wrapper"></div>
+        </div>
+
+        <div class="backheader backHeaderBg blueText">
+          <a href="../composeemail.html" class="back-button">
+            <div class="formBack">
+              <i class="fa  fa-angle-left" title="back" aria-hidden="true"></i>
+            </div>
+            Back
+          </a>
+        </div>
+
+        <div class="formheader greyTitleBg greyTitle borderBottom">
+          Add Deal
+        </div>
+        <div class="panel-body">
+          <form name="addTaskForm" id="addTaskForm" class="form-flex">
+            <div class="form-group">
+              <div class="col-sm-5">
+                <label for="account" class="control-label">Company</label>
+              </div>
+              <div class="col-sm-7">
+                <div>
+                  <div class="dropdown">
+                    <div data-toggle="dropdown">
+                      <div class="input-content has-suffix">
+                        <input type="text" class="form-control" id="account" placeholder="" />
+                      </div>
+                      <span class="input-group-suffix">
+                        <i class="fa fa-angle-down"></i>
+                      </span>
+                    </div>
+                    <ul
+                      id="account-dropdown-menu"
+                      class="dropdown-menu dropdown-menu-right"
+                      style="width: 10rem; overflow: auto;"
+                    >
+                      <li style="padding: 0rem;">
+                        <div class="scrollingDiv dropdown-fix-height">
+                          <table class="table" id="accountlist"></table>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group" id="contact-field">
+              <div class="col-sm-5">
+                <label class="control-label">Contact:</label>
+              </div>
+
+              <div class="col-sm-7">
+                <div>
+                  <div class="dropdown">
+                    <div data-toggle="dropdown">
+                      <div class="input-content has-suffix">
+                        <input type="text" class="form-control" id="leadcontact" placeholder="" />
+                      </div>
+                      <span class="input-group-suffix">
+                        <i class="fa fa-angle-down"></i>
+                      </span>
+                    </div>
+                    <ul class="dropdown-menu dropdown-menu-right" style="width: 100%; overflow: auto;">
+                      <li style="padding: 0rem;">
+                        <div class="scrollingDiv dropdown-fix-height">
+                          <table class="table" id="ddlleadcontact"></table>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group sb-dropdown-wrapper">
+              <div class="col-sm-5">
+                <label for="product-group" class="control-label" style="width: 5.8rem;">Product group:</label>
+              </div>
+
+              <div class="col-sm-7">
+                <div>
+                  <div class="dropdown">
+                    <div data-toggle="dropdown">
+                      <div class="input-content has-suffix">
+                        <input type="text" readonly class="form-control" id="leadpgroup" />
+                      </div>
+                      <span class="input-group-suffix">
+                        <i class="fa fa-angle-down"></i>
+                      </span>
+                    </div>
+                    <ul class="dropdown-menu dropdown-menu-right" style="width: 100%; overflow: auto;">
+                      <li style="padding: 0rem;">
+                        <div class="scrollingDiv dropdown-fix-height">
+                          <table class="table" id="dllleadpgroup"></table>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group sb-dropdown-wrapper">
+              <div class="col-sm-5">
+                <label for="product" class="control-label">Products:</label>
+              </div>
+
+              <div class="col-sm-7">
+                <div>
+                  <div class="dropdown">
+                    <div data-toggle="dropdown">
+                      <div class="input-content has-suffix">
+                        <input type="text" class="form-control" id="leadproduct" readonly="readonly" placeholder="" />
+                      </div>
+                      <span class="input-group-suffix">
+                        <i class="fa fa-angle-down"></i>
+                      </span>
+                    </div>
+                    <ul class="dropdown-menu dropdown-menu-right" style="width: 100%; overflow: auto;">
+                      <li style="padding: 0rem;">
+                        <div class="scrollingDiv dropdown-fix-height">
+                          <table class="table" id="ddleadproduct"></table>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group sb-dropdown-wrapper">
+              <div class="col-sm-5">
+                <label for="priority" class="control-label">Priority:</label>
+              </div>
+
+              <div class="col-sm-7">
+                <div>
+                  <div class="dropdown">
+                    <div data-toggle="dropdown">
+                      <div class="input-content has-suffix">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="leadpriority"
+                          readonly="readonly"
+                          placeholder="required"
+                        />
+                      </div>
+                      <span class="input-group-suffix">
+                        <i class="fa fa-angle-down"></i>
+                      </span>
+                    </div>
+                    <ul class="dropdown-menu dropdown-menu-right" style="width: 100%; overflow: auto;">
+                      <li style="padding: 0rem;">
+                        <div class="scrollingDiv dropdown-fix-height">
+                          <table class="table" id="ddlleadpriority">
+                            <tr class="dropdown-item" data-uuid="20">
+                              <td>Lowest</td>
+                            </tr>
+                            <tr class="dropdown-item" data-uuid="40">
+                              <td>Low</td>
+                            </tr>
+                            <tr class="dropdown-item" data-uuid="60">
+                              <td>Medium</td>
+                            </tr>
+                            <tr class="dropdown-item" data-uuid="80">
+                              <td>High</td>
+                            </tr>
+                            <tr class="dropdown-item" data-uuid="100">
+                              <td>Highest</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group sb-dropdown-wrapper">
+              <div class="col-sm-5">
+                <label for="owner" class="control-label">Owner:</label>
+              </div>
+              <div class="col-sm-7">
+                <input type="text" readonly class="sb-modal-form-control no-border" id="leadowner" />
+              </div>
+            </div>
+
+            <div class="form-group note no-border">
+              <div class="col-sm-4"><label for="note" class="control-label">Note</label></div>
+              <div class="col-sm-7"></div>
+              <div class="col-sm-1" id="remainingchar">2000</div>
+              <textarea
+                placeholder="Note"
+                class="sb-modal-form-control no-border note-block"
+                id="leadnote"
+                rows="3"
+                maxlength="2000"
+              ></textarea>
+            </div>
+
+            <div class="btn-logout loginbutton">
+              <a id="add-to-prospector" href="#" class="loginbutton">Done</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var deviceAgent = navigator.userAgent.toLowerCase();
+        var agentID = deviceAgent.match(/(iphone|ipod|ipad)/);
+        var windowH = 0;
+        var fieldsH = 480;
+        if (agentID) {
+          windowH = window.screen.height - 40 - $('#salesbox-plugin').offset().top;
+        } else {
+          windowH = $(window).height() - $('#salesbox-plugin').offset().top;
+        }
+
+        $('#salesbox-plugin').css({
+          height: windowH,
+        });
+
+        if ($(window).height() > fieldsH) {
+          $('textarea').css({
+            height: windowH - fieldsH,
+          });
+        }
+
+        $(window).on('resize', function() {
+          $('#salesbox-plugin').css({
+            height: windowH,
+          });
+
+          if ($(window).height() > fieldsH) {
+            $('textarea').css({
+              height: windowH - fieldsH,
+            });
+          }
+        });
+      });
+      $('#leadnote').keyup(function() {
+        var char = 200 - $(this).val().length;
+        if (char < 0) {
+          char = 0;
+        }
+        $('#remainingchar').text(char);
+      });
+    </script>
+  </body>
+</html>

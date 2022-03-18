@@ -1,0 +1,100 @@
+.root {
+}
+
+.accept {
+  display: flex;
+  align-items: center;
+}
+.title {
+  color: #173849;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.accept input {
+  margin-right: 6px;
+}
+.title button {
+  color: #173849 !important;
+  background-color: transparent !important;
+  border: 1px solid #173849 !important;
+  border-radius: 5px !important;
+  padding: 10px 15px !important;
+  font-size: 14px !important;
+}
+
+.formSignUp label {
+  font-size: 14px !important;
+  font-weight: normal !important;
+}
+
+.formSignUp div[name='country'] {
+  font-weight: normal;
+  max-height: 38px !important;
+  min-height: 28px !important;
+  height: 38px !important;
+  font-size: 14px !important;
+}
+
+.formSignUp div[name='country'] .menu .item {
+  font-size: 14px !important;
+}
+
+.formSignUp div[name='industry'] {
+  font-weight: normal;
+  max-height: 38px !important;
+  min-height: 28px !important;
+  height: 38px !important;
+  font-size: 14px !important;
+}
+
+.formSignUp div[name='industry'] .menu .item {
+  font-size: 14px !important;
+}
+
+.title h2 {
+  font-size: 24px;
+  margin: 0px;
+}
+
+.termsOfUse {
+  color: #173849;
+  margin-left: 6px;
+  font-size: 14px;
+}
+
+.termsOfUse:hover {
+  cursor: pointer;
+}
+
+.acceptTerm {
+  width: 16px;
+  height: 16px;
+  content: '';
+  background: #ffffff;
+  border-radius: 0.25rem;
+  border-color: rgba(23, 56, 73, 0.75) !important;
+  transition: border 0.1s ease, opacity 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease;
+  cursor: pointer;
+}
+
+.signUpBtn {
+  border-radius: 7px !important;
+  font-size: 14px !important;
+  font-weight: normal !important;
+  background-color: #173849 !important;
+}
+.SignInBtn {
+  border-radius: 7px !important;
+  font-size: 14px !important;
+}
+
+.formSignIn input{
+  border-radius: 4px !important;
+}
+.errorSingUp {
+  color: #ed684e;
+  text-align: center;
+  font-size: calc(var(--font-size-base) - 2px);
+}

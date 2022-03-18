@@ -1,0 +1,254 @@
+@import 'variables.css';
+
+.menu {
+    a {
+        color: gray;
+    }
+    a:hover {
+        color: gray;
+    }
+    .item {
+        font-size: var(--memium-text);
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        max-height: 50px;
+        border-radius: 50px;
+        position: relative;
+        font-weight: 400;
+    }
+    .itemSubMenu {
+        /*margin: 10px;*/
+        font-size: var(--memium-text);
+        /*padding: 10px;*/
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        max-height: 50px;
+        border-radius: 50px;
+        position: relative;
+        font-weight: 400;
+        margin-right: 10px;
+    }
+}
+.icon {
+    width: var(--left-menu-icon-size);
+    height: var(--left-menu-icon-size);
+    margin-left: 2.5px;
+}
+
+.icon:hover {
+    fill: red !important;
+}
+.subMenus {
+    /*margin-left: 67px;*/
+    margin-left: 50px;
+    /*margin-left: 35px;*/
+    display: none;
+    font-size: 12px;
+    font-weight: 300;
+}
+.subMenuLabel {
+    padding: 10px 0;
+    /*padding-left: 10px;*/
+
+}
+.subLabelActive {
+    font-weight: 600;
+}
+.show {
+    display: block;
+}
+.iconSubMenu {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 20px;
+}
+.iconSubDown {
+    background: url('../../../public/Arrow\ down.svg');
+    background-size: 100% 100%;
+}
+.iconSubUp {
+    background: url('../../../public/Arrow\ up.svg');
+    background-size: 100% 100%;
+}
+.ic_activities {
+    background: url('../../../public/Tasks.svg');
+    background-size: 100% 100%;
+}
+.ic_pipeline {
+    background: url('../../../public/Filter.png');
+    background-size: 100% 100%;
+}
+.ic_delegation {
+    background: url('../../../public/Delegation.svg');
+    background-size: 100% 100%;
+}
+.ic_accounts {
+    background: url('../../../public/Accounts.svg');
+    background-size: 100% 100%;
+}
+.ic_contacts {
+    background: url('../../../public/Contacts.svg');
+    background-size: 100% 100%;
+}
+.ic_resources {
+  background: url('../../../public/Resource.png');
+  background-size: 100% 100%;
+}
+.ic_call-lists {
+    background: url('../../../public/Call lists.svg');
+    background-size: 100% 100%;
+}
+.ic_campaigns {
+    background: url('../../../public/Campaigns.svg');
+    background-size: 100% 100%;
+}
+.ic_insights {
+    background: url('../../../public/Insights.svg');
+    background-size: 100% 100%;
+}
+
+.ic_unqualified_deals {
+  background: url('../../../public/Unqualified_deals.svg');
+  background-size: 100% 100%;
+}
+.ic_qualified_deals {
+  background: url('../../../public/Qualified_deals.svg');
+  background-size: 100% 100%;
+}
+.ic_orders {
+  background: url('../../../public/Orders.svg');
+  background-size: 100% 100%;
+}
+.ic_recruitment {
+  background: url('../../../public/Recruitment-1.png');
+  background-size: 100% 100%;
+}
+
+.label {
+    padding-left: 20px;
+    user-select: none;
+    display: none;
+}
+.showText {
+    .label {
+        display: block;
+    }
+    .item {
+        /* justify-content: normal !important; */
+    }
+}
+
+.active {
+    .label {
+        font-weight: 500;
+    }
+}
+.activities {
+    color: #F8C168 !important;
+    background-color: #fef8ef;
+    .ic_activities {
+        background: url('../../../public/Tasks_active.svg');
+        background-size: 100% 100%;
+    }
+}
+.contacts {
+    color: rgb(97, 153, 139);
+    background-color: rgb(235, 243, 240);
+    .ic_contacts {
+        background: url('../../../public/Contacts_Active.svg');
+        background-size: 100% 100%;
+    }
+}
+.resources {
+  color: #66c18c;
+  background-color: rgb(235, 243, 240);
+  .ic_resources {
+      background: url('../../../public/Resource_Active.png');
+      background-size: 100% 100%;
+  }
+}
+.pipeline, .lead {
+    color: #EE8267;
+    background-color: #fbe6e3;
+    .ic_pipeline {
+        background: url('../../../public/filter_active.svg');
+        background-size: 100% 100%;
+    }
+}
+.call-lists {
+    color: rgb(161, 125, 136);
+    background-color: rgb(243, 240, 239);
+    .ic_call-lists {
+        background: url('../../../public/Calllists_Active.svg');
+        background-size: 100% 100%;
+    }
+}
+.delegation {
+    color: #7D7FBC;
+    background-color: #e6e6f2;
+    .ic_delegation {
+        background: url('../../../public/Delegation_Active.svg');
+        background-size: 100% 100%;
+    }
+}
+.accounts {
+    color: #5F6A7C;
+    background-color: rgba(95, 106, 124, .1);
+    .ic_accounts {
+        background: url('../../../public/Accounts_Active.svg');
+        background-size: 100% 100%;
+    }
+}
+.campaigns {
+    color: #68BDD4;
+    background-color: rgba(104, 189, 212, .1);
+    .ic_campaigns {
+        background: url('../../../public/Campaigns_Active.svg');
+        background-size: 100% 100%;
+    }
+}
+.insights {
+    color: #7BB9FF;
+    background-color: rgba(123, 185, 255, .1);
+    .ic_insights {
+        background: url('../../../public/Insights_Active.svg');
+        background-size: 100% 100%;
+    }
+}
+.recruitment{
+  color: #66c18c;
+  background-color: rgb(235, 243, 240);
+  .ic_recruitment {
+      background: url('../../../public/Recruitment-1_active.png');
+      background-size: 100% 100%;
+  }
+}
+.disableIcon {
+    display: none;
+}
+
+.preload {
+   visibility: hidden;
+   height: 0px !important;
+       width: 0px !important;
+   .icon {
+       height: 0px !important;
+       width: 0px !important;
+   }
+}
+
+.itemContainer {
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: rgb(241,241,241);
+    /* border: 1px dotted #000; */
+}

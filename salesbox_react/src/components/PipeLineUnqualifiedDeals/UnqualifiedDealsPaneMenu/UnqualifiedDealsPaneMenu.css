@@ -1,0 +1,44 @@
+@import 'variables.css';
+
+.hasLabels {
+  width: 308px;
+  min-width: 308px;
+  max-width: 308px;
+  padding: 6px 0px;
+  border: 0px !important;
+  text-align: left !important;
+  justify-content: left !important;
+  margin-top: 0px !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+
+  &:global(.ui.menu) {
+    :global(.item) {
+      position: relative;
+      :global(> .label) {
+        position: absolute;
+        top: 1px;
+        padding: 0px !important;
+        width: 15px !important;
+        height: 15px !important;
+        max-width: 15px !important;
+        max-height: 15px !important;
+        border-radius: 50% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+      }
+    }
+  }
+}
+
+.text {
+  font-size: 11px !important;
+  margin-top: 10px !important;
+}
+.numberonPane {
+  background-color: #2e2f2f!important;
+  border-color: #2e2f2f!important;
+  color: #fff!important;
+}

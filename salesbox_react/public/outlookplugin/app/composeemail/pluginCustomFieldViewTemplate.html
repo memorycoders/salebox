@@ -1,0 +1,128 @@
+<div class="panel panel-default no-background" ng-show="customFieldList.length > 0 && ($root.rulePackage != 'SUPER' && $root.rulePackage != 'BASIC') ">
+    <div class="panel-heading">
+        <span class="text-bold panel-title" style="font-size: 16px !important;" translate>Custom Fields</span>
+    </div>
+    <div class="panel-body panel-body-custom-field">
+        <div class="alert alert-danger" ng-model="messegeErrorList" ng-show="messegeErrorList.length">
+            <p ng-repeat="messegeError in messegeErrorList"><span>{{messegeError}}</span></p>
+        </div>
+        <table class="table-custom-field" style="padding: 0px 5px 0px 5px;font-size: 11px;">
+            <tbody ng-repeat="customField in customFieldList" ng-model="customFieldList" class="" style=" border-bottom: 1px solid #c0c1c2">
+            <tr ng-if="customField.active && customField.fieldType=='TEXT'" ng-model="customField">
+                <td style="width: 30%;"><label ng-class="{'text-red' : customField.$$validate || (customField.customFieldValueDTOList[0].value == '' && customField.required == true)}">{{ customField.title | limitTo:20 }}</label></td>
+                <td>
+                    <input
+                            type="text"
+                            class="input-text text-right"
+                            style="padding: 0; padding-right: 5px;"
+                            maxlength="{{customField.customFieldOptionDTO.maxLength}}"
+                            ng-model="customField.customFieldValueDTOList[0].value"
+                            ng-blur="updateCustomField(customField)"
+                            ng-change="toggleChange(customField)">
+                </td>
+            </tr>
+            <script>
+                isNumber = function(evt) {
+                    evt = (evt) ? evt : window.event;
+                    var charCode = (evt.which) ? evt.which : evt.keyCode;
+                    if (charCode > 31 && (charCode < 45 || charCode > 57)) {
+                        return false;
+                    }
+                    return true;
+                }
+            </script>
+            <tr ng-if="customField.active && customField.fieldType=='NUMBER'">
+                <td><label ng-class="{'text-red' : customField.$$validate || (customField.customFieldValueDTOList[0].value == '' && customField.required == true)}">{{ customField.title }}</label></td>
+                <td>
+                    <input type="text" class="input-text text-right"
+                           ng-model="customField.customFieldValueDTOList[0].value"  style="padding: 0;padding-right: 5px"
+                           ng-blur="updateCustomField(customField)" onkeypress="return isNumber(event)" ng-change="toggleChange(customField)">
+                </td>
+            </tr>
+            <tr ng-if="customField.active && customField.fieldType=='TEXT_BOX'">
+                <td colspan="2"><label ng-class="{'text-red' : customField.$$validate || (customField.customFieldValueDTOList[0].value == '' && customField.required == true)}">{{ customField.title }}</label></td>
+            </tr>
+            <tr ng-if="customField.active && customField.fieldType=='TEXT_BOX'">
+                <td colspan="2"><textarea style="padding-right: 5px" class="input-text text-right" ng-model="customField.customFieldValueDTOList[0].value" ng-blur="updateCustomField(customField)" ng-change="toggleChange(customField)"></textarea></td>
+            </tr>
+            <tr ng-if="customField.active && customField.fieldType=='DROPDOWN' && customField.customFieldOptionDTO.customFieldOptionValueDTOList.length != 0">
+                <td class="text-left"><label>{{ customField.title }}</label></td>
+                <td class="text-right"><custom-field-dropdown custom-field-data="customField" custom-field-object="objectId"></custom-field-dropdown></td>
+            </tr>
+            <tr ng-if="customField.active && customField.fieldType=='URL'">
+                <td>
+                    <label ng-class="{'text-red' : customField.$$validate || (customField.customFieldValueDTOList[0].value == '' && customField.required == true)}">{{ customField.title }}</label>
+                </td>
+                <td class="input-url text-right">
+                    <a href="skype:{{customField.customFieldValueDTOList[0].value}}?call" ng-if="customField.customFieldOptionDTO.urlType =='SKYPE'">
+                        <i class="fa fa-skype" style="color: #00ADEF"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/{{customField.customFieldValueDTOList[0].value}}" ng-if="customField.customFieldOptionDTO.urlType =='LINKEDIN'" target="_blank">
+                        <i class="fa fa-linkedin" style="color: #0077B5"></i>
+                    </a>
+                    <a href="https://www.facebook.com/{{customField.customFieldValueDTOList[0].value}}" ng-if="customField.customFieldOptionDTO.urlType =='FACEBOOK'" target="_blank">
+                        <i class="fa fa-facebook" style="color: #4867AA"></i>
+                    </a>
+                    <a href="https://twitter.com/{{customField.customFieldValueDTOList[0].value}}" ng-if="customField.customFieldOptionDTO.urlType =='TWITTER'" target="_blank">
+                        <i class="fa fa-twitter" style="color: #1DA1F2"></i>
+                    </a>
+                    <a href="https://www.instagram.com/{{customField.customFieldValueDTOList[0].value}}" ng-if="customField.customFieldOptionDTO.urlType =='INSTAGRAM'" target="_blank">
+                        <i class="fa fa-instagram" style="color: #F70404"></i>
+                    </a>
+                    <a ng-href="{{customField.customFieldValueDTOList[0].value.indexOf('http')>=0?customField.customFieldValueDTOList[0].value : '//' + customField.customFieldValueDTOList[0].value}}"
+                       ng-if="customField.customFieldOptionDTO.urlType =='WEB'" target="_blank">
+                        <i class="fa fa-globe" style="color: #4867AA"></i>
+                    </a>
+                    <a href="https://www.google.com/search?q={{customField.customFieldOptionDTO.searchPrefix}}+{{objectName}}" ng-if="customField.customFieldOptionDTO.urlType =='GOOGLE_SEARCH' && customField.customFieldOptionDTO.searchPrefix != null" target="_blank">
+                        <i class="fa fa-search" style="color: grey"></i>
+                    </a>
+                    <a href="https://www.google.com/?q={{objectName}}" ng-if="customField.customFieldOptionDTO.urlType == 'GOOGLE_SEARCH' && customField.customFieldOptionDTO.searchPrefix == null" target="_blank">
+                        <i class="fa fa-search" style="color: grey"></i>
+                    </a>
+                    <input type="text" class="text-right" style="padding: 0; padding-right: 5px; width: 85%;" ng-if="customField.customFieldOptionDTO.urlType != 'GOOGLE_SEARCH'" ng-model="customField.customFieldValueDTOList[0].value" ng-blur="updateCustomField(customField)" ng-change="toggleChange(customField)">
+                </td>
+            </tr>
+            <tr ng-if="customField.active && customField.fieldType=='DATE'">
+                <td>
+                    <label ng-class="{'text-red' : customField.$$validate || (customField.customFieldValueDTOList[0].value == '' && customField.required == true)}">{{ customField.title }}</label>
+                </td>
+                <td class="text-right">
+                    <!--  formatDate: customField.customFieldOptionDTO.dateFormat -->
+                    <input
+                            class="no-border date input-date text-right"
+                            ng-blur="updateCustomField(customField)" sb-datetimepicker2
+                            period-options="{timepicker: false,scrollMonth:false,scrollTime:false,scrollInput:false}"
+                            style="width:80% !important;" type="text"
+                            ng-model="customField.customFieldValueDTOList[0].value"
+                            ng-change="toggleChange(customField)" readonly/>
+                    <span ng-if="customField.customFieldValueDTOList && customField.customFieldValueDTOList.length > 0 && customField.customFieldValueDTOList[0].value !== '' " ng-click="clearDateFieldView($event,customField);updateCustomField(customField)" style="padding: 0px 4px;font-size: 10px;cursor: pointer;background-color: #777777;color: white;min-width: 10px !important;" class="btn clear_time">&times;</span>
+                </td>
+            </tr>
+            <tr ng-if="customField.active && customField.fieldType=='CHECK_BOXES' && customField.customFieldOptionDTO.customFieldOptionValueDTOList.length != 0">
+                <td>
+                    <label>{{ customField.title }}</label>
+                </td>
+                <td>
+                    <div style="padding-right: 5px" class="input-check text-right" ng-repeat="checkBoxValue in customField.customFieldValueDTOList" ng-model="customField.customFieldValueDTOList" ng-click="updateCustomFieldCheck(checkBoxValue, customField)">
+                        <a href="" ng-model="checkBoxValue">
+                            {{ checkBoxValue.value }}
+                            <i class="fa fa-check-circle" ng-class="{'inactive' : !checkBoxValue.isChecked}"></i>
+                        </a>
+                    </div>
+                </td>
+            </tr>
+            <tr ng-if="customField.active && customField.fieldType === 'PRODUCT_TAG'">
+                <td class="width-30">
+                    <label>{{ customField.title }}</label>
+                </td>
+                <td>
+                    <custom-field-product-tag custom-field="customField" object-id="objectId">
+                    </custom-field-product-tag>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+

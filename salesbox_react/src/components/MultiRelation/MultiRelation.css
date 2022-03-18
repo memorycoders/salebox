@@ -1,0 +1,144 @@
+@import 'variables.css';
+
+.loader {
+  text-align: center;
+  padding: var(--default-padding);
+}
+
+.wrapper {
+  display: flex;
+  font-size: 90%;
+  .spacer {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 25%;
+  }
+  .contacts {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 25%;
+    position: relative;
+    .item {
+      border-style: none solid solid none;
+      & > div {
+        right: 12px;
+        & > div {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+  .accounts {
+    position: relative;
+    left: -1px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 25%;
+    .item {
+      border-style: none none solid solid;
+      & > div {
+        left: 12px;
+        & > div {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  .item {
+    border-color: var(--barder-color);
+    border-width: 1px;
+    min-height: 64px;
+    position: relative;
+    & > div {
+      position: absolute;
+      text-align: center;
+      bottom: -16px;
+    }
+  }
+  padding-top: 8px;
+  margin-bottom: 32px;
+}
+
+.relationInfo {
+  max-width: 108px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  padding: 0px 3px !important;
+  font-size: 11px !important;
+  min-width: 108px !important;
+}
+
+.onlyAccountButton {
+   max-width: 164px;
+   width: 160px !important;
+}
+
+.relationParent {
+  position: absolute;
+  width: 100px;
+  height: 24px;
+  left: 104px;
+  z-index: 2;
+}
+
+.onlyAccount {
+  left: 24px;
+}
+
+.rightIcon {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  max-height: 24px;
+  padding: 0px !important;
+  display: flex;
+  border-radius: 50% !important;
+  justify-content: center;
+  margin: 0px 0px 0px 0px !important;
+}
+
+.rightIcon:first-child {
+  margin-right: 3px !important;
+}
+
+.rightIcon:hover,
+.rightIcon:active {
+  background-color: #f0f0f0 !important;
+}
+
+.circleAvtive {
+  background-color: #f0f0f0 !important;
+}
+
+.rightIcon:last-child {
+  margin-left: 0px !important;
+  margin: 0px 3px 0px 0px !important;
+}
+
+.historyIcon {
+  width: 15px !important;
+  min-width:  15px !important;
+  height:  15px !important;
+}
+
+.addRelationModal {
+   width: 500px !important;
+  height: auto !important;
+}
+
+.tabContainer {
+ 
+}
+ .tab {
+    width: 50% !important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contentModal {
+    padding-top: 0px !important;
+  }

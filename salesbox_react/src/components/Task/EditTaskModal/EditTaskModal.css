@@ -1,0 +1,48 @@
+
+.editTaskModal {
+  width:800px !important;
+  /* height: auto !important;
+  overflow-x: hidden !important; */
+}
+.modalCustomField {
+  width: 1000px !important;
+}
+.modalW650 {
+   width:650px !important;
+}
+
+.editTaskModal button:nth-child(2) {
+  margin-right: 20px !important;
+}
+
+.button {
+  background: #fff !important;
+  color: rgba(0, 0, 0, 0.8) !important;
+  -webkit-box-shadow: 0 0 0 1px rgba(34, 36, 38, 0.35) inset, 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 1px rgba(34, 36, 38, 0.35) inset, 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+}
+
+.cancelButton {
+  border-color: #f8c168 !important;
+  color: #f8c168 !important;
+}
+
+.cancelButton:hover {
+  background-color: #e6e6e6 !important;
+}
+
+.doneButton {
+  background: #f8c168 !important;
+  border: 1px solid #f8c168 !important;
+  color: #fff !important;
+}
+.doneButton:hover {
+  background: #ab8037 !important;
+  border: 1px solid #ab8037 !important;
+}
+
+@media (min-width: 700px) {
+  .editTaskModal button:nth-child(2) {
+    margin-right: 11px !important;
+  }
+}

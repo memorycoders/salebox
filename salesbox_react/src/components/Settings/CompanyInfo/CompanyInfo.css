@@ -1,0 +1,17 @@
+@import 'variables.css';
+
+.container {
+  background-color: #fff;
+  width: 100%;
+}
+.subContainer {
+  overflow: hidden;
+}
+.column {
+  width: 100%;
+  height: auto;
+}
+.column:hover {
+  overflow-y: overlay;
+  overflow-x: hidden;
+}

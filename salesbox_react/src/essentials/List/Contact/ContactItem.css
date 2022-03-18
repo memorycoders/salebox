@@ -1,0 +1,82 @@
+@import 'variables.css';
+
+.listItem {
+  display: flex;
+  min-height: 40px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom: var(--border-color);
+  padding-left: 4px;
+
+  &:hover {
+    background-color: var(--hover-color);
+  }
+
+  &.header {
+    &:hover {
+      background-color: transparent;
+    }
+
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: var(--border-color);
+    margin-bottom: 2px;
+  }
+
+  .avatar {
+    padding: 2px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 48px;
+    justify-content: center;
+    display: flex;
+  }
+
+  .name {
+    padding: 2px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 96px;
+    white-space: nowrap;
+
+    .organisation {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: 700;
+    }
+  }
+
+  .kpi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    flex-shrink: 0;
+
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 48px;
+
+    :global(.ui.compact.icon.button) {
+      padding: 4px 2px;
+      margin: 2px;
+    }
+  }
+
+  .button.favorited {
+    -webkit-text-fill-color: #F5B342 !important;
+    color: #F5B342 !important;
+  }
+
+  .button.beStar {
+    margin-top: 4px !important;
+  }
+}

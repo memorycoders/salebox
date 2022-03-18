@@ -1,0 +1,134 @@
+.product-item {
+
+  display: flex;
+  font-weight: 500;
+  min-height: 56px;
+  // align-items: center;
+  border-bottom: 1px solid #c0c1c2;
+  padding: 0px 4px;
+  font-size: 10px;
+  .text-value {
+    font-weight: 600;
+  }
+  .column-product {
+    display: flex;
+    flex-direction: column;
+    span {
+      font-weight: 600;
+    }
+  }
+  .product-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .product-name-text {
+      width: 60%;
+    }
+  }
+  .product-name,
+  .product-time {
+    width: 30%;
+    justify-content: center;
+  }
+
+  .product-more {
+    width: 10%;
+  }
+
+  .bgMore-product {
+    background-color: #f3f4f4;
+  }
+  .bgMore-product {
+    height: var(--list-icon-size);
+    width: var(--list-icon-size);
+    min-height: var(--list-icon-size);
+    min-width: var(--list-icon-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  .step-progress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+    padding-left: 5px;
+    .progress-line {
+      display: flex;
+      flex: 1;
+      width: 1px;
+      background-color: #808285;
+    }
+  }
+
+  .progress-status {
+    width: 16px;
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    border-radius: 50%;
+  }
+
+  .circle-green {
+    background-color: #a9ce31;
+  }
+
+  .circle-grey {
+    background-color: #808285;
+  }
+
+  .circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .description-product {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    position: absolute;
+    bottom: 3px;
+  }
+
+  .right-content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 80%;
+    .top-container {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      align-items: center;
+      .product-unit {
+        width: 60%;
+        justify-content: center;
+      }
+      .product-value {
+        width: 40%;
+      }
+    }
+  }
+}
+
+.header-product {
+  font-weight: bold;
+  height: 36px !important;
+  min-height: unset;
+  .right-content {
+    height: 36px !important;
+  }
+  .product-name {
+    justify-content: flex-start;
+    padding-left: 20px;
+    height: 36px !important;
+  }
+}
+.isFetching {
+  min-height: 70px;
+}

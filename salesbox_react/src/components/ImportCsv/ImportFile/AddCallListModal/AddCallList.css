@@ -1,0 +1,42 @@
+.rowContainer {
+    display: flex;
+    /* width: 100%; */
+    .column {
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+    }
+}
+
+.dropdownContainer {
+    width: 100%;
+}
+
+.Form {
+  padding-bottom: 0px !important;
+  padding-right: 0px !important;
+}
+.label {
+    width: 90px !important;
+    min-width: 90px !important;
+    font-size: 11px !important;
+    padding-top: 0.8% !important;
+}
+.field {
+    margin-right: 0px !important;
+}
+
+.addButton {
+    text-align: left !important;
+    color: #173849;
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    opacity: 0.6;
+    font-size: 11px;
+}
+
+.options {
+    padding-left: 20px !important;
+}

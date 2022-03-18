@@ -1,0 +1,13 @@
+.tableActions {
+  border: none !important;
+  margin-top: 10px;
+
+  td {
+    font-size: var(--normal-text);
+    padding: 1em 0 !important;
+    cursor: pointer;
+  }
+  td:hover {
+    background-color: #eeeeee;
+  }
+}

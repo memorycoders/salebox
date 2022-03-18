@@ -1,0 +1,20 @@
+.actionIcon{
+    /* height: 20px;
+    width: 20px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.notSetasDone {
+   background: url('../../../public/Check.svg');
+    height: 13px;
+    background-size: 100% 100%;
+    width: 13px;
+    min-height: 13px;
+    min-width: 13px;
+}
+.preload {
+  position:absolute;
+  top:-9999px;
+  left:-9999px;
+}

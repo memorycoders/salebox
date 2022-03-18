@@ -1,0 +1,122 @@
+.email-pane-wrapper {
+  display: flex;
+  flex-direction: column;
+  .email-row {
+    display: flex;
+    align-items: center;
+    width: 100% !important;
+    margin-bottom: 0px !important;
+    margin-top: 20px ;
+
+    &.delete {
+      margin-top: 0px;
+      font-size: 11px;
+      span {
+        cursor: pointer;
+        color: '#1a3847' !important;
+      }
+    }
+
+    .account-fields {
+      width: 100% !important;
+      display: flex;
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+
+      .account-field-label {
+        width: 110px !important;
+        font-size: 11px !important;
+        align-items: center;
+        display: flex;
+        font-weight: 400;
+        font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+        .required {
+          color: red;
+          display: inline-block;
+          margin: 0px 2px;
+          font-size: 11px;
+        }
+        &.participant-label {
+          width: 150px !important;
+        }
+        &.__account {
+          font-family: 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif !important;
+        }
+        .default-done {
+          cursor: pointer;
+          margin-left: 20px;
+          background-color: #a9ce31;
+          div {
+            background: url('../../../../../public/CheckHistory.svg');
+            height: 11px;
+            background-size: 100% 100%;
+            width: 11px;
+            min-height: 11px;
+            min-width: 11px;
+          }
+        }
+        .default-notDone {
+          margin-left: 20px;
+          background-color: #f3f4f4;
+          cursor: pointer;
+          div {
+            background: url('../../../../../public/Check.svg');
+            height: 11px;
+            background-size: 100% 100%;
+            width: 11px;
+            min-height: 11px;
+            min-width: 11px;
+          }
+        }
+      }
+
+      .error {
+        input {
+          color: #9f3a38 !important;
+          background: #fff6f6 !important;
+          border-color: #e0b4b4 !important;
+        }
+      }
+
+      .email-field-type {
+        flex-grow: 0;
+        width: 128px;
+      }
+      .email-field-input {
+        margin-left: 20px;
+        flex-grow: 1;
+        .ui {
+          width: 100% !important;
+        }
+      }
+      .email-delete {
+        margin-left: 20px;
+        background-color: #f3f4f4;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        min-width: 20px;
+        min-height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        div {
+          background: url('../../../../../public/Close.svg');
+          height: 8px;
+          background-size: 100% 100%;
+          width: 8px;
+          min-height: 8px;
+          min-width: 8px;
+        }
+      }
+
+      input {
+        max-height: 28px !important;
+        min-height: 28px !important;
+        height: 28px !important;
+        font-size: 11px !important;
+      }
+    }
+  }
+}

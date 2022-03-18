@@ -1,0 +1,844 @@
+@import "variables.css";
+:root {
+  --loader-size: 32px;
+}
+body {
+  font-size: var(--normal-text) !important;
+}
+
+.padded {
+  padding: calc(var(--default-padding) / 4);
+}
+
+.padded2 {
+  padding: calc(var(--default-padding) / 1);
+}
+
+.padBottom {
+  padding-bottom: calc(var(--default-padding) * 4);
+}
+
+.page {
+  width: 1024px;
+  margin: 0px auto;
+  padding: 16px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  margin: 0px auto;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.positionAbsolute {
+  position: absolute;
+}
+
+.growingContainer {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  margin-bottom: 8px;
+  height: 100%;
+}
+
+.loader {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rotatePulse {
+  position: relative;
+  transform: translate3d(0, 0, 0);
+  box-sizing: border-box;
+  display: block;
+  font-size: 0;
+  color: #333;
+
+  width: var(--loader-size);
+  height: var(--loader-size);
+
+  &.light {
+    color: #fff;
+  }
+
+  & > div {
+    box-sizing: border-box;
+    display: inline-block;
+    float: none;
+    background-color: currentColor;
+    border: 0 solid currentColor;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 100%;
+    &:first-child {
+      position: absolute;
+      width: var(--loader-size);
+      height: var(--loader-size);
+      background: transparent;
+      border-style: solid;
+      border-width: 2px;
+      border-right-color: transparent;
+      border-left-color: transparent;
+      animation: ball-clip-rotate-pulse-rotate 1s cubic-bezier(0.09, 0.57, 0.49, 0.9) infinite;
+    }
+    &:last-child {
+      width: calc(var(--loader-size) / 2);
+      height: calc(var(--loader-size) / 2);
+      animation: ball-clip-rotate-pulse-scale 1s cubic-bezier(0.09, 0.57, 0.49, 0.9) infinite;
+    }
+  }
+
+  &.big {
+    width: calc(var(--loader-size) * 4);
+    height: calc(var(--loader-size) * 4);
+    & > div {
+      &:first-child {
+        width: calc(var(--loader-size) * 4);
+        height: calc(var(--loader-size) * 4);
+        border-width: calc(2px * 4);
+      }
+      &:last-child {
+        width: calc(var(--loader-size) * 4 / 2);
+        height: calc(var(--loader-size) * 4 / 2);
+      }
+    }
+  }
+}
+
+@-webkit-keyframes ball-clip-rotate-pulse-rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@-moz-keyframes ball-clip-rotate-pulse-rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@-o-keyframes ball-clip-rotate-pulse-rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes ball-clip-rotate-pulse-rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@-webkit-keyframes ball-clip-rotate-pulse-scale {
+  0%,
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  30% {
+    opacity: 0.3;
+    transform: translate(-50%, -50%) scale(0.15);
+  }
+}
+
+@-moz-keyframes ball-clip-rotate-pulse-scale {
+  0%,
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  30% {
+    opacity: 0.3;
+    transform: translate(-50%, -50%) scale(0.15);
+  }
+}
+
+@-o-keyframes ball-clip-rotate-pulse-scale {
+  0%,
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  30% {
+    opacity: 0.3;
+    transform: translate(-50%, -50%) scale(0.15);
+  }
+}
+
+@keyframes ball-clip-rotate-pulse-scale {
+  0%,
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  30% {
+    opacity: 0.3;
+    transform: translate(-50%, -50%) scale(0.15);
+  }
+}
+
+:global(.ui.modal > .header) {
+  padding: var(--default-padding);
+  &:global(.contact) {
+    color: #ffffff;
+    background-color: var(--contact);
+  }
+
+  &:global(.account) {
+    color: #ffffff;
+    background-color: var(--account);
+  }
+
+  &:global(.activity) {
+    color: #ffffff;
+    background-color: var(--activity);
+  }
+
+  &:global(.task) {
+    color: #ffffff;
+    background-color: var(--task);
+  }
+
+  &:global(.appointment) {
+    color: #ffffff;
+    background-color: var(--appointment);
+  }
+
+  &:global(.delegation) {
+    color: #ffffff;
+    background-color: var(--delegation);
+  }
+
+  &:global(.opportunity) {
+    color: #ffffff;
+    background-color: var(--opportunity);
+  }
+
+  &:global(.call-list) {
+    color: #ffffff;
+    background-color: var(--call-list);
+  }
+
+  &:global(.campaign) {
+    color: #ffffff;
+    background-color: var(--campaign);
+  }
+
+  &:global(.insight) {
+    color: #ffffff;
+    background-color: var(--insight);
+  }
+
+  &:global(.pipeline) {
+    color: #ffffff;
+    background-color: var(--pipeline);
+  }
+
+  &:global(.lead) {
+    color: #ffffff;
+    background-color: var(--lead);
+  }
+}
+
+:global(.ui.inverted.menu) {
+  :global(.active.item) {
+    &:global(.contact) {
+      background-color: var(--contact);
+    }
+
+    &:global(.account) {
+      background-color: var(--account);
+    }
+
+    &:global(.activity) {
+      background-color: var(--activity);
+    }
+
+    &:global(.task) {
+      background-color: var(--task);
+    }
+
+    &:global(.appointment) {
+      background-color: var(--appointment);
+    }
+
+    &:global(.delegation) {
+      background-color: var(--delegation);
+    }
+
+    &:global(.opportunity) {
+      background-color: var(--opportunity);
+    }
+
+    &:global(.call-list) {
+      background-color: var(--call-list);
+    }
+
+    &:global(.campaign) {
+      background-color: var(--campaign);
+    }
+
+    &:global(.insight) {
+      background-color: var(--insight);
+    }
+
+    &:global(.pipeline) {
+      background-color: var(--pipeline);
+    }
+
+    &:global(.lead) {
+      background-color: var(--lead);
+    }
+  }
+}
+
+:global(.ui.menu) {
+  :global(.active.item) {
+    &:global(.contact) {
+      background-color: var(--contact);
+      color: var(--light-text-color);
+    }
+
+    &:global(.account) {
+      background-color: var(--account);
+      color: var(--light-text-color);
+    }
+
+    &:global(.activity) {
+      background-color: var(--activity);
+      color: var(--light-text-color);
+    }
+
+    &:global(.task) {
+      background-color: var(--task);
+      color: var(--light-text-color);
+    }
+
+    &:global(.appointment) {
+      background-color: var(--appointment);
+      color: var(--light-text-color);
+    }
+
+    &:global(.delegation) {
+      background-color: var(--delegation);
+      color: var(--light-text-color);
+    }
+
+    &:global(.opportunity) {
+      background-color: var(--opportunity);
+      color: var(--light-text-color);
+    }
+
+    &:global(.call-list) {
+      background-color: var(--call-list);
+      color: var(--light-text-color);
+    }
+
+    &:global(.campaign) {
+      background-color: var(--campaign);
+      color: var(--light-text-color);
+    }
+
+    &:global(.insight) {
+      background-color: var(--insight);
+      color: var(--light-text-color);
+    }
+
+    &:global(.pipeline) {
+      background-color: var(--pipeline);
+      color: var(--light-text-color);
+    }
+
+    &:global(.lead) {
+      background-color: var(--lead);
+      color: var(--light-text-color);
+    }
+  }
+}
+
+:global(.ui.active.button) {
+  &:global(.contact) {
+    color: var(--light-text-color);
+    background-color: var(--contact);
+  }
+
+  &:global(.activity) {
+    color: var(--light-text-color);
+    background-color: var(--activity);
+  }
+
+  &:global(.task) {
+    color: var(--light-text-color);
+    background-color: var(--task);
+  }
+
+  &:global(.task) {
+    color: var(--light-text-color);
+    background-color: var(--task);
+  }
+
+  &:global(.appointment) {
+    color: var(--light-text-color);
+    background-color: var(--appointment);
+  }
+
+  &:global(.delegation) {
+    color: var(--light-text-color);
+    background-color: var(--delegation);
+  }
+
+  &:global(.opportunity) {
+    color: var(--light-text-color);
+    background-color: var(--opportunity);
+  }
+
+  &:global(.call-list) {
+    color: var(--light-text-color);
+    background-color: var(--call-list);
+  }
+
+  &:global(.campaign) {
+    color: var(--light-text-color);
+    background-color: var(--campaign);
+  }
+
+  &:global(.insight) {
+    color: var(--light-text-color);
+    background-color: var(--insight);
+  }
+
+  &:global(.pipeline) {
+    color: var(--light-text-color);
+    background-color: var(--pipeline);
+  }
+
+  &:global(.lead) {
+    color: var(--light-text-color);
+    background-color: var(--lead);
+  }
+}
+
+.popup {
+  &:global(.contact) {
+    &:global(.ui.bottom.popup:before) {
+      background-color: var(--contact);
+    }
+    :global(.ui.inverted.segment) {
+      margin: -1px;
+      background-color: var(--contact);
+    }
+  }
+
+  &:global(.activity) {
+    &:global(.ui.bottom.popup:before) {
+      background-color: var(--activity);
+    }
+    :global(.ui.inverted.segment) {
+      margin: -1px;
+      background-color: var(--activity);
+    }
+  }
+
+  &:global(.account) {
+    &:global(.ui.bottom.popup:before) {
+      background-color: var(--account);
+    }
+    :global(.ui.inverted.segment) {
+      margin: -1px;
+      background-color: var(--account);
+    }
+  }
+
+  &:global(.task) {
+    &:global(.ui.bottom.popup:before) {
+      background-color: var(--task);
+    }
+    :global(.ui.inverted.segment) {
+      margin: -1px;
+      background-color: var(--task);
+    }
+  }
+
+  &:global(.appointment) {
+    &:global(.ui.bottom.popup:before) {
+      background-color: var(--appointment);
+    }
+    :global(.ui.inverted.segment) {
+      margin: -1px;
+      background-color: var(--appointment);
+    }
+  }
+
+  &:global(.delegation) {
+    &:global(.ui.bottom.popup:before) {
+      background-color: var(--delegation);
+    }
+    :global(.ui.inverted.segment) {
+      margin: -1px;
+      background-color: var(--delegation);
+    }
+  }
+
+  &:global(.opportunity) {
+    &:global(.ui.bottom.popup:before) {
+      background-color: var(--opportunity);
+    }
+    :global(.ui.inverted.segment) {
+      margin: -1px;
+      background-color: var(--opportunity);
+    }
+  }
+
+  &:global(.call-list) {
+    &:global(.ui.bottom.popup:before) {
+      background-color: var(--call-list);
+    }
+    :global(.ui.inverted.segment) {
+      margin: -1px;
+      background-color: var(--call-list);
+    }
+  }
+
+  &:global(.campaign) {
+    &:global(.ui.bottom.popup:before) {
+      background-color: var(--campaign);
+    }
+    :global(.ui.inverted.segment) {
+      margin: -1px;
+      background-color: var(--campaign);
+    }
+  }
+
+  &:global(.insight) {
+    &:global(.ui.bottom.popup:before) {
+      background-color: var(--insight);
+    }
+    :global(.ui.inverted.segment) {
+      margin: -1px;
+      background-color: var(--insight);
+    }
+  }
+
+  &:global(.pipeline) {
+    &:global(.ui.bottom.popup:before) {
+      background-color: var(--pipeline);
+    }
+    :global(.ui.inverted.segment) {
+      margin: -1px;
+      background-color: var(--pipeline);
+    }
+  }
+
+  &:global(.lead) {
+    &:global(.ui.bottom.popup:before) {
+      background-color: var(--lead);
+    }
+    :global(.ui.inverted.segment) {
+      margin: -1px;
+      background-color: var(--lead);
+    }
+  }
+}
+
+:global(.ui.pointing.dropdown.contact) {
+  &:global(:not(.upward) > .menu:after) {
+    color: var(--light-text-color);
+    background-color: var(--contact);
+  }
+  :global(.menu) {
+    :global(> .header) {
+      margin: 0;
+      padding: 0.5em 1.666667rem;
+      background-color: var(--contact);
+      color: var(--light-text-color);
+    }
+  }
+}
+
+:global(.ui.pointing.dropdown.account) {
+  &:global(:not(.upward) > .menu:after) {
+    color: var(--light-text-color);
+    background-color: var(--account);
+  }
+  :global(.menu) {
+    :global(> .header) {
+      margin: 0;
+      padding: 0.5em 1.666667rem;
+      background-color: var(--account);
+      color: var(--light-text-color);
+    }
+  }
+}
+
+:global(.ui.pointing.dropdown.task) {
+  &:global(:not(.upward) > .menu:after) {
+    color: var(--light-text-color);
+    background-color: var(--task);
+  }
+  :global(.menu) {
+    :global(> .header) {
+      margin: 0;
+      padding: 0.5em 1.666667rem;
+      background-color: var(--task);
+      color: var(--light-text-color);
+    }
+  }
+}
+
+:global(.ui.pointing.dropdown.appointment) {
+  &:global(:not(.upward) > .menu:after) {
+    color: var(--light-text-color);
+    background-color: var(--appointment);
+  }
+  :global(.menu) {
+    :global(> .header) {
+      margin: 0;
+      padding: 0.5em 1.666667rem;
+      background-color: var(--appointment);
+      color: var(--light-text-color);
+    }
+  }
+}
+
+:global(.ui.pointing.dropdown.delegation) {
+  &:global(:not(.upward) > .menu:after) {
+    color: var(--light-text-color);
+    background-color: var(--delegation);
+  }
+  :global(.menu) {
+    :global(> .header) {
+      margin: 0;
+      padding: 0.5em 1.666667rem;
+      background-color: var(--delegation);
+      color: var(--light-text-color);
+    }
+  }
+}
+
+:global(.ui.pointing.dropdown.opportunity) {
+  &:global(:not(.upward) > .menu:after) {
+    color: var(--light-text-color);
+    background-color: var(--opportunity);
+  }
+  :global(.menu) {
+    :global(> .header) {
+      margin: 0;
+      padding: 0.5em 1.666667rem;
+      background-color: var(--opportunity);
+      color: var(--light-text-color);
+    }
+  }
+}
+
+:global(.ui.pointing.dropdown.call) {
+  &:global(-list > .menu:after) {
+    color: var(--light-text-color);
+    background-color: var(--call-list);
+  }
+  :global(.menu) {
+    :global(> .header) {
+      margin: 0;
+      padding: 0.5em 1.666667rem;
+      background-color: var(--call-list);
+      color: var(--light-text-color);
+    }
+  }
+}
+
+:global(.ui.pointing.dropdown.campaign) {
+  &:global(:not(.upward) > .menu:after) {
+    color: var(--light-text-color);
+    background-color: var(--campaign);
+  }
+  :global(.menu) {
+    :global(> .header) {
+      margin: 0;
+      padding: 0.5em 1.666667rem;
+      background-color: var(--campaign);
+      color: var(--light-text-color);
+    }
+  }
+}
+
+:global(.ui.pointing.dropdown.insight) {
+  &:global(:not(.upward) > .menu:after) {
+    color: var(--light-text-color);
+    background-color: var(--insight);
+  }
+  :global(.menu) {
+    :global(> .header) {
+      margin: 0;
+      padding: 0.5em 1.666667rem;
+      background-color: var(--insight);
+      color: var(--light-text-color);
+    }
+  }
+}
+
+:global(.ui.pointing.dropdown.pipeline) {
+  &:global(:not(.upward) > .menu:after) {
+    color: var(--light-text-color);
+    background-color: var(--pipeline);
+  }
+  :global(.menu) {
+    :global(> .header) {
+      margin: 0;
+      padding: 0.5em 1.666667rem;
+      background-color: var(--pipeline);
+      color: var(--light-text-color);
+    }
+  }
+}
+
+:global(.ui.pointing.dropdown.lead) {
+  &:global(:not(.upward) > .menu:after) {
+    color: var(--light-text-color);
+    background-color: var(--lead);
+  }
+  :global(.menu) {
+    :global(> .header) {
+      margin: 0;
+      padding: 0.5em 1.666667rem;
+      background-color: var(--lead);
+      color: var(--light-text-color);
+    }
+  }
+}
+
+.fullscreen {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  color: #333;
+  padding-top: 32px;
+  .wrapper {
+    position: absolute;
+    left: 32;
+    right: 32;
+    top: 96;
+    bottom: 32;
+  }
+}
+
+/* Create Task Modal */
+.headerCreateTask {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.modal {
+  width: 35% !important;
+  height: 60% !important;
+  bottom: 25%;
+  min-width: 30%;
+}
+.addCreateTask {
+  padding-left: 2%;
+  font-size: 32px;
+  font-weight: 700;
+}
+.closeCreateTask {
+  padding-right: 1%;
+}
+.CustomTextArea {
+  resize: none !important;
+}
+.btnFooter {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1%;
+}
+.cancelBtn {
+  border: 1.5px solid #173849 !important;
+  color: #173849 !important;
+  background-color: #fff !important;
+  font-weight: 600 !important;
+  border-radius: 7px !important;
+  cursor: pointer;
+  text-decoration: none !important;
+  text-shadow: 0px 1px 0px #173849 !important;
+  padding: 7px 15px !important;
+  font-size: 16px !important;
+  margin-right: 20px;
+}
+.saveBtn {
+  /* border: 2px solid #173849 !important; */
+  color: #fff !important;
+  background-color: #173849 !important;
+  font-weight: 700 !important;
+  border-radius: 7px !important;
+  cursor: pointer;
+  text-decoration: none !important;
+  text-shadow: 0px 1px 0px #173849 !important;
+  padding: 7px 15px !important;
+  font-size: 16px !important;
+}
+/* .dimmer.inverted {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+} */
+
+body {
+  font-size: 11px;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif !important;
+
+}
+
+.ui.dimmer {
+   background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.dimmed.dimmable>.ui.animating.dimmer, .dimmed.dimmable>.ui.visible.dimmer, .ui.active.dimmer {
+  opacity: 0.5 !important;
+}
+:global(.bg_contact_color) {
+  background:#87b2a7;
+  color: white;
+}
+
+:global(.bg_account_color) {
+  background:#5F6A7C;
+  color: white;
+}
+.position-clear {
+  position: inherit !important;
+  transform: none !important;
+  -webkit-transform: none !important;
+}

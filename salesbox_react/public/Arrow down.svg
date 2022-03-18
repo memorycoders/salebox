@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="6px" viewBox="0 0 8 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Arrow down</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design-System" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-68.000000, -1068.000000)">
+            <g id="Arrow-down" transform="translate(72.000000, 1071.000000) scale(1, -1) translate(-72.000000, -1071.000000) translate(60.000000, 1059.000000)">
+                <circle id="Oval" cx="12" cy="12" r="12"></circle>
+                <path d="M13.500125,16.00025 C13.244125,16.00025 12.988125,15.90225 12.793125,15.70725 L9.793125,12.70725 C9.402125,12.31625 9.402125,11.68425 9.793125,11.29325 L12.793125,8.29325 C13.184125,7.90225 13.816125,7.90225 14.207125,8.29325 C14.598125,8.68425 14.598125,9.31625 14.207125,9.70725 L11.914125,12.00025 L14.207125,14.29325 C14.598125,14.68425 14.598125,15.31625 14.207125,15.70725 C14.012125,15.90225 13.756125,16.00025 13.500125,16.00025" id="Fill-1-Copy-5" fill="#808080" transform="translate(12.000125, 12.000125) scale(-1, -1) rotate(-90.000000) translate(-12.000125, -12.000125) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

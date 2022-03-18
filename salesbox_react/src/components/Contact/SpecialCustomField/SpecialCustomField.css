@@ -1,0 +1,151 @@
+@import 'variables.css';
+
+.cursorPoiter {
+  cursor: pointer !important;
+}
+.btnLoadmore {
+  text-align: center;
+  cursor: pointer;
+  a {
+    text-decoration: underline;
+  }
+}
+.container {
+  padding: 0px 20px;
+}
+.sendMessage {
+  display: flex;
+  label {
+    font-weight: bold;
+    min-width: 100px;
+    display: flex;
+    align-self: center;
+  }
+  div {
+    width: 100%;
+  }
+}
+.history {
+  font-weight: bold;
+}
+.comment {
+  display: flex;
+  padding: 2px 0;
+}
+.name {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+.childComment {
+  width: 100%;
+  padding: 2px 0 2px 10%;
+}
+.user {
+  text-align: center;
+  float: left;
+  width: 4em;
+  margin-right: 10px;
+}
+.wrapAvatar {
+  height: 2.5rem;
+  display: table;
+  width: 4rem;
+  text-align: center;
+}
+.avartar {
+  margin: 0 auto;
+}
+.time {
+  margin-top: 2px;
+  font-size: 10px !important;
+  color: gray;
+  line-height: 9px;
+}
+.content {
+  width: 100%;
+  position: relative;
+}
+.bubbles {
+  font-size: 11px !important;
+  /* min-width: 200px; */
+  width: 100%;
+  background-color: #e4e5e6 !important;
+  font-weight: 400 !important;
+  color: #58585a !important;
+  position: relative;
+  word-break: break-all !important;
+  margin-left: 0 !important;
+}
+.notuserLogin {
+  background-color: #ebf3f0 !important;
+}
+.bubbles::before {
+  top: 40% !important;
+}
+.btnReply {
+  cursor: pointer;
+}
+.add {
+  position: absolute;
+  right: -12.5px;
+  top: -12.5px;
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+}
+
+.iconMSTeams {
+  background: url(../../../../public/icon_ms_teams.png);
+  background-size: 100% 100%;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+.teamProject {
+  display: table;
+  width: 100%;
+  span {
+    font-size: 11px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+.iconBorderInput {
+  cursor: pointer;
+  display: flex !important;
+  align-items: center !important;
+  width: auto !important;
+  border: 1px solid rgba(34, 36, 38, 0.15) !important;
+  border-radius: 4px !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  padding-left: 8px;
+  border-right: none !important;
+}
+.iconBorderInput:focus {
+  border-color: #85b7d9 !important;
+}
+.popupStatus {
+  display: flex;
+  align-items: center;
+}
+.circleBig {
+  cursor: pointer;
+  position: absolute;
+  right: -6px;
+  top: -6px;
+  border-radius: 50%;
+  margin-left: 5px;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.iconAdd {
+  background: url(../../../../public/add_chat.svg);
+  background-size: 100% 100%;
+}

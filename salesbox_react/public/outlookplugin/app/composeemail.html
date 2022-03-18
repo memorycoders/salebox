@@ -1,0 +1,132 @@
+﻿<!-- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license at the bottom of this file. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+      media="screen"
+      title="fontawesome"
+    />
+    <!-- <link rel="stylesheet" href="/css/fa.css" media="screen" title="no title"> -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.fabric.js" type="text/javascript"></script>
+
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/sb-icon.css" rel="stylesheet" type="text/css" />
+    <link href="../css/variables.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="../css/login.css" rel="stylesheet" type="text/css" /> -->
+    <script src="app.js" type="text/javascript"></script>
+    <!--<script src="commands/dialoghelper.js" type="text/javascript"></script>-->
+    <script src="logic/mailhook.js" type="text/javascript"></script>
+    <!--<script src="openemail.js" type="text/javascript"></script>-->
+    <script src="logic/globaladdin.js" type="text/javascript"></script>
+    <script src="home.js" type="text/javascript"></script>
+  </head>
+  <body class="whitebg">
+    <div id="salesbox-plugin" class="container-fluid">
+      <div class="panel panel-default add-panel whitebg">
+        <!-- <div class="loginwindowlogo">
+        </div> -->
+
+        <div class=" addMenuItem centerContent">
+          <a href="javascript:void(0);" id="viewcontact">
+            <div class="addMenuIcon contactBg">
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </div>
+            <div class="addMenuTitle lightText">
+              View contact info
+            </div>
+          </a>
+        </div>
+
+        <div class="addMenuItem centerContent">
+          <a href="#" id="addcontact">
+            <div class="addMenuIcon contactBg">
+              <i class="fa fa-user-plus" aria-hidden="true"></i>
+            </div>
+            <div class="addMenuTitle lightText">
+              Add contact
+            </div>
+          </a>
+        </div>
+
+        <div class="addMenuItem centerContent">
+          <a href="#" id="addlead">
+            <div class="addMenuIcon leadBg">
+              <i class="fa fa-leads"></i>
+            </div>
+            <div class="addMenuTitle lightText">
+              Add Deal
+            </div>
+          </a>
+        </div>
+
+        <div class="addMenuItem centerContent">
+          <a href="#" id="addtask">
+            <div class="addMenuIcon taskBg">
+              <i class="fa fa-calendar-check-o"></i>
+            </div>
+            <div class="addMenuTitle lightText">
+              Add Reminder
+            </div>
+          </a>
+        </div>
+
+        <div class="addMenuItem centerContent">
+          <a href="#" id="addappointment">
+            <div class="addMenuIcon appointmentBg">
+              <i class="fa fa-calendar fa-fw"></i>
+            </div>
+            <div class="addMenuTitle lightText">
+              Add Meeting
+            </div>
+          </a>
+        </div>
+
+        <div class="addMenuItem centerContent">
+          <a href="#" id="addnote">
+            <div class="addMenuIcon noteBg">
+              <i class="fa fa-comments fa-fw"></i>
+            </div>
+            <div class="addMenuTitle lightText">
+              Add Note
+            </div>
+          </a>
+        </div>
+
+        <!--<div class='addMenuItem centerContent'>-->
+        <!--<a href="javascript:void(0);" id="saveemail">-->
+        <!--<div class="addMenuIcon emailBg">-->
+        <!--<i class="fa fa-envelope-o" aria-hidden="true"></i><i class="fa fa-save secondaryIcon iconTiny"-->
+        <!--aria-hidden="true"></i>-->
+        <!--</div>-->
+        <!--<div class="addMenuTitle lightText">-->
+        <!--Save Email-->
+        <!--</div>-->
+        <!--</a>-->
+
+        <!--</div>-->
+
+        <div class="addMenuItem centerContent addMenuItemLastRow">
+          <!-- <a href="javascript:void(0);" id="trackemail"> -->
+          <a href="javascript:void(0)" id="trackemail">
+            <div class="addMenuIcon emailBg">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i
+              ><i class="fa fa-clock secondaryIcon trackiconTiny" aria-hidden="true"></i>
+            </div>
+            <div class="addMenuTitle lightText">
+              Track Email
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <input type="button" class="btn-logout loginbutton" value="Logout" id="btnLogout" />
+  </body>
+</html>

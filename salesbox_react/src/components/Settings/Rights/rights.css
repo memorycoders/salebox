@@ -1,0 +1,206 @@
+@import 'variables.css';
+
+.pageRights {
+  background-color: #ffffff;
+  margin-top: 0px !important;
+  border-top-right-radius: 10px !important;
+  border-top-left-radius: 10px !important;
+  margin-left: 2px !important;
+  margin-right: 2px !important;
+}
+
+.viewHeader {
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+  padding-bottom: 0px !important;
+}
+
+.colorRed {
+  background-color: red;
+}
+
+.itemButton {
+  padding: 5px !important;
+  width: 120px !important;
+  background-color: #efefef !important;
+  color: #000000 !important;
+}
+
+.itemButtonSecond {
+  margin-top: 10px !important;
+}
+
+.itemChecked {
+  background-color: #1a3848 !important;
+  color: #ffffff !important;
+}
+
+.viewItemRights {
+  background-color: #f9fafb !important;
+  padding: 0px !important;
+}
+
+.viewAllcompany {
+  padding: 0px 20px !important;
+}
+
+.viewAllcompany:hover {
+}
+
+.nameManager {
+  color: #8a6d3b !important;
+}
+
+.btnDone {
+  background-color: #1a3848 !important;
+  font-weight: 500 !important;
+  color: #fff !important;
+  padding: 0.125em 1em !important;
+  min-width: 100px;
+  height: 18px !important;
+  font-size: 11px !important;
+  border-radius: 3px !important;
+  border: 1px solid #1a3848;
+  vertical-align: middle !important;
+}
+
+.buttonGroup {
+  background-color: #1a3848 !important;
+  font-weight: 500 !important;
+  color: #fff !important;
+  padding: 0.3em 0.7em !important;
+}
+
+.buttonGroupClicked {
+  background-color: #f3f4f4 !important;
+  font-weight: 500 !important;
+  color: #fff !important;
+  padding: 0.3em 0.7em !important;
+  color: #1a3848 !important;
+}
+
+.buttonSave {
+  background-color: #1a3848 !important;
+  font-weight: 500 !important;
+  color: #fff !important;
+  padding: 0px 0.7em !important;
+  min-width: 70px;
+  height: 28px !important;
+  font-size: 11px !important;
+}
+
+.buttonClick {
+  background-color: #1a3848 !important;
+  color: #fff !important;
+}
+
+.buttonClicked {
+  background-color: gray !important;
+  color: #fff !important;
+}
+
+.iconCheck {
+  color: #1a3848 !important;
+}
+
+.iconUnCheck {
+  color: gray !important;
+}
+
+.buttonCheck {
+  background-color: transparent !important;
+}
+
+.textHeader {
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.textTitle {
+  font-size: 11px !important;
+  font-weight: 600 !important;
+}
+
+.heightMax {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.nameItem {
+  justify-content: flex-start !important;
+}
+
+.reponsibleIconSize {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reponsibleIconSize:first-child {
+  margin-right: 5px;
+}
+.daysDelegation .reponsibleIconSize:first-child {
+  margin-right: 0px;
+}
+
+.notSetasDone,
+.setDone,
+.bgMore {
+  height: var(--list-icon-size);
+  width: var(--list-icon-size);
+  min-height: var(--list-icon-size);
+  min-width: var(--list-icon-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.notSetasDone {
+  cursor: pointer;
+  background-color: #f3f4f4;
+  /* margin-right: 7px; */
+  div {
+    background: url('../../../../public/Check.svg');
+    height: 11px;
+    background-size: 100% 100%;
+    width: 11px;
+    min-height: 11px;
+    min-width: 11px;
+  }
+}
+
+.setDone {
+  cursor: pointer;
+  background-color: #1a3848;
+  /* margin-right: 7px; */
+  div {
+    background: url('../../../../public/CheckHistory.svg');
+    height: 11px;
+    background-size: 100% 100%;
+    width: 11px;
+    min-height: 11px;
+    min-width: 11px;
+  }
+}
+
+.dividerItem {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.viewHeaderTitle {
+  padding-top: 10px !important;
+  padding-bottom: 0px !important;
+}
+
+.viewIconCheck {
+  align-items: center !important;
+  justify-content: flex-end !important;
+  padding-right: 152px !important;
+}

@@ -1,0 +1,108 @@
+@import 'variables.css';
+
+.header {
+  margin-top: 16px;
+  margin-bottom: 2px;
+  padding: 2px 0px;
+  display: flex;
+  border-style: none none solid none;
+  border-color: var(--border-color);
+  border-width: 1px;
+  align-items: center;
+  .label {
+    flex-grow: 1;
+    flex-shrink: 0;
+    font-weight: 700;
+  }
+  .action {
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  &.mini {
+    font-size: 90%;
+  }
+}
+
+.customFieldPair {
+    &.mini {
+    & >.labelWrapper {
+      padding: 1px;
+      font-size: var(--normal-text) !important;
+      & .label {
+        width: 128px;
+        padding: 0 4px 0 0;
+      }
+    }
+  }
+  &.left {
+    >.labelWrapper {
+      & .label {
+        text-align: left;
+        font-size: var(--normal-text) !important;
+      }
+    }
+  }
+  & >.labelWrapper {
+    display: flex;
+    align-items: flex-start;
+    padding : 8px 0px;
+    margin: 0;
+    .required {
+      color: red;
+      display: inline-block;
+      margin: 0px 2px;
+    }
+    & .label {
+      width: 36%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      text-align: right;
+      padding: 0px 0px;
+    }
+    & .input {
+      flex-grow: 1;
+    }
+  }
+}
+
+.pair {
+  &.mini {
+    & >.labelWrapper {
+      padding: 1px;
+      font-size: var(--normal-text) !important;
+      & .label {
+        width: 128px;
+        padding: 0 4px 0 0;
+      }
+    }
+  }
+  &.left {
+    >.labelWrapper {
+      & .label {
+        text-align: left;
+        font-size: var(--normal-text) !important;
+      }
+    }
+  }
+  & >.labelWrapper {
+    display: flex;
+    align-items: flex-start;
+    padding : 8px;
+    margin: 0;
+    .required {
+      color: red;
+      display: inline-block;
+      margin: 0px 2px;
+    }
+    & .label {
+      width: 50%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      text-align: right;
+      padding: 0px 16px;
+    }
+    & .input {
+      flex-grow: 1;
+    }
+  }
+}

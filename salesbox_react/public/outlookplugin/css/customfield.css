@@ -1,0 +1,238 @@
+.panel-custom-field {
+    /*position: relative;*/
+    /*background: #ffffff;*/
+}
+
+.panel-custom-field input {
+    font-size: 11px !important;
+}
+
+.panel-default .panel-body-custom-field {
+    z-index: auto !important;
+}
+
+.panel-body {
+    padding: 15px;
+}
+
+.table-custom-field {
+    width: 100%;
+}
+
+tbody {
+    border-bottom: 1px solid #c0c1c2 !important;
+}
+
+tbody tr .sb-dropdown-wrapper > a {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2px;
+    position: absolute;
+}
+
+.fa {
+    color: #9d9d9c;
+    display: inline-block;
+}
+
+.sb-dropdown-wrapper .dropdown-menu.dropdown-menu-right {
+    width: 60%;
+    right: 0;
+    left: auto;
+    border: none;
+    padding: 0;
+}
+
+.sb-dropdown-wrapper .dropdown-menu {
+    font-size: 12px;
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+    z-index: 99999;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    display: none;
+    float: left;
+    min-width: 160px;
+    margin: 2px 0 0;
+    list-style: none;
+    text-align: left;
+    background-color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+}
+
+.sb-dropdown-wrapper .dropdown-menu .dropdown-loading {
+    height: 40px;
+    padding: 5px 10px;
+    line-height: 40px;
+}
+
+.sb-dropdown-wrapper .dropdown-menu .dropdown-fix-height {
+    height: auto;
+    max-height: 222px;
+}
+
+.scrollingDiv {
+    position: relative;
+    padding: 0;
+}
+
+.ps-container {
+    touch-action: auto;
+    overflow: hidden !important;
+}
+
+.element-list-input {
+    padding-left: 0;
+    padding-top: 0;
+}
+
+.table-custom-field tbody tr .input-dropdown label {
+    padding: 3px;
+    margin: 3px 5px 3px 0;
+    color: #fff;
+    display: inline-block;
+    min-width: 45px;
+    background-color: #777777;
+    font-size: 11px;
+    border-radius: 3px;
+}
+
+.table-custom-field tbody tr .input-dropdown label span {
+    min-width: 25px;
+    display: inherit;
+}
+
+.fa-check-circle, .fa-plus {
+    color: #a9ce31;
+}
+
+.table-custom-field tbody tr .input-check .fa {
+    font-size: 11px !important;
+}
+
+.table-custom-field tbody tr .input-check i {
+    margin-left: 10px;
+}
+
+.fa.inactive {
+    color: #CCCCCB !important;
+}
+
+textarea {
+    overflow: auto;
+    border: none;
+    width: 100%;
+}
+
+.table-custom-field tbody tr td {
+    padding: 8px 0;
+}
+
+tbody tr .input-url i {
+    width: 9% !important;
+    float: left !important;
+    font-size: 18px !important;
+    line-height: 17px !important;
+    /*margin-top: 11px;*/
+}
+
+.table-custom-field tbody tr label {
+    margin-bottom: 0;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    color: rgb(88, 88, 90);
+}
+
+button, input, optgroup, select, textarea {
+    color: rgb(88, 88, 90);
+}
+
+.table-custom-field input {
+    height: 1.5rem !important;
+    padding: 0px !important;
+    border: none;
+    font-size: inherit;
+    font-family: inherit;
+    box-shadow: none;
+    width: 100%;
+    background: none;
+}
+
+.xdsoft_datetimepicker .xdsoft_datepicker {
+    width: 239px !important;
+    float: left;
+    margin-left: 8px;
+}
+
+.panel-custom-field .table {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.panel-custom-field .sb-dropdown-wrapper .dropdown-menu.dropdown-menu-right table.table tr > td {
+    padding: 5px 10px;
+    line-height: 30px;
+    vertical-align: middle;
+    height: 30px;
+}
+
+.panel-custom-field .sb-dropdown-wrapper .dropdown-menu.dropdown-menu-right table.table tr:nth-child(2n+1) {
+    background: #f9fafb;
+}
+
+.open .dropdown-menu-right {
+    display: block !important;
+}
+
+.custom-scroll-bar .table td:hover {
+    background-color: rgb(221, 221, 221);
+}
+
+.panel-custom-field .dropdown .dropdown-menu {
+    top: 23px !important;
+    width: 90% !important;
+}
+
+.panel-custom-field .sb-dropdown-wrapper .dropdown-menu.dropdown-menu-right table.table tr {
+    background: #fff;
+}
+
+/*custom-scroll-bar*/
+.custom-scroll-bar::-webkit-scrollbar {
+    width: 5px;
+    height: 2px;
+}
+
+/* Track */
+.custom-scroll-bar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0);
+    border-radius: 6px;
+    background-color: rgba(153, 153, 153, 0.2);
+}
+
+/* Handle */
+.custom-scroll-bar::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 6px;
+    -webkit-box-shadow: inset 0 0 5px rgba(248, 248, 248, 0);
+}
+.custom-scroll-bar:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(153, 153, 153, 0.6);
+}
+
+/* Handle on hover */
+.custom-scroll-bar::-webkit-scrollbar-thumb:hover {
+    border-radius: 6px;
+    -webkit-box-shadow: inset 0 0 5px rgba(153, 153, 153, 1);
+    background-color: #999;
+}

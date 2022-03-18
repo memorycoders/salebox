@@ -1,0 +1,136 @@
+@import 'variables.css';
+
+.listItem {
+  display: flex;
+  min-height: 40px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom: var(--border-color);
+  padding-left: 4px;
+  align-items: center;
+
+  &:hover {
+    background-color: var(--hover-color);
+  }
+
+  &.header {
+    font-weight: bold;
+    font-size: 10px !important;
+    &:hover {
+      background-color: transparent;
+    }
+
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: var(--border-color);
+    margin-bottom: 2px;
+    min-height: 28px;
+  }
+
+  .avatar {
+    padding: 2px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: center;
+    display: flex;
+    width: 40px;
+    cursor: pointer;
+  }
+
+  .name {
+    cursor: pointer;
+    padding-left: 4px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80px;
+    /* height: 100%; */
+    /* margin-bottom: 4px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    white-space: nowrap;
+
+    .organisation {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: 700;
+    }
+  }
+
+  .kpi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px !important;
+    flex-shrink: 0;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 70px;
+
+    :global(.ui.compact.icon.button) {
+      padding: 4px 2px;
+      margin: 2px;
+    }
+  }
+
+  .button.favorited {
+    -webkit-text-fill-color: #F5B342 !important;
+    color: #F5B342 !important;
+  }
+
+  .button.beStar {
+    margin-top: 4px !important;
+  }
+}
+
+
+.moreAction
+{
+   margin-left: 5px;
+   background-color: #f3f4f4;
+  height: var(--list-icon-size);
+  width: var(--list-icon-size);
+  min-height: var(--list-icon-size);
+  min-width: var(--list-icon-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.listItem:hover {
+  .moreAction {
+    background-color: #fff;
+  }
+
+
+}
+
+.activeIcon {
+  display: inline;
+  i {
+    width: auto !important;
+    height: auto !important;
+    font-size: 12px;
+    margin-left: 5px;
+    color: #808080;
+  }
+}
+
+.normalIcon {
+  display: none;
+}
+.beStar {
+  margin-top: 0px !important;
+  margin: 0px !important;
+  height: unset !important;
+  width: 15px;
+}

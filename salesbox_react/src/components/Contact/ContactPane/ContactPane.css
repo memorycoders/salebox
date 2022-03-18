@@ -1,0 +1,228 @@
+@import 'variables.css';
+:root {
+  --image-size: 102px;
+}
+.relation{
+  font-weight: 500;
+  font-size: 16px !important;
+}
+.tooltip{
+  display: inline-flex !important;
+  line-height: 20px;
+  position: relative;
+  font-size: 11px !important;
+  /* margin-top: -10px; */
+}
+.relationFont {
+  font-size: 11px !important;
+}
+.tooltipShortText{
+  display: inline-flex !important;
+  font-size: 11px !important;
+  line-height: 20px;
+  /* margin-top: -10px; */
+  /* margin-left: 55px; */
+}
+.headerFont{
+  font-weight: 700;
+  line-height: 20px;
+  font-size: 11px !important;
+}
+.contentContact {
+  min-height: 35px;
+}
+.contentAccount {
+  min-height: 13px;
+}
+
+.header {
+  border-radius: 4px;
+  min-height: calc(var(--image-size) * 2);
+  background-color: var(--grey);
+  position: relative;
+  padding-top: calc(var(--image-size) / 2 + 8px);
+  color: #fff;
+  &:global(.contact) {
+    background-color: rgb(97, 153, 139);
+    border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  }
+
+  &:global(.account) {
+    background-color: var(--account);
+  }
+
+  &:global(.activity) {
+    background-color: var(--activity);
+  }
+
+  &:global(.task) {
+    background-color: var(--task);
+  }
+
+  &:global(.appointment) {
+    background-color: var(--appointment);
+  }
+
+  &:global(.delegation) {
+    background-color: var(--delegation);
+  }
+
+  &:global(.opportunity) {
+    background-color: var(--opportunity);
+  }
+
+  &:global(.call-list) {
+    background-color: var(--call-list);
+  }
+
+  &:global(.campaign) {
+    background-color: var(--campaign);
+  }
+
+  &:global(.insight) {
+    background-color: var(--insight);
+  }
+
+  &:global(.pipeline) {
+    background-color: var(--pipeline);
+  }
+
+  &:global(.lead) {
+    background-color: var(--lead);
+  }
+}
+
+.heading {
+  text-align: center;
+  color: white;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  font-size: var(--large-text);
+  /* line-height: calc(var(--large-text) * var(--golden-ratio)); */
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+
+.qualifiedDescription {
+   white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  padding: 0px 5px;
+  line-height: 21px;
+}
+
+.subHeading {
+  text-align: center;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  padding: 0px 10px;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  line-height: calc(var(--font-size-h5) * 1.2);
+}
+.contactDetails {
+  font-size: var(--normal-text);
+  line-height: 1.6rem;
+  & > ul {
+    padding: 10px 8px;
+    margin: 0;
+    list-style-type: none;
+  }
+  & a {
+    color: inherit;
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+}
+
+.centerImage {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: -48px;
+  margin-left: calc(-1 * var(--image-size) / 2);
+  width: var(--image-size);
+  height: var(--image-size);
+  border-radius: calc(var(--image-size) / 2);
+  border-width: 6px;
+  border-color: #eeeeee;
+  border-style: solid;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.contactContainer {
+  position: relative;
+  width: 308px;
+}
+
+.qualifiedContractDetails {
+  display: flex;
+  flex: 1;
+}
+.qualifiedContractLeft {
+  flex: 1;
+  & > ul {
+    padding: 10px 8px;
+    margin: 0;
+    list-style-type: none;
+  }
+  & a {
+    color: inherit;
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+}
+.qualifiedContractRight {
+  flex: 1.1;
+  & > ul {
+    padding: 10px 8px;
+    margin: 0;
+    list-style-type: none;
+  }
+  & a {
+    color: inherit;
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+}
+.notBorder {
+  background-color: #eeeeee;
+}
+
+.qualifiedHeader {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+li {
+  font-weight: 400 !important;
+}
+
+.font24 {
+  font-size: 24px !important;
+}
+
+.weight500 {
+  font-weight: 500 !important;
+}
+
+.oldDate {
+  font-weight: 500 !important;
+  background-color: #fff;
+  color: red;
+  margin-left: 2px;
+  padding-left: 4px;
+}
+
+.weight400 {
+  font-weight: 400 !important;
+}

@@ -1,0 +1,95 @@
+@import 'variables.css';
+
+.fullName {
+  font-size: 16px !important;
+  font-weight: bold !important;
+}
+.title {
+  font-size: 13px !important;
+  font-weight: 300 !important;
+}
+.leftContent {
+  padding: 10px;
+  height: calc(100vh - 56px);
+  overflow: hidden;
+
+}
+.leftContent:hover {
+  overflow-y: overlay;
+}
+.name {
+  font-weight: bold;
+  font-size: 20px;
+}
+.avatar {
+  float: left;
+  margin-right: 20px;
+}
+.avatar img {
+  width: 60px !important;
+}
+.tabs {
+  .menu {
+    .active {
+      background: none !important;
+    }
+  }
+}
+.rightCornerDiv {
+  float: right;
+  text-align: right;
+  margin-right: 16px;
+  position: relative;
+}
+.closeIcon {
+  /* -webkit-transform: rotate(45deg); */
+  transform: rotate(45deg);
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 4px;
+  position: absolute;
+  top: -10px;
+  right: -20px;
+  z-index: 10;
+}
+.closeIcon:hover {
+  background-color: #f0f0f0;
+}
+.actionIcon {
+  /* height: 20px;
+  width: 20px; */
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.87) !important;
+  right: 50px;
+  a {
+    color: rgba(0, 0, 0, 0.87) !important;
+  }
+}
+.threeDot {
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  height: 24px;
+  background-color: #f0f0f0;
+}
+.threeDot:hover {
+  background-color: #f0f0f0;
+}
+.version {
+  cursor: pointer;
+}
+.listFlag {
+  z-index: 1;
+  position: absolute;
+  width: 42px !important;
+  right: 15px;
+  top: 35px;
+  &.show {
+    display: block !important;
+  }
+  &.hide {
+    display: none !important;
+  }
+}

@@ -1,0 +1,8 @@
+p {
+  font-size: var(--normal-text);
+  word-break: break-all;
+}
+.infoIcon {
+  word-break: break-all;
+}
+

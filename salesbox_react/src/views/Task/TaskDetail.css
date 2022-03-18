@@ -1,0 +1,42 @@
+.closeIcon {
+  color: #676868;
+}
+
+.circleIcon {
+  color: #676868 !important;
+  font-size: 1em !important;
+  opacity: 0.9;
+  margin-bottom: 5px !important;
+  margin: 0em !important;
+  vertical-align: top !important;
+}
+
+.circleButtonTaskDetail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  margin-right: 5px;
+  /* box-shadow: 5px 10px #888888; */
+  background-color: #f0f0f0;  
+  cursor: pointer;
+}
+
+.circleButtonTaskDetail:hover, .circleButtonTaskDetail:active {
+   background-color: #fff;  
+}
+
+.circleButtonTaskDetail:last-child {
+  margin-right: 0px;
+}
+
+.detailIconSize {
+  height: var(--detail-icon-size);
+  width: var(--detail-icon-size);
+}
+
+.closeIcon {
+  transform: rotate(45deg);
+}

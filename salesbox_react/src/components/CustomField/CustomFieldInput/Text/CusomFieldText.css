@@ -1,0 +1,39 @@
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-end;
+  flex: 1;
+  .error {
+    font-size: 9px;
+    color: var(--red);
+    position: absolute;
+    bottom: -14px;
+    display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+  }
+}
+
+.inputCustomizeText {
+  height: 28px !important;
+  max-height: 28px !important;
+  width: 100% !important;
+  min-height: 28px !important;
+  min-width: 150px;
+}
+.inputCustomTask {
+  height: 28px !important;
+  max-height: 28px !important;
+  width: 200px !important;
+  min-height: 28px !important;
+}
+
+.width200 {
+  height: 28px !important;
+  max-height: 28px !important;
+  width: 178px !important;
+  min-height: 28px !important;
+}

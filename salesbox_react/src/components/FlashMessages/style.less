@@ -1,0 +1,102 @@
+@keyframes slideIn {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.animate-enter {
+  opacity: 0.01;
+}
+.animate-enter.animate-enter-active {
+  opacity: 1;
+  animation-name: slideIn;
+  animation-duration: .3s;
+}
+.animate-exit {
+  opacity: 1;
+}
+.animate-exit.animate-exit-active {
+  opacity: 0.01;
+  transition: opacity .3s ease-in;
+}
+
+.flash-container {
+  position: absolute;
+  top: 66px;
+  right: 14px;
+  z-index: 9999;
+  &--noheader {
+    top: 11px;
+  }
+  &--front {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.flash {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  color: #fff;
+  min-height: 52px;
+  padding: 10px;
+  margin-bottom: 14px;
+  border: 0;
+  border-radius: 4px;
+  border-left: 10px solid #f8c168;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .10), 0 2px 4px rgba(0, 0, 0, .18);
+  background: #fff;
+  color: #58585a;
+  min-width: 400px;
+  max-width: 400px;
+  font-size: 11px;
+  &:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .10), 0 3px 6px rgba(0, 0, 0, .18);
+    transition: .15s ease-in;
+  }
+  &--front {
+    border-radius: 0;
+  }
+  &--success {
+    background-color: #8BC34A;
+  }
+  &--info {
+    // background-color: #2196F3;
+    background-color: #fff;
+  }
+  &--warning {
+    background-color: #FF9800;
+  }
+  &--error {
+    background-color: #F44336;
+  }
+  &__message {
+    margin: 0 14px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  &__close {
+    cursor: pointer;
+    background: transparent;
+    font-size: 11px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    &:hover {
+      transform: scale(1.2);
+      transition: .15s ease-in;
+    }
+  }
+  .fa-hx {
+    font-size: 1.5em;
+  }
+}

@@ -1,0 +1,57 @@
+@import 'variables.css';
+.header {
+  text-align: right;
+}
+
+.wrapper {
+  margin-top: 16px;
+  &>div:first-child {
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: var(--border-color);
+  }
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  font-size: 90%;
+
+  .iconButton {
+    padding: 2px 2px 2px 0px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .deleteButton {
+    padding: 2px 0px 2px 2px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+
+  .type {
+    padding: 2px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 128px;
+  }
+
+  .input {
+    padding: 2px;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+
+  .title {
+    padding: 2px;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+
+}
+
+.buttonContainer {
+  margin: 16px 0 0 0;
+  padding: 2px;
+}

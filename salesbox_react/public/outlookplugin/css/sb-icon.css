@@ -1,0 +1,304 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'salesbox';
+  src: url("../fonts/salesbox.eot?qegcfq");
+  src: url("../fonts/salesbox.eot?qegcfq#iefix") format("embedded-opentype"), url("../fonts/salesbox.ttf?qegcfq") format("truetype"), url("../fonts/salesbox.woff?qegcfq") format("woff"), url("../fonts/salesbox.svg?qegcfq#salesbox") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+  
+[class^="fa-"], [class*=" fa-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'salesbox', FontAwesome !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.fa-google-doc:before {
+  content: ""; }
+
+.fa-google-presentation:before {
+  content: ""; }
+
+.fa-google-sheet:before {
+  content: ""; }
+
+.fa-question-square:before {
+  content: ""; }
+
+.fa-mail-read:before {
+  content: ""; }
+
+.fa-battery:before {
+  content: ""; }
+
+.fa-area-chart:before {
+  content: ""; }
+
+.fa-atom:before {
+  content: ""; }
+
+.fa-bar-chart:before {
+  content: ""; }
+
+.fa-bell-o:before {
+  content: ""; }
+
+.fa-building:before {
+  content: ""; }
+
+.fa-bullhorn:before {
+  content: ""; }
+
+.fa-bullseye:before {
+  content: ""; }
+
+.fa-calendar-check-o:before {
+  content: ""; }
+
+.fa-calendar:before {
+  content: ""; }
+
+.fa-camera:before {
+  content: ""; }
+
+.fa-caret-down:before {
+  content: ""; }
+
+.fa-caret-left:before {
+  content: ""; }
+
+.fa-caret-right:before {
+  content: ""; }
+
+.fa-caret-up:before {
+  content: ""; }
+
+.fa-chatting-square:before {
+  content: ""; }
+
+.fa-check-circle:before {
+  content: ""; }
+
+.fa-chevron-left:before {
+  content: ""; }
+
+.fa-chevron-right:before {
+  content: ""; }
+
+.fa-chevron-up:before {
+  content: ""; }
+
+.fa-circle-thin:before {
+  content: ""; }
+
+.fa-clock-o:before {
+  content: ""; }
+
+.fa-clock:before {
+  content: ""; }
+
+.fa-clould-download:before {
+  content: ""; }
+
+.fa-cogs:before {
+  content: ""; }
+
+.fa-comments:before {
+  content: ""; }
+
+.fa-desktop:before {
+  content: ""; }
+
+.fa-documents:before {
+  content: ""; }
+
+.fa-dollar:before {
+  content: ""; }
+
+.fa-ellipsis-h:before {
+  content: ""; }
+
+.fa-envelope-new:before {
+  content: ""; }
+
+.fa-envelope-o-send:before {
+  content: ""; }
+
+.fa-envelope-o:before {
+  content: ""; }
+
+.fa-exclamation-triangle:before {
+  content: ""; }
+
+.fa-external-link:before {
+  content: ""; }
+
+.fa-file-delete:before {
+  content: ""; }
+
+.fa-file-excel-o:before {
+  content: ""; }
+
+.fa-file-pdf-o:before {
+  content: ""; }
+
+.fa-file-text-o:before {
+  content: ""; }
+
+.fa-filter:before {
+  content: ""; }
+
+.fa-flag-circle:before {
+  content: ""; }
+
+.fa-folder:before {
+  content: ""; }
+
+.fa-global:before {
+  content: ""; }
+
+.fa-hand-shake:before {
+  content: ""; }
+
+.fa-history:before {
+  content: ""; }
+
+.fa-info-circle:before {
+  content: ""; }
+
+.fa-leads:before {
+  content: ""; }
+
+.fa-line-chart:before {
+  content: ""; }
+
+.fa-list:before {
+  content: ""; }
+
+.fa-lock:before {
+  content: ""; }
+
+.fa-mail-exclamation-triangle:before {
+  content: ""; }
+
+.fa-medal-bronze:before {
+  content: ""; }
+
+.fa-order-row:before {
+  content: ""; }
+
+.fa-pencil-square-o:before {
+  content: ""; }
+
+.fa-pencil:before {
+  content: ""; }
+
+.fa-percent:before {
+  content: ""; }
+
+.fa-phone-circle:before {
+  content: ""; }
+
+.fa-phone-call:before {
+  content: ""; }
+
+.fa-phone-dial:before {
+  content: ""; }
+
+.fa-phone:before {
+  content: ""; }
+
+.fa-picture-o:before {
+  content: ""; }
+
+.fa-plus-circle:before {
+  content: ""; }
+
+.fa-plus:before {
+  content: ""; }
+
+.fa-power-off:before {
+  content: ""; }
+
+.fa-question-triangle:before {
+  content: ""; }
+
+.fa-question-circle:before {
+  content: ""; }
+
+.fa-running-man:before {
+  content: ""; }
+
+.fa-salesbox-logo:before {
+  content: ""; }
+
+.fa-search:before {
+  content: ""; }
+
+.fa-sort:before {
+  content: ""; }
+
+.fa-star-circle-ban:before {
+  content: ""; }
+
+.fa-star-circle:before {
+  content: ""; }
+
+.fa-star-o:before {
+  content: ""; }
+
+.fa-star:before {
+  content: ""; }
+
+.fa-th-list:before {
+  content: ""; }
+
+.fa-th:before {
+  content: ""; }
+
+.fa-thermo-1:before {
+  content: ""; }
+
+.fa-thermo-2:before {
+  content: ""; }
+
+.fa-thermo-3:before {
+  content: ""; }
+
+.fa-thermo-4:before {
+  content: ""; }
+
+.fa-thermo-5:before {
+  content: ""; }
+
+.fa-times-circle:before {
+  content: ""; }
+
+.fa-unit:before {
+  content: ""; }
+
+.fa-upload:before {
+  content: ""; }
+
+.fa-usd:before {
+  content: ""; }
+
+.fa-user-circle-o:before {
+  content: ""; }
+
+.fa-user-o:before {
+  content: ""; }
+
+.fa-user-plus:before {
+  content: ""; }
+
+.fa-wifi:before {
+  content: ""; }
+
+/*# sourceMappingURL=sb-icon.css.map */

@@ -1,0 +1,228 @@
+@import 'variables.css';
+
+/* .item:hover {
+  .deleteButton {
+     background-color: rgb(243, 244, 244) !important
+  }
+} */
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 8px 5px;
+  border-bottom: 1px solid #f1f1f1;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  .avatar {
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 2px;
+  }
+  .body {
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 2px;
+  }
+  .receivedDate {
+    color: #a9d231;
+  }
+  .date {
+    text-align: right;
+    flex-grow: 1;
+    height: 35px;
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-shrink: 1;
+    /* font-style: oblique; */
+    font-color: #777777;
+    font-size: 11px;
+    padding: 2px;
+  }
+  .type {
+    padding: 2px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}
+
+.freeSearch {
+  background: rgb(243, 244, 244);
+  border-radius: 40px;
+  padding: 0px 0;
+  width: 290px;
+  /* margin: 9px; */
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.inputSearch {
+  margin-right: 0px;
+  margin-left: 9px;
+  width: 290px;
+  margin-bottom: 10px;
+  border-top-left-radius: 60px !important;
+  border-bottom-left-radius: 60px !important;
+  height: 36px !important;
+  input {
+    padding-left: 10px;
+    border-top-left-radius: 60px !important;
+    border-bottom-left-radius: 60px !important;
+    border-color: transparent !important;
+    background: rgb(243, 244, 244) !important;
+    border-top-right-radius: 60px !important;
+    border-bottom-right-radius: 60px !important;
+    cursor: pointer !important;
+  }
+}
+
+.searchIcon {
+  background: rgb(31, 56, 71);
+  color: white;
+  height: 100%;
+  height: 36px !important;
+  width: 36px !important;
+  opacity: 0.85 !important;
+  border-radius: 50% !important;
+  cursor: pointer !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px !important;
+}
+
+.searchIcon:before {
+  text-align: center;
+  top: 50% !important;
+  left: 25% !important;
+  margin-top: -0.5em;
+  width: 18px !important;
+}
+
+.searchIcon:hover,
+.searchIcon:active {
+  background: rgb(31, 56, 71);
+  color: white;
+  height: 100%;
+  opacity: 1 !important;
+  border-radius: 30px !important;
+  cursor: pointer !important;
+}
+
+.info {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  width: 35%;
+  margin-left: 10px;
+  height: 35px;
+  .sentReceived {
+    /* font-style: oblique; */
+    font-weight: 700;
+  }
+}
+
+.deleteButton {
+  background-color: transparent !important;
+  /* color: rgba(0,0,0,.8) !important; */
+}
+
+.iconContent {
+  width: 15%;
+  height: 35px;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.trackingIcon {
+  display: flex;
+  width: 100%;
+}
+
+.icon {
+  font-size: 15px !important;
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+}
+
+.icon:first-child {
+margin-left: 0px;
+}
+
+.list {
+  overflow-y: hidden !important;
+  outline: none;
+}
+
+.list:hover {
+  overflow-y: overlay !important;
+}
+
+.rightIcon {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  max-height: 24px;
+  padding: 0px !important;
+  display: flex;
+  border-radius: 50% !important;
+  justify-content: center;
+  margin: 0px 0px 0px 0px !important;
+}
+
+.rightIcon:first-child {
+  margin-right: 3px !important;
+}
+
+.rightIcon:hover,
+.rightIcon:active {
+  background-color: #f0f0f0 !important;
+}
+
+.circleAvtive {
+  background-color: #f0f0f0 !important;
+}
+
+.rightIcon:last-child {
+  margin-left: 0px !important;
+  margin: 0px 3px 0px 0px !important;
+}
+
+.historyIcon {
+  width: 15px !important;
+  min-width:  15px !important;
+  height:  15px !important;
+}
+
+.headerRight {
+  padding: .92857143em 0em !important;
+}
+
+.mr2 {
+  margin-right: 2px !important;
+}
+
+.searchIconCommunication {
+  font-size: 15px !important;
+  margin: 0px !important;
+  width: 15px !important;
+  height: 15px !important;
+  color: rgb(135,135,135);
+  margin-bottom: 2px !important;
+}
+
+.formContent {
+  height: 200px;
+  overflow-y: auto;
+  border-radius: 5px;
+  border: 1px solid rgb(172,172,172);
+  padding: 5px 10px;
+}

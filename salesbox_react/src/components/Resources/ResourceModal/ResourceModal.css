@@ -1,0 +1,47 @@
+.label {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  width: auto !important;
+}
+.labelMini {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  width: auto !important;
+}
+.requiredField {
+  color: red;
+  /* position: absolute;
+  left: 60px;
+  top: 0px; */
+  font-size: 11px !important;
+  margin-bottom: 10px;
+}
+.rowForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fromTo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+.fromTo > p {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+}
+.inputForm {
+  height: 29px !important;
+  min-height: 29px !important;
+  max-height: 29px !important;
+  font-size: 11px !important;
+}
+.errorMessage {
+  color: #ed684e !important;
+  font-size: 11px !important;
+  position: absolute !important;
+}
+.inputNewOption {
+  width: calc(100% - 50px);
+}

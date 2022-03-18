@@ -1,0 +1,498 @@
+@import "variables.scss";
+
+@font-face {
+    font-family: 'salesbox';
+    src:    url('fonts/salesbox.eot?qegcfq');
+    src:    url('fonts/salesbox.eot?qegcfq#iefix') format('embedded-opentype'),
+        url('fonts/salesbox.ttf?qegcfq') format('truetype'),
+        url('fonts/salesbox.woff?qegcfq') format('woff'),
+        url('fonts/salesbox.svg?qegcfq#salesbox') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="fa-"], [class*=" fa-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'salesbox', 'FontAwesome' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-google-doc {
+    &:before {
+        content: $fa-google-doc;
+    }
+}
+.fa-google-presentation {
+    &:before {
+        content: $fa-google-presentation;
+    }
+}
+.fa-google-sheet {
+    &:before {
+        content: $fa-google-sheet;
+    }
+}
+.fa-question-square {
+    &:before {
+        content: $fa-question-square;
+    }
+}
+.fa-mail-read {
+    &:before {
+        content: $fa-mail-read;
+    }
+}
+.fa-battery {
+    &:before {
+        content: $fa-battery;
+    }
+}
+.fa-area-chart {
+    &:before {
+        content: $fa-area-chart;
+    }
+}
+.fa-atom {
+    &:before {
+        content: $fa-atom;
+    }
+}
+.fa-bar-chart {
+    &:before {
+        content: $fa-bar-chart;
+    }
+}
+.fa-bell-o {
+    &:before {
+        content: $fa-bell-o;
+    }
+}
+.fa-building {
+    &:before {
+        content: $fa-building;
+    }
+}
+.fa-bullhorn {
+    &:before {
+        content: $fa-bullhorn;
+    }
+}
+.fa-bullseye {
+    &:before {
+        content: $fa-bullseye;
+    }
+}
+.fa-calendar-check-o {
+    &:before {
+        content: $fa-calendar-check-o;
+    }
+}
+.fa-calendar {
+    &:before {
+        content: $fa-calendar;
+    }
+}
+.fa-camera {
+    &:before {
+        content: $fa-camera;
+    }
+}
+.fa-caret-down {
+    &:before {
+        content: $fa-caret-down;
+    }
+}
+.fa-caret-left {
+    &:before {
+        content: $fa-caret-left;
+    }
+}
+.fa-caret-right {
+    &:before {
+        content: $fa-caret-right;
+    }
+}
+.fa-caret-up {
+    &:before {
+        content: $fa-caret-up;
+    }
+}
+.fa-chatting-square {
+    &:before {
+        content: $fa-chatting-square;
+    }
+}
+.fa-check-circle {
+    &:before {
+        content: $fa-check-circle;
+    }
+}
+.fa-chevron-left {
+    &:before {
+        content: $fa-chevron-left;
+    }
+}
+.fa-chevron-right {
+    &:before {
+        content: $fa-chevron-right;
+    }
+}
+.fa-chevron-up {
+    &:before {
+        content: $fa-chevron-up;
+    }
+}
+.fa-circle-thin {
+    &:before {
+        content: $fa-circle-thin;
+    }
+}
+.fa-clock-o {
+    &:before {
+        content: $fa-clock-o;
+    }
+}
+.fa-clock {
+    &:before {
+        content: $fa-clock;
+    }
+}
+.fa-clould-download {
+    &:before {
+        content: $fa-clould-download;
+    }
+}
+.fa-cogs {
+    &:before {
+        content: $fa-cogs;
+    }
+}
+.fa-comments {
+    &:before {
+        content: $fa-comments;
+    }
+}
+.fa-desktop {
+    &:before {
+        content: $fa-desktop;
+    }
+}
+.fa-documents {
+    &:before {
+        content: $fa-documents;
+    }
+}
+.fa-dollar {
+    &:before {
+        content: $fa-dollar;
+    }
+}
+.fa-ellipsis-h {
+    &:before {
+        content: $fa-ellipsis-h;
+    }
+}
+.fa-envelope-new {
+    &:before {
+        content: $fa-envelope-new;
+    }
+}
+.fa-envelope-o-send {
+    &:before {
+        content: $fa-envelope-o-send;
+    }
+}
+.fa-envelope-o {
+    &:before {
+        content: $fa-envelope-o;
+    }
+}
+.fa-exclamation-triangle {
+    &:before {
+        content: $fa-exclamation-triangle;
+    }
+}
+.fa-external-link {
+    &:before {
+        content: $fa-external-link;
+    }
+}
+.fa-file-delete {
+    &:before {
+        content: $fa-file-delete;
+    }
+}
+.fa-file-excel-o {
+    &:before {
+        content: $fa-file-excel-o;
+    }
+}
+.fa-file-pdf-o {
+    &:before {
+        content: $fa-file-pdf-o;
+    }
+}
+.fa-file-text-o {
+    &:before {
+        content: $fa-file-text-o;
+    }
+}
+.fa-filter {
+    &:before {
+        content: $fa-filter;
+    }
+}
+.fa-flag-circle {
+    &:before {
+        content: $fa-flag-circle;
+    }
+}
+.fa-folder {
+    &:before {
+        content: $fa-folder;
+    }
+}
+.fa-global {
+    &:before {
+        content: $fa-global;
+    }
+}
+.fa-hand-shake {
+    &:before {
+        content: $fa-hand-shake;
+    }
+}
+.fa-history {
+    &:before {
+        content: $fa-history;
+    }
+}
+.fa-info-circle {
+    &:before {
+        content: $fa-info-circle;
+    }
+}
+.fa-leads {
+    &:before {
+        content: $fa-leads;
+    }
+}
+.fa-line-chart {
+    &:before {
+        content: $fa-line-chart;
+    }
+}
+.fa-list {
+    &:before {
+        content: $fa-list;
+    }
+}
+.fa-lock {
+    &:before {
+        content: $fa-lock;
+    }
+}
+.fa-mail-exclamation-triangle {
+    &:before {
+        content: $fa-mail-exclamation-triangle;
+    }
+}
+.fa-medal-bronze {
+    &:before {
+        content: $fa-medal-bronze;
+    }
+}
+.fa-order-row {
+    &:before {
+        content: $fa-order-row;
+    }
+}
+.fa-pencil-square-o {
+    &:before {
+        content: $fa-pencil-square-o;
+    }
+}
+.fa-pencil {
+    &:before {
+        content: $fa-pencil;
+    }
+}
+.fa-percent {
+    &:before {
+        content: $fa-percent;
+    }
+}
+.fa-phone-circle {
+    &:before {
+        content: $fa-phone-circle;
+    }
+}
+.fa-phone-call {
+    &:before {
+        content: $fa-phone-call;
+    }
+}
+.fa-phone-dial {
+    &:before {
+        content: $fa-phone-dial;
+    }
+}
+.fa-phone {
+    &:before {
+        content: $fa-phone;
+    }
+}
+.fa-picture-o {
+    &:before {
+        content: $fa-picture-o;
+    }
+}
+.fa-plus-circle {
+    &:before {
+        content: $fa-plus-circle;
+    }
+}
+.fa-plus {
+    &:before {
+        content: $fa-plus;
+    }
+}
+.fa-power-off {
+    &:before {
+        content: $fa-power-off;
+    }
+}
+.fa-question-triangle {
+    &:before {
+        content: $fa-question-triangle;
+    }
+}
+.fa-question-circle {
+    &:before {
+        content: $fa-question-circle;
+    }
+}
+.fa-running-man {
+    &:before {
+        content: $fa-running-man;
+    }
+}
+.fa-salesbox-logo {
+    &:before {
+        content: $fa-salesbox-logo;
+    }
+}
+.fa-search {
+    &:before {
+        content: $fa-search;
+    }
+}
+.fa-sort {
+    &:before {
+        content: $fa-sort;
+    }
+}
+.fa-star-circle-ban {
+    &:before {
+        content: $fa-star-circle-ban;
+    }
+}
+.fa-star-circle {
+    &:before {
+        content: $fa-star-circle;
+    }
+}
+.fa-star-o {
+    &:before {
+        content: $fa-star-o;
+    }
+}
+.fa-star {
+    &:before {
+        content: $fa-star;
+    }
+}
+.fa-th-list {
+    &:before {
+        content: $fa-th-list;
+    }
+}
+.fa-th {
+    &:before {
+        content: $fa-th;
+    }
+}
+.fa-thermo-1 {
+    &:before {
+        content: $fa-thermo-1;
+    }
+}
+.fa-thermo-2 {
+    &:before {
+        content: $fa-thermo-2;
+    }
+}
+.fa-thermo-3 {
+    &:before {
+        content: $fa-thermo-3;
+    }
+}
+.fa-thermo-4 {
+    &:before {
+        content: $fa-thermo-4;
+    }
+}
+.fa-thermo-5 {
+    &:before {
+        content: $fa-thermo-5;
+    }
+}
+.fa-times-circle {
+    &:before {
+        content: $fa-times-circle;
+    }
+}
+.fa-unit {
+    &:before {
+        content: $fa-unit;
+    }
+}
+.fa-upload {
+    &:before {
+        content: $fa-upload;
+    }
+}
+.fa-usd {
+    &:before {
+        content: $fa-usd;
+    }
+}
+.fa-user-circle-o {
+    &:before {
+        content: $fa-user-circle-o;
+    }
+}
+.fa-user-o {
+    &:before {
+        content: $fa-user-o;
+    }
+}
+.fa-user-plus {
+    &:before {
+        content: $fa-user-plus;
+    }
+}
+.fa-wifi {
+    &:before {
+        content: $fa-wifi;
+    }
+}

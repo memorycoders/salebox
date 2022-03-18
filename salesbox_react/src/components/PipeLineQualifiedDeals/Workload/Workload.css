@@ -1,0 +1,19 @@
+
+.paneTable {
+  border: none !important;
+  
+  td {
+    font-size: var(--normal-text);
+    padding: 0.7em 0.7em;
+  }
+}
+
+.textBold {
+  font-weight: 600;
+  text-align: right !important;
+}
+
+
+.faClock:before {
+      content: "\e915";
+}

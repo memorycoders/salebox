@@ -1,0 +1,42 @@
+@import 'variables.css';
+
+.root {
+}
+
+.finish {
+  color: #fff;
+}
+
+.header {
+  /*background: #14313d !important;*/
+  background: #f0f0f0 !important;
+  border-bottom: 0px !important;
+}
+
+.content {
+  /*background: #14313d !important;*/
+  background: #f0f0f0 !important;
+  height: 500px;
+  width: 360px;
+  font-size: 14px !important;
+  color: black;
+
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.content h1 {
+  /* margin-top: 120em; */
+}
+
+.pretty {
+  margin: 0 auto;
+}
+
+.action {
+  background: #f0f0f0 !important;
+  border-top: none !important ;
+}
+.button{
+  background-color: #11313C !important;
+}

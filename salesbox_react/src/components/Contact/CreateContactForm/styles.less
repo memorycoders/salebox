@@ -1,0 +1,122 @@
+.account-form {
+  // padding-left: 8px;
+  width: 100%;
+  .account-fields-group {
+    display: flex;
+    .fields-group-left {
+      width: 50%;
+      padding-right: 15px;
+    }
+    .fields-group-right {
+      width: 50%;
+      padding-left: 15px;
+    }
+    .account-fields {
+      max-width: 100% !important;
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+
+      .account-field-label {
+        width: 80px !important;
+        font-size: 11px !important;
+        align-items: center;
+        display: flex;
+        font-weight: 400;
+        font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+        .required {
+          color: red;
+          display: inline-block;
+          margin: 0px 2px;
+          font-size: 11px;
+        }
+        &.participant-label {
+          width: 150px !important;
+        }
+        &.__account {
+          font-family: 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif !important;
+        }
+        .default-done {
+          margin-left: 20px;
+          background-color: #a9ce31;
+          div {
+            background: url('../../../../public/CheckHistory.svg');
+            height: 11px;
+            background-size: 100% 100%;
+            width: 11px;
+            min-height: 11px;
+            min-width: 11px;
+          }
+        }
+        .default-notDone {
+          margin-left: 20px;
+          background-color: #f3f4f4;
+          div {
+            background: url('../../../../public/Check.svg');
+            height: 11px;
+            background-size: 100% 100%;
+            width: 11px;
+            min-height: 11px;
+            min-width: 11px;
+          }
+        }
+      }
+
+      .account-field {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        .error {
+          input {
+            color: #9f3a38 !important;
+            background: #fff6f6 !important;
+            border-color: #e0b4b4 !important;
+          }
+        }
+      }
+
+      input {
+        max-height: 28px !important;
+        min-height: 28px !important;
+        height: 28px !important;
+        font-size: 11px !important;
+      }
+    }
+  }
+  .account-address-type {
+    display: flex;
+    border-bottom: 1px solid rgba(34,36,38,.15);
+    .fields-group-left {
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      padding-right: 15px;
+      .address-type-item {
+        &.active {
+          border-bottom: 1px solid red;
+          font-family: 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif !important;
+        }
+        cursor: pointer;
+        line-height: 25px;
+        font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+      }
+    }
+  }
+  .account-form-header {
+    display: flex;
+    border-bottom: 1px solid rgba(34,36,38,.15);
+    .header-item {
+      line-height: 25px;
+    }
+  }
+
+  .default-done, .default-notDone {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

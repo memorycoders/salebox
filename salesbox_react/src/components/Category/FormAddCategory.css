@@ -1,0 +1,29 @@
+@import 'variables.css';
+.categoryHeaderModal {
+}
+.categoryNameLable {
+  text-align: left !important;
+  width: inherit !important;
+  font-weight: bold;
+}
+.formErrors {
+  color: #ed684e;
+  font-size: 11px;
+}
+.fieldForm {
+  display: flex;
+}
+.inputWraper {
+  width: 76%;
+  div {
+    div {
+      input {
+        height: 28px !important;
+        font-size: 11px !important;
+      }
+    }
+  }
+}
+.label{
+  margin-left: 10px;
+}

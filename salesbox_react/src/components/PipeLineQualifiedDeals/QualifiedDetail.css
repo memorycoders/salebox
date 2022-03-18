@@ -1,0 +1,72 @@
+.starButtonWon {
+    div {
+    background: url('../../../public/star_circle_won.svg');
+     width: 18px;
+    background-size: 100% 100%;
+    height: 18px;
+    min-height: var(--detail-icon-size);
+    min-width: var(--detail-icon-size);
+  }
+}
+
+.starButtonWon:hover, .starButtonWon:active {
+    div {
+    background: url('../../../public/star_circle_won_active.svg');
+     width: 18px;
+    background-size: 100% 100%;
+    height: 18px;
+    min-height: var(--detail-icon-size);
+    min-width: var(--detail-icon-size);
+  }
+}
+
+.starButtonWonActive {
+    div {
+    background: url('../../../public/star_circle_won_active.svg');
+     width: 18px;
+    background-size: 100% 100%;
+    height: 18px;
+    min-height: var(--detail-icon-size);
+    min-width: var(--detail-icon-size);
+  }
+}
+
+.starButtonLostActive {
+    div {
+    background: url('../../../public/star_circle_lost_active.svg');
+     width: 18;
+    background-size: 100% 100%;
+    height: 18;
+    min-height: var(--detail-icon-size);
+    min-width: var(--detail-icon-size);
+  }
+}
+
+.starButtonLost {
+    div {
+    /* margin-left: 5px; */
+    background: url('../../../public/star_circle_lost.svg');
+     width: 18;
+    background-size: 100% 100%;
+    height: 18;
+    min-height: var(--detail-icon-size);
+    min-width: var(--detail-icon-size);
+  }
+}
+
+.starButtonLost:hover, .starButtonLost:active {
+    div {
+    background: url('../../../public/star_circle_lost_active.svg');
+     width: 18;
+    background-size: 100% 100%;
+    height: 18;
+    min-height: var(--detail-icon-size);
+    min-width: var(--detail-icon-size);
+  }
+}
+
+.leftGroup {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}

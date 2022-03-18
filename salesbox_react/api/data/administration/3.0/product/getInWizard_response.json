@@ -1,0 +1,14 @@
+{
+  "uuid": "d98f4fc9-aca2-483f-9c35-792eef749287",
+  "name": "XYZ",
+  "price": 0.0,
+  "active": true,
+  "quantity": 1.0,
+  "margin": 0.0,
+  "lineOfBusinessId": "18e68e53-2db9-4647-af61-1a899293435b",
+  "measurementTypeId": "6c8275a4-0383-4923-8c83-52e9f7f368f5",
+  "measurementTypeName": null,
+  "lineOfBusinessName": null,
+  "costUnit": null,
+  "description": null
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salesbox</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="body">
+    <img src="../salesbox-logo-menu.svg" class="logo" />
+    <div class="content">
+      <div class="column left">
+        <h2>Market’s best CRM for SME!<br />Not a user yet? Test free for 14 days.</h2>
+        <p>
+          Connect Salesbox CRM with Fortnox and get full sync of customers, contacts, invoices and articles in both
+          directions. Salesbox also imports your customers, invoices and relevant items automatically within 48 hours
+          after signing up.
+        </p>
+        <strong class="shortDes">Short about Salesbox</strong>
+        <ul>
+          <li>Get CRM for SEK 29 per month & person</li>
+          <li>Test for free with 2 people</li>
+          <li>No lock-in period</li>
+          <li>Add Fortnox to Salesbox for SEK 19 extra per month</li>
+        </ul>
+        <div style="margin-top: 10px;">
+          <input style="cursor: pointer;" type="checkbox" id="acceptedTerm" onchange="handleChangeTerm()" /><label
+            for="acceptedTerm"
+            style="cursor: pointer;font-size: 13px;margin-left: 5px;"
+            >I accepted Salesbox's terms</label
+          >
+        </div>
+        <p class="errorMessage" id="errorMessage"></p>
+        <div class="btnDiv">
+          <button class="loginBtn btnTestFree" onclick="onClickTestFree()">Test free</button>
+        </div>
+      </div>
+      <div class="column right">
+        <h2 style="margin-bottom: 0;">Already a Salesbox user?<br />Connect the systems now.</h2>
+        <p>
+          Are you already a Salesbox user and want to connect Salesbox with Fortnox? Login to Salesbox with an existing
+          Salesbox admin account and get full sync of customers, contacts, invoices and articles in both directions.
+        </p>
+        <p>Salesbox imports your existing customers, invoices and relevant articles automatically within 48 hours.</p>
+        <p>
+          <strong>Note! </strong>If you are an existing user of Salesbox you need to add the add-on Fortnox in Salesbox
+          billing before you login to be able to activate the connection.
+        </p>
+        <div class="btnDiv">
+          <button class="loginBtn" onclick="onClickLogin()">Login</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">Copyright &copy; <span id="year"></span> Salesbox &reg;</div>
+  </body>
+
+  <script>
+    let year = new Date().getFullYear();
+    document.getElementById('year').innerText = year;
+    const { search, hash } = window.location;
+    const params = (search ? search : hash).match(/[^&#?]*?=[^&?]*/g);
+    const queryObj = {};
+    (params || []).map((param) => {
+      const paramArr = param.split('=');
+      queryObj[paramArr[0]] = paramArr[1];
+    });
+
+    function handleChangeTerm() {
+      document.getElementById('errorMessage').innerText = '';
+    }
+    function onClickLogin() {
+      if (queryObj['authorization-code'])
+        window.location.replace(`/sign-in?mode=login&authorization-code=${queryObj['authorization-code']}`);
+      else {
+        window.location.replace(`/sign-in?mode=login`);
+      }
+    }
+
+    function onClickTestFree() {
+      let check = document.getElementById('acceptedTerm');
+      if (check.checked === false) {
+        document.getElementById('errorMessage').innerText = "Please accept Salesbox's terms first";
+        return;
+      }
+      document.getElementById('errorMessage').innerText = '';
+      if (queryObj['authorization-code'])
+        window.location.replace(
+          `https://production.salesbox.com/enterprise-v3.0/fortNox/redirect?authorization-code=${queryObj['authorization-code']}`
+        );
+    }
+  </script>
+</html>

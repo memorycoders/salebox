@@ -1,0 +1,19 @@
+.content {
+  overflow: hidden !important;
+  max-height: 230px !important;
+}
+
+.options {
+  max-height: 170px !important;
+}
+.addButton {
+  width: 100% !important;
+  height: 30px !important;
+  bottom: 0px;
+  border-radius: 0 !important;
+  background-color: #fff !important;
+  color: #14313e !important;
+  border: none !important;
+  font-size: var(--normal-text) !important;
+  /* font-weight: 700 !important; */
+}

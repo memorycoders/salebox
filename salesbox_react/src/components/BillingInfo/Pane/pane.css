@@ -1,0 +1,52 @@
+.container {
+  padding-top: 10px;
+  border-right: 1px solid #eeefef;
+  font-size: 11px;
+}
+.title {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  strong {
+    font-weight: 600;
+  }
+}
+.step {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 11px;
+  background-color: #aeaeae;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.content {
+  padding-left: 45px;
+  padding-right: 45px;
+  margin-top: 17px !important;
+}
+.contentTop15 {
+  padding-left: 45px;
+  padding-right: 45px;
+  margin-top: 15px !important;
+}
+.contentTop23 {
+  padding-left: 43px;
+  padding-right: 45px;
+  margin-top: 24px !important;
+}
+
+.step0 {
+  margin-right: 10px;
+}
+.number2 {
+  width: 27;
+  height: 27;
+}
+.number {
+  height: 30;
+  width: 30;
+}

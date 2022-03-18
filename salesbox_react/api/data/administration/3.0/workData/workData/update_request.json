@@ -1,0 +1,12 @@
+{
+  "queryString": {
+    "token": "aba66576-46f5-46c1-934d-6eddebdce4b8",
+    "enterpriseID": "f93daf1c-618c-4541-8390-76607b2fdc29"
+  },
+  "payload": {
+    "name": "Margin",
+    "value": 0,
+    "type": "FISCAL_YEAR",
+    "changeable": true
+  }
+}

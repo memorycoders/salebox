@@ -1,0 +1,769 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+          media="screen"
+          title="fontawesome">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="../css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/sb-icon.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/variables.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/variables.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/customfield.css" rel="stylesheet" type="text/css"/>
+    <link href="./lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.3/jquery.datetimepicker.min.css" data-remove="false" data-concat="false">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.3/build/jquery.datetimepicker.full.min.js" data-remove="false" data-concat="false"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css" type="text/css"/>
+
+    <script src="./lib/angularjs-nvd3-directives/dist/angularjs-nvd3-directives.min.js"></script>
+    <script src="./lib/angularjs-nvd3-directives/examples/js/moment.js"></script>
+    <script src="../Scripts/jquery.fabric.js" type="text/javascript"></script>
+    <script src="../Scripts/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../Scripts/d3.min.js" type="text/javascript"></script>
+    <script src="../Scripts/date.js" type="text/javascript"></script>
+    <script src="./lib/angular-bootstrap/ui-bootstrap.js" type="text/javascript"></script>
+    <script src="./lib/perfect-scrollbar/js/perfect-scrollbar.min.js" type="text/javascript"></script>
+    <script src="./lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+
+    <script src="app.js" type="text/javascript"></script>
+    <script src="logic/globaladdin.js" type="text/javascript"></script>
+    <script src="./customField.js" type="text/javascript"></script>
+    <script src="logic/mailhook.js" type="text/javascript"></script>
+    <script src="detail.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="loading">
+    <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+</div>
+<div id="salesbox-plugin" class="detail-page" style="min-width: 18rem;">
+
+    <div class="panel panel-default main-panel ">
+        <div class="panel-heading">
+            <a href="composeemail.html" class="back-button">
+                <div class="formBack">
+                    <i class="fa  fa-angle-left" style="color:#9d9d9c" title="back" aria-hidden="true"></i>
+                </div>
+            </a>
+            <div class="action-buttons cssmargin-right">
+                <ul>
+                    <!--
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-check-circle"></i>
+                        </a>
+                    </li>
+                    -->
+                    <li>
+                        <a href="composeemail/edit_contact.html">
+                            <i class="fa fa-pencil-square-o"></i>
+                        </a>
+                    </li>
+                    <!--
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-ellipsis-h"></i>
+                        </a>
+                    </li>
+                    -->
+                </ul>
+            </div>
+        </div>
+        <div class="panel-body contactBg">
+            <button id="btn_save_email" class="btn btn-default" style="display:none">Save this Email</button>
+            <div class="avatar-container">
+                <div id="avatar-relationship-ring" class="relationship-ring">
+                    <img class="avatar-large img-circle" id="profileimage" src="../img/Gray_Photo.png">
+                </div>
+
+            </div>
+
+            <div class="profile">
+                <h3 class="text-center" id="pname"></h3>
+                <p class="text-center"><span id="headline"></span></p>
+                <p class="text-center cssmargin-bottom"><span id="industry"></strong></p>
+                <p id="phone"></p>
+                <p id="email"></p>
+                <p id="address"></p>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <div class="bubble-actions">
+                <div class="row">
+                    <div class="col-xs-2 no-padding">
+                        <a href="javascript:void(0);" id="lead" data-target="#panel-lead" data-toggle="sub-panel">
+                            <div class="icon text-center">
+                                <i class="fa fa-leads"></i>
+                                <div class="badge">0</div>
+                            </div>
+                            <p class="text-center">Prospects</p>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 no-padding">
+                        <a href="javascript:void(0);" id="appointments" data-target="#panel-appointment"
+                           data-toggle="sub-panel">
+                            <div class="icon text-center">
+                                <i class="fa fa-calendar"></i>
+                                <div class="badge">0</div>
+                            </div>
+                            <p class="text-center">Meetings</p>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 no-padding">
+                        <a href="javascript:void(0);" id="opportunities" data-target="#panel-opportunity"
+                           data-toggle="sub-panel">
+                            <div class="icon text-center">
+                                <i class="fa fa-usd"></i>
+                                <div class="badge">0</div>
+                            </div>
+                            <p class="text-center">Deals</p>
+                        </a>
+                    </div>
+                    <div class="col-xs-2 no-padding">
+                        <a href="javascript:void(0);" id="task" data-target="#panel-task" data-toggle="sub-panel">
+                            <div class="icon text-center">
+                                <i class="fa fa-calendar-check-o"></i>
+                                <div class="badge">0</div>
+                            </div>
+                            <p class="text-center">Reminders</p>
+                        </a>
+                    </div>
+                    <div class="col-xs-2 no-padding">
+                        <a href="javascript:void(0);" id="closed" data-target="#panel-closed" data-toggle="sub-panel">
+                            <div class="icon text-center">
+                                <i class="fa fa-hand-shake"></i>
+                                <div class="badge">0</div>
+                            </div>
+                            <p class="text-center">Orders</p>
+                        </a>
+                    </div>
+                    <div class="col-xs-2 no-padding">
+                        <a href="javascript:void(0);" id="colleagues" data-target="#panel-colleague"
+                           data-toggle="sub-panel">
+                            <div class="icon text-center">
+                                <i class="fa fa-user-o"></i>
+                                <div class="badge">0</div>
+                            </div>
+                            <p class="text-center">Colleagues</p>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 no-padding">
+                        <a href="javascript:void(0);" id="note" data-target="#panel-note" data-toggle="sub-panel">
+                            <div class="icon text-center">
+                                <i class="fa fa-comments"></i>
+                                <div class="badge">0</div>
+                            </div>
+                            <p class="text-center">Notes</p>
+                        </a>
+                    </div>
+                    <!--
+                                        <div class="col-xs-3">
+                                            <a href="javascript:void(0);" id="photos" data-target="#panel-photos" data-toggle="sub-panel">
+                                                <div class="icon text-center">
+                                                    <i class="fa fa-picture-o"></i>
+                                                    <div class="badge">0</div>
+                                                </div>
+                                                <p class="text-center">Photos</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <a href="javascript:void(0);" id="documents" data-target="#panel-documents" data-toggle="sub-panel">
+                                                <div class="icon text-center">
+                                                    <i class="fa fa-file-text-o"></i>
+                                                    <div class="badge">0</div>
+                                                </div>
+                                                <p class="text-center">Documents</p>
+                                            </a>
+                                        </div>
+
+                    -->
+                    <div class="col-xs-3 no-padding">
+                        <!--
+                        <div id="details_add_menu" class="detailsaddicon">
+                            <i class="fa fa-plus-circle text-contact fa-semi-large"></i>
+                            <div class="details_add_menu_container">
+                                <div class="details_add_menu_list">
+                                    <div class="header">
+                                        Quick Add
+                                        <div class="pointer">
+
+                                        </div>
+                                    </div>
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="menuicon fa fa-leads">
+
+                                                </div>
+                                                <div class="menutitle" id="pagerlead">
+                                                    Add Leads
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="menuicon fa fa-calendar">
+
+                                                </div>
+                                                <div class="menutitle" id="pagerapp">
+                                                    Add Meeting
+                                                </div>
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="menuicon fa fa-calendar-check-o">
+
+                                                </div>
+                                                <div class="menutitle" id="pagertask">
+                                                    Add Reminder
+                                                </div>
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="menuicon fa fa-comments">
+
+                                                </div>
+                                                <div class="menutitle" id="pagernote">
+                                                    Add Note
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-xs-3">
+                        <!--<a href="#">-->
+                        <!--<div class="icon text-center">-->
+                        <!--<i class="fa fa-picture-o"></i>-->
+                        <!--</div>-->
+                        <!--<p class="text-center">Photos</p>-->
+                        <!--</a>-->
+                    </div>
+                    <div class="col-xs-3">
+                        <!--<a href="#">-->
+                        <!--<div class="icon text-center">-->
+                        <!--<i class="fa fa-file-text-o"></i>-->
+                        <!--</div>-->
+                        <!--<p class="text-center">Documents</p>-->
+                        <!--</a>-->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="panel-lead" class="sub-panel hidden panel panel-default">
+        <div class="formheader greyTitleBg greyTitle bordeBottom">
+            <i class="fa fa-leads"></i>
+            <span class="panel-title">Prospects</span>
+
+            <span class="counter color-lead">0</span>
+        </div>
+        <div class="panel-body">
+            <table class="table lead-table">
+                <thead>
+                <tr>
+                    <th>Priority</th>
+                    <th>Created</th>
+                    <th>&nbsp;</th>
+                    <th>&nbsp;</th>
+                    <th>Owner</th>
+                </tr>
+                </thead>
+                <tbody id="leadlist">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="panel-appointment" class="sub-panel hidden panel panel-default">
+        <div class="formheader greyTitleBg greyTitle bordeBottom">
+            <i class="fa fa-calendar"></i>
+            <span class="panel-title">Meetings</span>
+            <span class="counter color-appointment">0</span>
+            <!--
+            <span class="pull-right">
+                <a class="m-r-10" id="showAppointmentHistory">
+                    <i class="fa fa-history" ></i>
+                </a>
+            </span>
+                -->
+        </div>
+        <div class="panel-body">
+            <table class="table appointment-table">
+                <thead>
+                <tr>
+                    <th>Focus</th>
+                    <th>When</th>
+                    <th>Where</th>
+                    <th>Owner</th>
+                </tr>
+                </thead>
+                <tbody id="appointmentslist">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="panel-opportunity" class="sub-panel hidden panel panel-default">
+        <div class="formheader greyTitleBg greyTitle bordeBottom">
+            <i class="fa fa-usd"></i>
+            <span class="panel-title">Deals</span>
+            <span class="counter color-opportunity">0</span>
+        </div>
+        <div class="panel-body">
+            <table class="table opportunity-table">
+                <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>&nbsp;</th>
+                    <th>Value</th>
+                    <th>&nbsp;</th>
+                </tr>
+                </thead>
+                <tbody id="opportunitieslist">
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="panel-task" class="sub-panel hidden panel panel-default">
+        <div class="formheader greyTitleBg greyTitle bordeBottom">
+            <i class="fa fa-calendar-check-o"></i>
+            <span class="panel-title">Reminders</span>
+            <span class="counter color-task">0</span>
+            <!--
+                        <span class="pull-right">
+                            <a id="showTaskHistory">
+                                <i class="fa fa-history" ></i>
+                            </a>
+                        </span>
+            -->
+        </div>
+        <div class="panel-body">
+            <table class="table task-table">
+                <thead>
+                <tr>
+                    <th>Deadline</th>
+                    <th>Focus/Category</th>
+                    <th>Owner</th>
+                </tr>
+                </thead>
+                <tbody id="tasklist">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="panel-closed" class="sub-panel hidden panel panel-default">
+        <div class="formheader greyTitleBg greyTitle bordeBottom">
+            <i class="fa fa-hand-shake"></i>
+            <span class="panel-title">Orders</span>
+            <span class="counter color-closed">0</span>
+        </div>
+        <div class="panel-body">
+            <!--
+                        <p class="text-right">
+                            <strong id="grass">Gross: 0</strong>
+                            <strong id="profit">Profit: 0</strong>
+                        </p>
+            -->
+            <table class="table opportunity-table">
+                <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>&nbsp;</th>
+                    <th>Closed sales</th>
+                    <th>&nbsp;</th>
+                </tr>
+                </thead>
+                <tbody id="closedlist">
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="panel-colleague" class="sub-panel hidden panel panel-default">
+        <div class="formheader greyTitleBg greyTitle bordeBottom">
+            <i class="fa fa-user-o"></i>
+            <span class="panel-title">Colleagues</span>
+            <span class="counter color-contact">0</span>
+        </div>
+        <div class="panel-body">
+            <table class="table colleague-table">
+                <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>&nbsp;</th>
+                    <th>
+                        <i class="fa fa-user-o"></i>
+                    </th>
+                    <th>
+                        <i class="fa fa-calendar-check-o"></i>
+                    </th>
+                    <th>
+                        <i class="fa fa-calendar"></i>
+                    </th>
+                    <th>
+                        <i class="fa fa-usd"></i>
+                    </th>
+                    <th>&nbsp;</th>
+                </tr>
+                </thead>
+                <tbody id="colleagueslist">
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="panel-note" class="sub-panel hidden panel panel-default">
+        <div class="formheader greyTitleBg greyTitle bordeBottom">
+            <i class="fa fa-comments"></i>
+            <span class="panel-title">Notes</span>
+            <span class="counter color-note">4</span>
+        </div>
+        <div class="panel-body">
+            <table class="table note-table" id="notelist">
+
+
+            </table>
+        </div>
+    </div>
+
+    <div id="panel-photos" class="sub-panel hidden panel panel-default">
+        <div class="formheader greyTitleBg greyTitle bordeBottom">
+            <i class="fa fa-picture-o"></i>
+            <span class="panel-title">Photos</span>
+            <span class="counter color-contact">0</span>
+        </div>
+        <div class="panel-body">
+            <table class="table colleague-table">
+                <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>&nbsp;</th>
+                    <th>
+                        <i class="fa fa-user-o"></i>
+                    </th>
+                    <th>
+                        <i class="fa fa-calendar-check-o"></i>
+                    </th>
+                    <th>
+                        <i class="fa fa-calendar"></i>
+                    </th>
+                    <th>
+                        <i class="fa fa-usd"></i>
+                    </th>
+                    <th>&nbsp;</th>
+                </tr>
+                </thead>
+                <tbody id="photolist">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="panel-documents" class="sub-panel hidden panel panel-default">
+        <div class="formheader greyTitleBg greyTitle bordeBottom">
+            <i class="fa fa-file-text-o"></i>
+            <span class="panel-title">Documents</span>
+            <span class="counter color-contact">0</span>
+        </div>
+        <div class="panel-body">
+            <table class="table colleague-table">
+                <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>&nbsp;</th>
+                    <th>
+                        <i class="fa fa-user-o"></i>
+                    </th>
+                    <th>
+                        <i class="fa fa-calendar-check-o"></i>
+                    </th>
+                    <th>
+                        <i class="fa fa-calendar"></i>
+                    </th>
+                    <th>
+                        <i class="fa fa-usd"></i>
+                    </th>
+                    <th>&nbsp;</th>
+                </tr>
+                </thead>
+                <tbody id="documentslist">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="panel panel-default panel-custom-field" ng-app="myapp">
+        <custom-field-view object-type="'CONTACT'"></custom-field-view>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="formheader greyTitleBg greyTitle bordeBottom">
+            <span class="panel-title">Sales</span>
+            <a class="collapse-action" href="javascript:void(0);">
+                <i class="fa fa-chevron-up"></i>
+            </a>
+            <span class="growth background-red">
+                Contact growth
+                <i class="fa fa-long-arrow-up growth-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <div class="panel-body">
+            <div class="">
+                <div class="col-xs-6 text-center dealCircles" style="padding-right: 0px;padding-left: 0px;">
+                    <svg class="widget-container indicator-circle" width="140" height="140" version="1.1"
+                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" preserveAspectRatio="xMidYMid meet">
+                        <text class="small-text text-12 weight-700" text-anchor="middle" dominant-baseline="central"
+                              x="80" y="40">
+                            Deal size
+                        </text>
+                        <text id="dealsize" class="small-text text-22 weight-700 text-red" text-anchor="middle"
+                              dominant-baseline="central" x="80" dy="60" tooltip-class="circle-tooltip"
+                              tooltip-placement="top" tooltip-html="outerTooltip" tooltip-append-to-body="true">
+                            10
+                        </text>
+                        <line x1="20%" y1="50%" x2="80%" y2="50%" class="separate-line"></line>
+                        <text id="dealtime" class="small-text text-22 weight-700 text-red" text-anchor="middle"
+                              dominant-baseline="central" x="80" y="100" tooltip-class="circle-tooltip"
+                              tooltip-placement="bottom" tooltip-html="innerTooltip" tooltip-append-to-body="true">
+                            15 Days
+                        </text>
+                        <text class="small-text text-12 weight-700" font-size="12px" text-anchor="middle"
+                              dominant-baseline="central" x="80" y="120">
+                            Deal time
+                        </text>
+                        <g sales-path-group="" transform="translate(80,80)">
+                            <path id="dealTimePath" class="progress-bar inner-bar normal thick-stroke circle-gray"
+                                  stroke-linejoin="round" sales-inner-normal=""
+                                  d="M0,59.50000000000001A59.50000000000001,59.50000000000001 0 1,1 0,-59.50000000000001A59.50000000000001,59.50000000000001 0 1,1 0,59.50000000000001M0,59.50000000000001A59.50000000000001,59.50000000000001 0 1,0 0,-59.50000000000001A59.50000000000001,59.50000000000001 0 1,0 0,59.50000000000001Z"></path>
+                            <path id="dealTimeArc" class="progress-bar inner-bar thick-stroke circle-gray"
+                                  stroke-linejoin="round" sales-inner-path=""
+                                  d="M0,59.50000000000001A59.50000000000001,59.50000000000001 0 1,1 0,-59.50000000000001A59.50000000000001,59.50000000000001 0 1,1 0,59.50000000000001M0,59.50000000000001A59.50000000000001,59.50000000000001 0 1,0 0,-59.50000000000001A59.50000000000001,59.50000000000001 0 1,0 0,59.50000000000001Z"></path>
+
+                            <path id="dealSizePath" class="progress-bar outer-bar normal thick-stroke circle-gray"
+                                  stroke-linejoin="round" sales-outer-normal=""
+                                  d="M0,70A70,70 0 1,1 0,-70A70,70 0 1,1 0,70M0,70A70,70 0 1,0 0,-70A70,70 0 1,0 0,70Z"></path>
+                            <path id="dealSizeArc" class="progress-bar outer-bar thick-stroke circle-gray"
+                                  stroke-linejoin="round" sales-outer-path=""
+                                  d="M4.2862637970157365e-15,-70A70,70 0 0,1 0.24031743729497215,-69.99958748113686L0.24031743729497215,-69.99958748113686A70,70 0 0,0 4.2862637970157365e-15,-70Z"></path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="col-xs-6 saleCircles" style="padding-right: 0px;padding-left: 0px;">
+                    <div class="text-center">
+                        <svg class="widget-container indicator-circle" width="140" height="140" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160"
+                             preserveAspectRatio="xMidYMid meet">
+                            <text class="small-text text-12 weight-700" text-anchor="middle" dominant-baseline="central"
+                                  x="80" y="40">
+                                Sales
+                            </text>
+                            <text id="totalsales" class="small-text text-22 weight-700" text-anchor="middle"
+                                  dominant-baseline="central" x="80" dy="60" tooltip-class="circle-tooltip"
+                                  tooltip-placement="top" tooltip-html="outerTooltip" tooltip-append-to-body="true">
+                                0
+                            </text>
+                            <line x1="20%" y1="50%" x2="80%" y2="50%" class="separate-line"></line>
+                            <text id="salemargin" class="small-text text-22 weight-700" text-anchor="middle"
+                                  dominant-baseline="central" x="80" y="100" tooltip-class="circle-tooltip"
+                                  tooltip-placement="bottom" tooltip-html="innerTooltip" tooltip-append-to-body="true">
+                                0 %
+                            </text>
+                            <text class="small-text text-12 weight-700" font-size="12px" text-anchor="middle"
+                                  dominant-baseline="central" x="80" y="120">
+                                Margin
+                            </text>
+                            <g sales-path-group="" transform="translate(80,80)">
+                                <path id="saleInnerPath" class="progress-bar inner-bar normal thick-stroke circle-gray"
+                                      stroke-linejoin="round" sales-inner-normal=""
+                                      d="M0,59.50000000000001A59.50000000000001,59.50000000000001 0 1,1 0,-59.50000000000001A59.50000000000001,59.50000000000001 0 1,1 0,59.50000000000001M0,59.50000000000001A59.50000000000001,59.50000000000001 0 1,0 0,-59.50000000000001A59.50000000000001,59.50000000000001 0 1,0 0,59.50000000000001Z"></path>
+                                <path id="saleInnerArc" class="progress-bar inner-bar thick-stroke circle-gray"
+                                      stroke-linejoin="round" sales-inner-path=""></path>
+
+                                <path id="saleOuterPath" class="progress-bar outer-bar normal thick-stroke circle-gray"
+                                      stroke-linejoin="round" sales-outer-normal=""
+                                      d="M0,70A70,70 0 1,1 0,-70A70,70 0 1,1 0,70M0,70A70,70 0 1,0 0,-70A70,70 0 1,0 0,70Z"></path>
+                                <path id="saleOuterArc" class="progress-bar outer-bar thick-stroke circle-gray"
+                                      stroke-linejoin="round" sales-outer-path=""
+                                      d="M4.2862637970157365e-15,-70A70,70 0 0,1 0.07483490106050919,-69.99995999811416L0.07483490106050919,-69.99995999811416A70,70 0 0,0 4.2862637970157365e-15,-70Z"></path>
+                            </g>
+                        </svg>
+                        <p id="saleprofilt">Profit : 0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="formheader greyTitleBg greyTitle bordeBottom">
+            <span class="panel-title">Statistics</span>
+            <a class="collapse-action" href="">
+                <i class="fa fa-chevron-up"></i>
+            </a>
+        </div>
+        <div class="panel-body">
+            <table class="table">
+                <tr>
+                    <td width="85%">Dials</td>
+                    <td width="15%" id="dials">0</td>
+                </tr>
+                <tr>
+                    <td width="85%">Calls</td>
+                    <td width="15%" id="calls">0</td>
+                </tr>
+                <tr>
+                    <td width="85%">Meetings</td>
+                    <td width="15%" id="appointment">0</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="formheader greyTitleBg greyTitle bordeBottom">
+            <span class="panel-title">Deal</span>
+            <a class="collapse-action" href="javascript:void(0);">
+                <i class="fa fa-chevron-up"></i>
+            </a>
+        </div>
+        <div class="panel-body">
+            <table class="table">
+                <tr>
+                    <td width="85%">Gross pipe</td>
+                    <td width="15%" id="grasspipe">0</td>
+                </tr>
+                <tr>
+                    <td width="85%">Weighted pipe</td>
+                    <td width="15%" id="weightedpipe">0</td>
+                </tr>
+                <tr>
+                    <td width="85%">Pipe profit</td>
+                    <td width="15%" id="pipeprofit">0</td>
+                </tr>
+                <tr>
+                    <td width="85%">Pipe margin</td>
+                    <td width="15%">
+                        <span id="pipemargin"> 0% </span>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="formheader greyTitleBg greyTitle bordeBottom">
+            <span class="panel-title">Latest communication</span>
+            <a class="collapse-action" href="javascript:void(0);">
+                <i class="fa fa-chevron-up"></i>
+            </a>
+        </div>
+        <div class="panel-body">
+            <table class="table latest-communication-table" id="lastCommunication">
+
+            </table>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="formheader greyTitleBg greyTitle bordeBottom">
+            <span class="panel-title" id="contactcount">Contact team (0)</span>
+            <a class="collapse-action" href="javascript:void(0);">
+                <i class="fa fa-chevron-up"></i>
+            </a>
+        </div>
+        <div class="panel-body" id="participantlist">
+        </div>
+    </div>
+
+</div>
+
+<script>
+    $(document).ready(function () {
+
+        var deviceAgent = navigator.userAgent.toLowerCase();
+        var agentID = deviceAgent.match(/(iphone|ipod|ipad)/);
+
+        if (agentID) {
+            $("#salesbox-plugin .panel.main-panel .panel-footer .bubble-actions .icon").css("font-size", 32 + "px");
+            $(".text-contact").css("color:", "#999999 !important");
+        }
+
+        $("[data-toggle='form-group-addon']").on('click', function () {
+            var target = $(this).attr('data-target');
+            $(target).removeClass("hidden");
+        });
+        $('[data-toggle="popover"]').popover();
+
+        $("[data-toggle='sub-panel']").on('click', function () {
+            $('.sub-panel:visible').addClass('hidden');
+            var target = $(this).attr('data-target');
+            $(target).removeClass("hidden");
+        });
+
+        $(".details_add_menu_container").hide();
+        $("#details_add_menu").click(function () {
+            $(".details_add_menu_container").toggle();
+        });
+        $(".formheader").click(function () {
+            $(this).next(".panel-body").toggle();
+            $(this).children().find(".fa").toggleClass("fa-chevron-up fa-chevron-down");
+        });
+    });
+
+
+</script>
+<style>
+    label{
+        font-size: 11px;
+    }
+    tbody {
+        border-bottom: 1px solid #c0c1c2;
+    }
+</style>
+
+</body>
+</html>
+

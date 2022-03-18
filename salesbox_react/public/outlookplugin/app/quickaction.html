@@ -1,0 +1,552 @@
+<!-- Add Reminder Modal -->
+<div
+  class="modal fade"
+  id="taskModal"
+  data-backdrop="false"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="addTaskModalLabel"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-inner border-contact">
+        <div class="modal-heading modal-header background-contact">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="addTaskModalLabel">Add Reminder</h4>
+        </div>
+        <div class="modal-body">
+          <form name="addTaskForm" id="addTaskForm">
+            <div class="form-group" id="contact-field">
+              <div class="col-sm-3">
+                <label class="control-label">Contact:</label>
+              </div>
+              <div class="col-sm-9">
+                <input style="display:none" type="text" readonly class="sb-modal-form-control no-border" id="invitee" />
+                <label class="label label-default background-contact">
+                  <span class="contact-name" id="taskcontact"></span>
+                </label>
+                <a class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li>
+                    <div class="contact-list-dropdown scrollingDiv dropdown-fix-height" id="ddltaskContact"></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="form-group sb-dropdown-wrapper">
+              <div class="col-sm-3">
+                <label for="opportunity" class="control-label">Deal:</label>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" readonly class="sb-modal-form-control no-border" id="taskopportunity" />
+              </div>
+              <a href data-toggle="dropdown">
+                <i class="fa fa-caret-down"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li>
+                  <div class="scrollingDiv dropdown-fix-height">
+                    <table class="table" id="ddltaskopporunity"></table>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form-group sb-dropdown-wrapper">
+              <div class="col-sm-3">
+                <label for="category" class="control-label">Category:</label>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" readonly class="sb-modal-form-control no-border" id="taskcategory" />
+              </div>
+              <a href data-toggle="dropdown">
+                <i class="fa fa-caret-down"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li>
+                  <div class="scrollingDiv dropdown-fix-height">
+                    <table class="table" id="ddltaskcategory"></table>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form-group sb-dropdown-wrapper">
+              <div class="col-sm-3">
+                <label for="focus" class="control-label">Focus:</label>
+              </div>
+              <div class="col-sm-9">
+                <input
+                  type="text"
+                  readonly
+                  placeholder="require"
+                  class="sb-modal-form-control no-border"
+                  id="taskfocus"
+                />
+              </div>
+              <a href data-toggle="dropdown">
+                <i class="fa fa-caret-down"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li>
+                  <div class="scrollingDiv dropdown-fix-height">
+                    <table class="table" id="ddltaskfocus"></table>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-3">
+                <label for="date" class="control-label">Date and Time:</label>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" class="sb-modal-form-control no-border date" id="taskdate" />
+              </div>
+            </div>
+
+            <div class="form-group sb-dropdown-wrapper">
+              <div class="col-sm-3">
+                <label for="owner" class="control-label">Owner:</label>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" value="" readonly class="sb-modal-form-control no-border" id="taskowner" />
+              </div>
+            </div>
+
+            <div class="form-group sb-dropdown-wrapper">
+              <div class="col-sm-3">
+                <label for="tag" class="control-label">Tag:</label>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" readonly placeholder="None" class="sb-modal-form-control no-border" id="tasktag" />
+              </div>
+              <a href data-toggle="dropdown">
+                <i class="fa fa-caret-down"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li>
+                  <div class="scrollingDiv dropdown-fix-height">
+                    <table class="table" id="ddltasktag"></table>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form-group note no-border">
+              <div class="col-sm-3"><label for="note" class="control-label">Note</label></div>
+              <div class="col-sm-8"></div>
+              <div class="col-sm-1">200</div>
+              <textarea
+                placeholder="Note"
+                class="sb-modal-form-control no-border note-block"
+                id="tasknote"
+                rows="3"
+                maxlength="200"
+              ></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-default btn-outline cancel-button border-contact text-contact"
+            data-dismiss="modal"
+          >
+            Cancel
+          </button>
+          <button type="button" id="btnTaskDone1" class="btn btn-default save-button background-contact">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Add Reminder Modal -->
+
+<!-- Add Appointment Modal -->
+<div
+  class="modal fade"
+  id="appointmentModal"
+  data-backdrop="false"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="addAppointmentModalLabel"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-inner border-contact">
+        <div class="modal-heading modal-header background-contact">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="addAppointmentModalLabel">Add Meeting</h4>
+        </div>
+        <div class="modal-body">
+          <form name="addTaskForm" id="addTaskForm">
+            <div class="form-group">
+              <div class="col-sm-3">
+                <label for="title" class="control-label">Title:</label>
+              </div>
+              <div class="col-sm-9"><input type="text" id="apptitle" placeholder="required" required /></div>
+            </div>
+
+            <div class="form-group" id="contact-field">
+              <div class="col-sm-3">
+                <label class="control-label">Contact:</label>
+              </div>
+              <div class="col-sm-9">
+                <div id="appcontact"></div>
+
+                <a data-toggle="dropdown" class="dropdown-toggle">
+                  <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li>
+                    <div class="contact-list-dropdown scrollingDiv dropdown-fix-height" id="ddlappcontact"></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="form-group sb-dropdown-wrapper">
+              <div class="col-sm-3">
+                <label for="opportunity" class="control-label">Deal:</label>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" readonly class="sb-modal-form-control no-border" id="appopportunity" />
+              </div>
+              <a href data-toggle="dropdown">
+                <i class="fa fa-caret-down"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li>
+                  <div class="scrollingDiv dropdown-fix-height">
+                    <table class="table" id="ddlappopportunity"></table>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form-group sb-dropdown-wrapper">
+              <div class="col-sm-3">
+                <label for="focus" class="control-label">Focus:</label>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" readonly class="sb-modal-form-control no-border" id="appfocus" />
+              </div>
+              <a href data-toggle="dropdown">
+                <i class="fa fa-caret-down"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li>
+                  <div class="scrollingDiv dropdown-fix-height">
+                    <table class="table" id="ddlappfocus"></table>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-3">
+                <label for="location" class="control-label">Location:</label>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" id="applocation" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-3">
+                <label for="start" class="control-label">Starts:</label>
+              </div>
+              <div class="col-sm-9">
+                <input
+                  type="text"
+                  placeholder="required"
+                  class="sb-modal-form-control no-border date"
+                  id="appstart"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-3">
+                <label for="end" class="control-label">Ends:</label>
+              </div>
+              <div class="col-sm-9">
+                <input
+                  type="text"
+                  placeholder="required"
+                  class="sb-modal-form-control no-border date"
+                  id="append"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group sb-dropdown-wrapper">
+              <div class="col-sm-3">
+                <label for="owner" class="control-label">Owner:</label>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" value="Manoj Singh" readonly class="sb-modal-form-control no-border" id="appowner" />
+              </div>
+            </div>
+
+            <div class="form-group sb-dropdown-wrapper">
+              <div class="col-sm-3">
+                <label for="invitee" class="control-label">Invitees:</label>
+              </div>
+              <div class="col-sm-9">
+                <input style="display:none" type="text" readonly class="sb-modal-form-control no-border" id="invitee" />
+                <div id="appinvitee"></div>
+              </div>
+              <a href data-toggle="dropdown">
+                <i class="fa fa-user-o"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li class="dropdown-search">
+                  <div class="input-group">
+                    <span class="input-group-addon">
+                      <i class="fa fa-search"></i>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inviteeauto"
+                        placeholder="Search contact or add email"
+                      />
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="scrollingDiv dropdown-fix-height">
+                    <table class="table fill-width" id="ddlappinvitee"></table>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form-group note no-border">
+              <div class="col-sm-3"><label for="note" class="control-label">Note</label></div>
+              <div class="col-sm-8"></div>
+              <div class="col-sm-1">200</div>
+              <textarea
+                placeholder="Note"
+                class="sb-modal-form-control no-border note-block"
+                id="appnote"
+                rows="3"
+                maxlength="200"
+              ></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-default btn-outline cancel-button border-contact text-contact"
+            data-dismiss="modal"
+          >
+            Cancel
+          </button>
+          <button type="button" id="btnApp1" class="btn btn-default save-button background-contact">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Add Appointment Modal -->
+
+<!-- Add Lead Modal -->
+<div
+  class="modal fade"
+  id="leadModal"
+  data-backdrop="false"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="addleadModalLabel"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-inner border-contact">
+        <div class="modal-heading modal-header background-contact">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="addleadModalLabel">Add Deal</h4>
+        </div>
+        <div class="modal-body">
+          <form name="addTaskForm" id="addTaskForm">
+            <div class="form-group" id="contact-field">
+              <div class="col-sm-3">
+                <label class="control-label">Contact:</label>
+              </div>
+              <div class="col-sm-9">
+                <input style="display:none" type="text" readonly class="sb-modal-form-control no-border" id="invitee" />
+                <label class="label label-default background-contact">
+                  <span class="contact-name" id="leadcontact"></span>
+                </label>
+                <a class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li>
+                    <div class="contact-list-dropdown scrollingDiv dropdown-fix-height" id="ddlleadcontact"></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="form-group sb-dropdown-wrapper">
+              <div class="col-sm-3">
+                <label for="product-group" class="control-label">Product group:</label>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" readonly class="sb-modal-form-control no-border" id="leadpgroup" />
+              </div>
+              <a href data-toggle="dropdown">
+                <i class="fa fa-caret-down"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li>
+                  <div class="scrollingDiv dropdown-fix-height">
+                    <table class="table" id="dllleadpgroup"></table>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form-group sb-dropdown-wrapper">
+              <div class="col-sm-3">
+                <label for="product" class="control-label">Products:</label>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" readonly class="sb-modal-form-control no-border" id="leadproduct" />
+              </div>
+              <a href data-toggle="dropdown">
+                <i class="fa fa-caret-down"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li>
+                  <div class="scrollingDiv dropdown-fix-height">
+                    <table class="table" id="ddleadproduct"></table>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form-group sb-dropdown-wrapper">
+              <div class="col-sm-3">
+                <label for="priority" class="control-label">Priority:</label>
+              </div>
+              <div class="col-sm-9">
+                <input
+                  type="text"
+                  required
+                  readonly
+                  placeholder="required"
+                  class="sb-modal-form-control no-border"
+                  id="leadpriority"
+                />
+              </div>
+              <a href data-toggle="dropdown">
+                <i class="fa fa-caret-down"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li>
+                  <div class="scrollingDiv dropdown-fix-height">
+                    <table class="table" id="ddlleadpriority">
+                      <tr class="dropdown-item" data-uuid="20">
+                        <td>Lowest</td>
+                      </tr>
+                      <tr class="dropdown-item" data-uuid="40">
+                        <td>Low</td>
+                      </tr>
+                      <tr class="dropdown-item" data-uuid="60">
+                        <td>Medium</td>
+                      </tr>
+                      <tr class="dropdown-item" data-uuid="80">
+                        <td>High</td>
+                      </tr>
+                      <tr class="dropdown-item" data-uuid="100">
+                        <td>Highest</td>
+                      </tr>
+                    </table>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form-group sb-dropdown-wrapper">
+              <div class="col-sm-3">
+                <label for="owner" class="control-label">Owner:</label>
+              </div>
+              <div class="col-sm-9">
+                <input type="text" readonly class="sb-modal-form-control no-border" id="leadowner" />
+              </div>
+            </div>
+
+            <div class="form-group note no-border">
+              <div class="col-sm-3"><label for="note" class="control-label">Note</label></div>
+              <div class="col-sm-8"></div>
+              <div class="col-sm-1">200</div>
+              <textarea
+                placeholder="Note"
+                class="sb-modal-form-control no-border note-block"
+                id="leadnote"
+                rows="3"
+                maxlength="200"
+              ></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-default btn-outline cancel-button border-contact text-contact"
+            data-dismiss="modal"
+          >
+            Cancel
+          </button>
+          <button type="button" id="btnLead1" class="btn btn-default save-button background-contact">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+    $("[data-toggle='form-group-addon']").on('click', function() {
+      var target = $(this).attr('data-target');
+      $(target).removeClass('hidden');
+    });
+    $('[data-toggle="popover"]').popover();
+
+    $("[data-toggle='sub-panel']").on('click', function() {
+      $('.sub-panel:visible').addClass('hidden');
+      var target = $(this).attr('data-target');
+      $(target).removeClass('hidden');
+    });
+  });
+
+  $('#taskModal').on('shown.bs.modal', function() {
+    $('.date').datetimepicker({
+      format: 'd M Y H:i',
+    });
+  });
+
+  $('#appointmentModal').on('shown.bs.modal', function() {
+    $('#appstart').datetimepicker({
+      format: 'd M Y H:i',
+    });
+    $('#append').datetimepicker({
+      format: 'd M Y H:i',
+    });
+  });
+</script>

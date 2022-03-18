@@ -1,0 +1,137 @@
+.action-plan-item {
+  display: flex;
+  font-weight: 400;
+  min-height: 36px;
+  // padding-top: 4px;
+  // padding-bottom: 4px;
+  border-bottom: 1px solid #c0c1c2;
+  padding-left: 4px;
+  font-size: 10px;
+  .step {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    .step-name {
+      width: 70%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .action-plan-date {
+    width: 60%;
+  }
+
+  .progress,
+  .metting,
+  .done-item {
+    width: 30%;
+  }
+
+  .step-progress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    .progress-line {
+      display: flex;
+      flex: 1;
+      width: 1px;
+      background-color: #808285;
+    }
+  }
+
+  .progress-status {
+    width: 16px;
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    border-radius: 50%;
+  }
+
+  .circle-green {
+    background-color: #a9ce31;
+  }
+
+  .circle-grey {
+    background-color: #808285;
+  }
+
+  .circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .not-done {
+    background-color: #f3f4f4;
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+    border-radius: 50%;
+    /* margin-right: 7px; */
+    div {
+      background: url('../../../../public/Check.svg');
+      height: 10px;
+      background-size: 100% 100%;
+      width: 10px;
+      min-height: 10px;
+      min-width: 10px;
+    }
+  }
+
+  .green-text {
+    color: #a9ce31;
+  }
+
+  .done {
+    background-color: #a9ce31;
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    border-radius: 50%;
+    div {
+      background: url('../../../../public/CheckHistory.svg');
+      height: 13px;
+      background-size: 100% 100%;
+      width: 13px;
+      min-height: 13px;
+      min-width: 13px;
+    }
+  }
+}
+
+.header-action-plan {
+  font-weight: bold;
+  min-height: 28px;
+}
+
+.common-item {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.action-plan-GREEN {
+  border-left: 3px solid #8cc290;
+}
+.action-plan-YELLOW {
+  border-left: 3px solid #e6d760;
+}
+.action-plan-PINK {
+  border-left: 3px solid #d885d9;
+}
+.action-plan-BLUE {
+  border-left: 3px solid #8bc3da;
+}
+.action-plan-RED {
+  border-left: 3px solid #d56772;
+}
+.action-plan-ORANGE {
+  border-left: 3px solid #ff8c00;
+}
+
+.isFetching {
+  min-height: 70px;
+}

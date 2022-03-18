@@ -1,0 +1,55 @@
+@import 'variables.css';
+
+.list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 4px;
+}
+
+.listItem {
+  display: flex;
+  padding: 4px;
+  border-style: none none inset none;
+  border-color: var(--border-color);
+  border-width: 0px;
+  &:last-child {
+    border-color: transparent;
+  }
+  &.active {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  .avatar {
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: calc(var(--default-padding)  / 4);
+    width: 20%;
+  }
+  .list {
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+}
+
+
+.shortInfor {
+  font-size: var(--normal-text);
+  color: #5d5e5e;
+  word-break: break-all;
+}
+
+.shortInfor:hover {
+  color: #3d90db;
+}
+
+.repon {
+  font-weight: 800;
+  font-size: 13;
+}
+
+.firstRepon {
+  font-size: 13;
+  font-weight: 800;
+  color: #ef8367;
+}
+

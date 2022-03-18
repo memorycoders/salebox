@@ -1,0 +1,6 @@
+@import 'variables.css';
+
+.error {
+  font-size: calc(var(--font-size-base) - 2px);
+  color: var(--red);
+}

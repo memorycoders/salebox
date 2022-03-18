@@ -1,0 +1,69 @@
+.tagCircle {
+  height: 15px;
+  width: 15px;
+  min-width: 15px;
+  max-width: 15px;
+  min-height: 15px;
+  max-height: 15px;
+  border-radius: 50%;
+  margin-left: 2px;
+  display: inline-block;
+  margin-right: 7px;
+  background-color: #fff;
+
+  &.blue {
+    background-color: var(--internal) !important;
+  }
+
+  &.yellow {
+    background-color: var(--issue) !important;
+  }
+  &.red {
+    background-color: var(--sale) !important;
+  }
+  &.green {
+    background-color: var(--external) !important;
+  }
+
+  &.pink {
+    background-color: var(--collaboration) !important;
+  }
+  &.unqualifiedfilter {
+    background-color: #f4b24e !important;
+  }
+  &.qualifiedfilter {
+    background-color: #aacd40 !important;
+  }
+  /* &.yellowunqualified {
+   background-color: #f4b24e !important;
+ } */
+  &.yellowunqualified {
+    background-color: var(--yellowunqualified) !important;
+  }
+  &.greenqualified {
+    background-color: var(--greenqualified) !important;
+  }
+}
+
+.itemDropdown {
+  display: flex !important;
+  align-items: center !important;
+  cursor: pointer;
+  justify-content: space-between;
+  width: 100%;
+  .left {
+    display: flex !important;
+    align-items: center !important;
+  }
+}
+
+.iconCalllist {
+  width: 24px !important;
+  height: 24px !important;
+  min-width: 24px !important;
+  min-height: 24px !important;
+  max-width: 24px !important;
+  max-height: 24px !important;
+  margin-left: 0px;
+  margin-right: 4px;
+}

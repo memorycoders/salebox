@@ -1,0 +1,2 @@
+@borderColor: rgba(240, 240, 240, 0.75);
+@border     : @borderWidth solid @borderColor;

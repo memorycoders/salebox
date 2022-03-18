@@ -1,0 +1,33 @@
+<div class="dropdown sb-dropdown-wrapper">
+    <div data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ng-click="loadOptions()">
+        <!--<input  class="no-border" id="industry" ng-if="!customField.customFieldOptionDTO.multiChoice" type="text"  style="padding: 0;text-align: right;padding-right: 30px" ng-model="entity" readonly>-->
+        <div ui-sortable="sortableOptions" class="element-list-input input-dropdown" ng-model="customField.customFieldValueDTOList" style="padding: 0;text-align: right;padding-right: 25px">
+            <span  ng-repeat="selectObject in customField.customFieldValueDTOList" ng-if="selectObject.isChecked == true">
+                <label class="label label-default">
+                       {{selectObject.value}}<span ng-click="removeOption(selectObject)">&times;</span>
+                </label>
+            </span>
+        </div>
+    </div>
+
+    <a href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ng-click="loadOptions()">
+        <i class="fa fa-caret-down"></i>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-right custom-scroll-bar" style="overflow-x: hidden;">
+        <li class="dropdown-loading" ng-hide="customField.customFieldValueDTOList.length > 0" translate>Loading...</li>
+        <li ng-show="customField.customFieldValueDTOList.length > 0">
+            <div class="scrollingDiv dropdown-fix-height">
+                <table class="table" ng-model="customField.customFieldValueDTOList">
+                    <tr ng-repeat="object in customField.customFieldValueDTOList" ng-click="selectOption(object);" class="dropdown-item" ng-if="object.isChecked == false||object.isChecked == undefined">
+                        <td >
+                            {{object.value}}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </li>
+    </ul>
+    <script data-remove="false" data-concat="false" type="text/javascript-lazy">
+        $(".scrollingDiv").perfectScrollbar();
+    </script>
+</div>

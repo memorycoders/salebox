@@ -1,0 +1,49 @@
+.itemStep {
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    width: 13px !important;
+    height: 13px !important;
+}
+
+.circleButton {
+    width: 19px !important;
+    height: 19px !important;
+    min-width: 19px !important;
+    background-color: #fff;
+     border: 1px solid #f2f2f2;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
+}
+
+.circleButton:hover {
+     background-color: #f2f2f2;
+}
+
+.btnClass {
+    border: 1px solid #f2f2f2;
+}
+
+.stepName {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px 5px;
+}
+
+.paneTable {
+  border: none !important;
+  width: unset !important;
+  tr {
+      width: unset !important;
+  }
+  
+  td {
+    font-size: var(--normal-text);
+    padding: 0.7em 0.7em;
+    border: none !important;
+  }
+}

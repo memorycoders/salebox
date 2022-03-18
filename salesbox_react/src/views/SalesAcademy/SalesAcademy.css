@@ -1,0 +1,14 @@
+.charts {
+  padding: 10px 10px 0 10px;
+  /* margin-top: 10px; */
+  height: calc(100% - 50px);
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.menuActive {
+  margin-bottom: -1 !important;
+  border-bottom: 2px solid rgb(240, 154, 137);
+}
+.categoryMenu {
+  font-weight: 700 !important;
+}

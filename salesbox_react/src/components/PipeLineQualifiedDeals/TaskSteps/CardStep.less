@@ -1,0 +1,281 @@
+@asideWidth: 12px;
+
+.card-item-active {
+  background-color: #f0f0f0 !important;
+}
+
+.card-item-container {
+  position: relative;
+  .circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+   .bg-more {
+   position: absolute;
+   right: 4px;
+   top: 45%;
+  }
+  font-size: 11px;
+  width: 94%;
+  //min-width: 94%;
+  margin: auto;
+  max-width: 100%;
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #585959;
+  .owner-info {
+    display: flex;
+    .info {
+      width: ~'calc(100% - 45px)' !important;
+      font-size: 11px;
+      color: #878787;
+      margin-left: 5px;
+      .sponsor {
+         white-space: nowrap;
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+      }
+      .description {
+        font-style: italic;
+        width: 90%;
+        white-space: nowrap;
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+      }
+      .name {
+        font-size: 13px;
+        font-weight: 600;
+        white-space: nowrap;
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+        color: #000;
+      }
+      .onlyContact {
+        height: 16px;
+      }
+      .fullInfo {
+        display: none;
+      }
+    }
+  }
+
+  .profit-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.card-header {
+  .content {
+    color: #585959;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // padding: 5px;
+    font-size: 11px;
+    color: #878787;
+    .count {
+      background-color: #fff;
+      height: 15px;
+      padding: 0px 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+    .title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #000;
+    }
+  }
+  .contentRecruitment {
+    color: #585959;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    // padding: 5px;
+    font-size: 11px;
+    color: #878787;
+    .count {
+      background-color: #fff;
+      height: 15px;
+      padding: 0px 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+    .title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #000;
+    }
+  }
+}
+
+.GREEN {
+  border-left: 4px solid #aacd40;
+}
+
+.RED {
+  border-left: 4px solid #df5759;
+}
+
+.YELLOW {
+  border-left: 4px solid #f4b24e;
+}
+
+.gPdGXw, .sc-fzoLsD, .fYZyZu {
+  overflow-y: hidden !important;
+  width: 100% !important;
+  // padding: 10px !important;
+  // margin: 5px !important;
+  margin-top: 0px !important;
+  min-width: unset !important;
+  box-sizing: border-box;
+}
+
+.column-trello {
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+  outline: none;
+
+}
+
+.column-trello.active, .column-trello:active {
+  border: none !important;
+}
+.column-trello:hover {
+  overflow-y: overlay !important;
+}
+
+.gPdGXw:hover, .sc-fzoLsD:hover, .fYZyZu:hover {
+  overflow-y: overlay !important;
+}
+.sc-fzoLsD::-webkit-scrollbar {
+  color: rgba(87, 168, 233, 0.2);
+  width: 8px;
+  height: 0px;
+}
+
+// trello clone
+
+.react-trello-lane {
+  min-height: 260px;
+  // min-width: 200px;
+  max-height: 98% !important;
+  padding: 0px !important;
+  width: ~'calc(20% - 10px)';
+  min-width: 150px;
+  // height: 100% !important;
+  .card-header {
+    padding: 5px;
+    margin: 5px;
+  }
+  header {
+    span {
+      font-size: 13px !important;
+    }
+  }
+}
+
+.smooth-dnd-container {
+  // min-height: 200px !important;
+  height: 100% ;
+  // width: 100% !important;
+}
+.krrJph {
+  height: 100%;
+}
+
+.react-trello-board {
+  background-color: #ffffff !important;
+  overflow-y: auto !important;
+  height: 100% !important;
+  width: 100% !important;
+  // div:first-child {
+  //   width: 100% !important;
+  // }
+}
+
+.react-trello-board > div {
+  width: 100% !important;
+}
+
+.smooth-dnd-container * {
+    box-sizing: border-box;
+}
+
+.task-steps-board {
+  position: relative;
+}
+
+#won-container {
+  width: 20%;
+  background-color: #aacd40;
+  height: 50px;
+}
+
+.card-header-lost-won {
+  position: absolute;
+  top: 15px;
+  left: 81px;
+  padding: 0px !important;
+  margin: 0px !important;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.mr75 {
+  margin-bottom: 80px !important;
+}
+
+.mr0 {
+  margin-bottom: 0px !important;
+}
+
+.height100 {
+  height: 100%;
+}
+
+.width200 {
+  width: 200px !important;
+}
+
+.draft-column {
+  .card-header {
+    // padding: 5px;
+    margin: 5px;
+  }
+}
+
+.draft-column:first-child {
+  margin-left: 10px !important;
+}
+
+.draft-column:last-child {
+  margin-right: 10px !important;
+}
+
+
+.absolute-droppable {
+  visibility: hidden;
+}
+
+.absolute-droppable-lost {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.absolute-droppable-won {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}

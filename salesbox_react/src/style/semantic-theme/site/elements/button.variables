@@ -1,0 +1,6 @@
+@borderRadius: 2px;
+// @borderBoxShadowColor: rgba(240, 240, 240, 0.75);
+// @borderBoxShadowWidth: 3px;
+
+// @shadowDistance: 0em;
+// @shadowBoxShadow: 0px -@shadowDistance 3px 1px @borderBoxShadowColor;

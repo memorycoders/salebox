@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<OfficeApp
+        xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+        xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides"
+        xsi:type="MailApp">
+  <Id>B5105FA6-105A-4E83-A5B1-9EA2C3776F59</Id>
+  <Version>1.0.0.7</Version>
+  <ProviderName>Salesbox</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Salesbox" />
+  <Description DefaultValue="Salesbox Addin for Outlook"/>
+  <IconUrl DefaultValue="https://go.salesbox.com/outlookplugin/img/logo_128.png" />
+  <HighResolutionIconUrl DefaultValue="https://go.salesbox.com/outlookplugin/img/logo_128.png" />
+  <SupportUrl DefaultValue="http://salesbox.com/contact-us" />
+  <Hosts>
+    <Host Name="Mailbox" />
+  </Hosts>
+  <Requirements>
+    <Sets>
+      <Set Name="MailBox" MinVersion="1.1" />
+    </Sets>
+  </Requirements>
+  <!-- These elements support older clients that don't support add-in commands -->
+  <FormSettings>
+    <Form xsi:type="ItemRead">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://go.salesbox.com/outlookplugin/app/openemail.html?cache=s98sj398nf03984jf3412n"/>
+        <RequestedHeight>250</RequestedHeight>
+      </DesktopSettings>
+    </Form>
+    <Form xsi:type="ItemEdit">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://go.salesbox.com/outlookplugin/app/composeemail.html"/>
+      </DesktopSettings>
+    </Form>
+  </FormSettings>
+  <Permissions>ReadWriteMailbox</Permissions>
+  <Rule xsi:type="RuleCollection" Mode="Or">
+    <Rule xsi:type="ItemIs" ItemType="Message" FormType="Edit" />
+    <Rule xsi:type="ItemIs" ItemType="Appointment" FormType="Edit" />
+    <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read" />
+    <Rule xsi:type="ItemIs" ItemType="Appointment" FormType="Read" />
+  </Rule>
+  <DisableEntityHighlighting>false</DisableEntityHighlighting>
+
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides" xsi:type="VersionOverridesV1_0">
+
+    <Requirements>
+      <bt:Sets DefaultMinVersion="1.3">
+        <bt:Set Name="Mailbox" />
+      </bt:Sets>
+    </Requirements>
+    <Hosts>
+      <Host xsi:type="MailHost">
+
+        <DesktopFormFactor>
+          <FunctionFile resid="functionFile" />
+
+          <!-- Message compose form -->
+          <ExtensionPoint xsi:type="MessageComposeCommandSurface">
+            <OfficeTab id="TabDefault">
+              <Group id="msgComposeDemoGroup">
+                <Label resid="groupLabel" />
+                <!-- Task pane button -->
+                <Control xsi:type="Button" id="msgComposeOpenPaneButton">
+                  <Label resid="paneComposeButtonLabel" />
+                  <Supertip>
+                    <Title resid="paneComposeSuperTipTitle" />
+                    <Description resid="paneComposeSuperTipDescription" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="logo-icon-16" />
+                    <bt:Image size="32" resid="logo-icon-32" />
+                    <bt:Image size="80" resid="logo-icon-80" />
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="composeTaskPaneUrl" />
+                  </Action>
+                </Control>
+              </Group>
+            </OfficeTab>
+          </ExtensionPoint>
+
+
+          <!-- Message read form -->
+          <ExtensionPoint xsi:type="MessageReadCommandSurface">
+            <OfficeTab id="TabDefault">
+              <Group id="msgReadDemoGroup">
+                <Label resid="groupLabel" />
+                <!-- Task pane button -->
+                <Control xsi:type="Button" id="msgReadOpenPaneButton">
+                  <Label resid="paneReadButtonLabel" />
+                  <Supertip>
+                    <Title resid="paneReadSuperTipTitle" />
+                    <Description resid="paneReadSuperTipDescription" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="logo-icon-16" />
+                    <bt:Image size="32" resid="logo-icon-32" />
+                    <bt:Image size="80" resid="logo-icon-80" />
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="readTaskPaneUrl" />
+                  </Action>
+                </Control>
+              </Group>
+            </OfficeTab>
+          </ExtensionPoint>
+
+
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+
+    <Resources>
+      <bt:Images>
+        <!-- Green icon -->
+        <bt:Image id="logo-icon-16" DefaultValue="https://go.salesbox.com/outlookplugin/img/logo_16.png"/>
+        <bt:Image id="logo-icon-32" DefaultValue="https://go.salesbox.com/outlookplugin/img/logo_32.png"/>
+        <bt:Image id="logo-icon-80" DefaultValue="https://go.salesbox.com/outlookplugin/img/logo_80.png"/>
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url id="functionFile" DefaultValue="https://go.salesbox.com/outlookplugin/app/commands/commands.html"/>
+        <bt:Url id="readTaskPaneUrl" DefaultValue="https://go.salesbox.com/outlookplugin/app/openemail.html?cache=s98sj398nf03984jf3445n"/>
+        <bt:Url id="composeTaskPaneUrl" DefaultValue="https://go.salesbox.com/outlookplugin/app/composeemail.html"/>
+      </bt:Urls>
+      <bt:ShortStrings>
+        <bt:String id="groupLabel" DefaultValue="Salesbox"/>
+        <!-- Compose mode -->
+
+        <bt:String id="paneComposeButtonLabel" DefaultValue="Salesbox"/>
+        <bt:String id="paneComposeSuperTipTitle" DefaultValue="Enter your own text to insert"/>
+
+        <!-- Read mode -->
+        <bt:String id="paneReadButtonLabel" DefaultValue="Salesbox"/>
+        <bt:String id="paneReadSuperTipTitle" DefaultValue="Get all properties"/>
+
+        <bt:String id="menuItem1ReadLabel" DefaultValue="Get item class"/>
+        <bt:String id="menuItem2ReadLabel" DefaultValue="Get date time created"/>
+        <bt:String id="menuItem3ReadLabel" DefaultValue="Get item ID"/>
+      </bt:ShortStrings>
+      <bt:LongStrings>
+        <!-- Compose mode -->
+        <bt:String id="paneComposeSuperTipDescription" DefaultValue="Opens a pane where you can enter text to insert in the body of the message or appointment. This is an example of a button that opens a task pane."/>
+
+
+        <bt:String id="funcComposeSuperTipDescription" DefaultValue="Inserts text into body of the message or appointment. This is an example of a function button."/>
+        <bt:String id="menuComposeSuperTipDescription" DefaultValue="Inserts your choice of text into body of the message or appointment. This is an example of a drop-down menu button."/>
+
+        <bt:String id="menuItem1ComposeTip" DefaultValue="Inserts Hello World! into the body of the message or appointment." />
+        <bt:String id="menuItem2ComposeTip" DefaultValue="Inserts Add-in commands are cool! into the body of the message or appointment." />
+        <bt:String id="menuItem3ComposeTip" DefaultValue="Inserts Visit dev.outlook.com into the body of the message or appointment." />
+        <!-- Read mode -->
+        <bt:String id="paneReadSuperTipDescription" DefaultValue="Opens a pane displaying all available properties of the message or appointment. This is an example of a button that opens a task pane."/>
+
+      </bt:LongStrings>
+    </Resources>
+
+    <!-- VersionOverrides for the v1.1 schema -->
+    <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides/1.1" xsi:type="VersionOverridesV1_1">
+
+      <Requirements>
+        <bt:Sets DefaultMinVersion="1.3">
+          <bt:Set Name="Mailbox" />
+        </bt:Sets>
+      </Requirements>
+      <Hosts>
+        <Host xsi:type="MailHost">
+          <DesktopFormFactor>
+            <FunctionFile resid="residUILessFunctionFileUrl" />
+
+            <!-- Message compose form -->
+            <ExtensionPoint xsi:type="MessageComposeCommandSurface">
+              <OfficeTab id="TabDefault">
+                <Group id="msgComposeDemoGroup">
+                  <Label resid="groupLabel" />
+                  <!-- Task pane button -->
+                  <Control xsi:type="Button" id="msgComposeOpenPaneButton">
+                    <Label resid="paneComposeButtonLabel" />
+                    <Supertip>
+                      <Title resid="paneComposeSuperTipTitle" />
+                      <Description resid="paneComposeSuperTipDescription" />
+                    </Supertip>
+                    <Icon>
+                      <bt:Image size="16" resid="logo-icon-16" />
+                      <bt:Image size="32" resid="logo-icon-32" />
+                      <bt:Image size="80" resid="logo-icon-80" />
+                    </Icon>
+                    <Action xsi:type="ShowTaskpane">
+                      <SourceLocation resid="composeTaskPaneUrl" />
+                    </Action>
+                  </Control>
+                </Group>
+              </OfficeTab>
+            </ExtensionPoint>
+
+
+            <!-- Message read form -->
+            <ExtensionPoint xsi:type="MessageReadCommandSurface">
+              <OfficeTab id="TabDefault">
+                <Group id="msgReadDemoGroup">
+                  <Label resid="groupLabel" />
+                  <!-- Task pane button -->
+                  <Control xsi:type="Button" id="msgReadOpenPaneButton">
+                    <Label resid="paneReadButtonLabel" />
+                    <Supertip>
+                      <Title resid="paneReadSuperTipTitle" />
+                      <Description resid="paneReadSuperTipDescription" />
+                    </Supertip>
+                    <Icon>
+                      <bt:Image size="16" resid="logo-icon-16" />
+                      <bt:Image size="32" resid="logo-icon-32" />
+                      <bt:Image size="80" resid="logo-icon-80" />
+                    </Icon>
+                    <Action xsi:type="ShowTaskpane">
+                      <SourceLocation resid="readTaskPaneUrl" />
+                      <SupportsPinning>false</SupportsPinning>
+                    </Action>
+                  </Control>
+
+                </Group>
+              </OfficeTab>
+            </ExtensionPoint>
+
+              <!-- onSend -->
+             <!--<FunctionFile resid="residUILessFunctionFileUrl" />-->
+             <!--<ExtensionPoint xsi:type="Events">-->
+                  <!--<Event Type="ItemSend" FunctionExecution="synchronous" FunctionName="getItemBeforeSend" />-->
+              <!--</ExtensionPoint>-->
+          </DesktopFormFactor>
+
+          <MobileFormFactor>
+            <FunctionFile resid="functionFile" />
+
+            <ExtensionPoint xsi:type="MobileMessageReadCommandSurface">
+              <Group id="mobileMsgRead">
+                <Label resid="groupLabel" />
+
+                <Control xsi:type="MobileButton" id="mblTaskPane">
+                  <Label resid="paneReadButtonLabel" />
+                  <Icon xsi:type="bt:MobileIconList">
+                    <bt:Image size="25" scale="1" resid="logo-icon-32" />
+                    <bt:Image size="25" scale="2" resid="logo-icon-32" />
+                    <bt:Image size="25" scale="3" resid="logo-icon-32" />
+
+                    <bt:Image size="32" scale="1" resid="logo-icon-32" />
+                    <bt:Image size="32" scale="2" resid="logo-icon-32" />
+                    <bt:Image size="32" scale="3" resid="logo-icon-32" />
+
+                    <bt:Image size="48" scale="1" resid="logo-icon-32" />
+                    <bt:Image size="48" scale="2" resid="logo-icon-32" />
+                    <bt:Image size="48" scale="3" resid="logo-icon-32" />
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="readTaskPaneMobileUrl" />
+                  </Action>
+                </Control>
+              </Group>
+            </ExtensionPoint>
+          </MobileFormFactor>
+        </Host>
+      </Hosts>
+
+      <Resources>
+        <bt:Images>
+
+          <!-- Logo -->
+          <bt:Image id="logo-icon-16" DefaultValue="https://go.salesbox.com/outlookplugin/img/logo_16.png"/>
+          <bt:Image id="logo-icon-32" DefaultValue="https://go.salesbox.com/outlookplugin/img/logo_32.png"/>
+          <bt:Image id="logo-icon-80" DefaultValue="https://go.salesbox.com/outlookplugin/img/logo_80.png"/>
+        </bt:Images>
+        <bt:Urls>
+          <bt:Url id="functionFile" DefaultValue="https://go.salesbox.com/outlookplugin/app/commands/commands.html"/>
+          <bt:Url id="readTaskPaneUrl" DefaultValue="https://go.salesbox.com/outlookplugin/app/openemail.html?cache=s98sj398nf03984jf3466n"/>
+          <bt:Url id="readTaskPaneMobileUrl" DefaultValue="https://go.salesbox.com/outlookplugin/app/openemailmobile.html?cache=s98sj398nf03984jf3444n"/>
+          <bt:Url id="composeTaskPaneUrl" DefaultValue="https://go.salesbox.com/outlookplugin/app/composeemail.html"/>
+        </bt:Urls>
+        <bt:ShortStrings>
+          <bt:String id="groupLabel" DefaultValue="Salesbox"/>
+          <!-- Compose mode -->
+          <bt:String id="paneComposeButtonLabel" DefaultValue="Salesbox"/>
+          <bt:String id="paneComposeSuperTipTitle" DefaultValue="Enter your own text to insert"/>
+
+          <!-- Read mode -->
+          <bt:String id="paneReadButtonLabel" DefaultValue="Salesbox"/>
+          <bt:String id="paneReadSuperTipTitle" DefaultValue="Get all properties"/>
+        </bt:ShortStrings>
+        <bt:LongStrings>
+          <!-- Compose mode -->
+
+          <bt:String id="paneComposeSuperTipDescription" DefaultValue="Opens a pane where you can enter text to insert in the body of the message or appointment. This is an example of a button that opens a task pane."/>
+
+          <!-- Read mode -->
+          <bt:String id="paneReadSuperTipDescription" DefaultValue="Opens a pane displaying all available properties of the message or appointment. This is an example of a button that opens a task pane."/>
+
+
+        </bt:LongStrings>
+      </Resources>
+    </VersionOverrides>
+  </VersionOverrides>
+</OfficeApp>

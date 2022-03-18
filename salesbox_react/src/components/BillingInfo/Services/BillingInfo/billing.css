@@ -1,0 +1,79 @@
+.main, .main table {
+  margin-top: 20px;
+  font-size: 11px;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  line-height: 25px;
+}
+
+.listAction {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btnCard {
+  background-color: #173849 !important;
+  color: #fff !important;
+  font-size: 11px !important;
+  border-radius: 10px !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  cursor: pointer;
+  max-height: 30px !important;
+  /*custom for btn*/
+  font-weight: normal !important;
+  width: auto !important;
+
+}
+.btnCard:hover {
+  color: #fff;
+}
+
+
+.textLeft {
+  text-align: left;
+}
+
+.textRight {
+  text-align: right;
+}
+.textRight input {
+  text-align: right !important;
+}
+.textCenter         { text-align: center; }
+.textJustify        { text-align: justify; }
+.textNowrap         { white-space: nowrap; }
+
+.textBold {
+  font-weight: 600;
+}
+
+.noBorder {
+  border: none !important;
+  min-width: 60px !important;
+}
+
+.noBorder input {
+  border: none !important;
+  min-width: 50px !important;
+}
+
+.noBorder input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.textRed {
+  fill: #e0575a;
+}
+
+.paddingRowOnlyText{
+  padding-top: 6px;
+  padding-bottom: 6px;
+}

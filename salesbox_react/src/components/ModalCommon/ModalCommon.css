@@ -1,0 +1,104 @@
+.modalContainer {
+  width: 500px;
+  margin: 0px auto auto auto !important;
+  max-height: 80% !important;
+  background: #fff !important;
+  opacity: 1;
+}
+
+@media (min-height: 880px) {
+  .modalContainer {
+    width: 600px;
+    margin: 0px auto auto auto !important;
+    max-height: 80% !important;
+    background: #fff !important;
+    opacity: 1;
+    margin: -50px auto auto auto !important;
+  }
+}
+
+.commonModaltitle {
+  font-size: var(--large-text);
+}
+
+.commonModalHeader {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0.7rem 1.5rem !important;
+  font-size: var(--large-text) !important;
+}
+
+.commonCloseButton {
+  color: #1a3848 !important;
+  background-color: #fff !important;
+}
+
+.commonCloseButton:hover {
+  background-color: #e6e6e6 !important;
+}
+
+.commonCloseButton:focus {
+  background-color: #e6e6e6 !important;
+}
+
+.commonButton {
+  border: 1px solid #1a3848 !important;
+  font-size: var(--normal-text) !important;
+  font-weight: 500 !important;
+  border-radius: 5px !important;
+  padding: 0.5em 1em !important;
+  min-width: 75px;
+  height: var(--button) !important;
+  max-height: 28px !important;
+  min-height: 28px !important;
+}
+
+.commonDoneButton {
+  color: #fff !important;
+  background-color: #1a3848 !important;
+}
+
+.commonDoneButton:hover {
+  background-color: #1a3848c4 !important;
+}
+
+.commonDoneButton:focus {
+  background-color: #1a3848c4 !important;
+}
+
+.commonActionModal {
+  padding: 0.75em 1em !important;
+  background-color: #fff !important;
+}
+
+.closeIcon {
+  cursor: pointer;
+  position: absolute;
+  top: -2.5rem;
+  right: -2rem;
+  z-index: 1;
+  opacity: 0.8;
+  font-size: 1.25em;
+  color: #ffffff;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0.625rem 0rem 0rem 0rem;
+}
+
+.modalBackground {
+  opacity: 1 !important;
+}
+
+.description {
+   font-size: var(--normal-text) !important;
+   overflow-y: overlay !important;
+}
+.paddingAsHeader{
+  padding: 0rem 0.5rem;
+}
+.listAction .Dropdown {
+  display: inline-block !important;
+}
+

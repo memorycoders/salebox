@@ -1,0 +1,16 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.75 38.75"><defs><style>.cls-1{fill:#808080;}.cls-2{fill:gray;}</style></defs><title>checkbox</title><g id="Design-System"><g id="Icons"><g id="Check"><g id="Group-25-Copy-7"><circle id="Oval" class="cls-1" cx="19.38" cy="19.38" r="19.38"/></g><path id="Fill-1" class="cls-2" d="M680.59,24.59a2,2,0,0,0-2.83,0L667.18,35.17l-2.59-2.59a2,2,0,1,0-2.83,2.83l4,4a2,2,0,0,0,2.83,0l12-12a2,2,0,<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="8px" viewBox="0 0 10 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Check</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design-System" stroke="none" stroke-width="1" fill="#808080" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-67.000000, -583.000000)">
+            <g id="Check" transform="translate(60.000000, 575.000000)">
+                <g id="Group-25-Copy-7">
+                    <circle id="Oval" cx="12" cy="12" r="12"></circle>
+                </g>
+                <path d="M16.70725,8.29325 C16.31625,7.90225 15.68425,7.90225 15.29325,8.29325 L10.00025,13.58625 L8.70725,12.29325 C8.31625,11.90225 7.68425,11.90225 7.29325,12.29325 C6.90225,12.68425 6.90225,13.31625 7.29325,13.70725 L9.29325,15.70725 C9.48825,15.90225 9.74425,16.00025 10.00025,16.00025 C10.25625,16.00025 10.51225,15.90225 10.70725,15.70725 L16.70725,9.70725 C17.09825,9.31625 17.09825,8.68425 16.70725,8.29325" id="Fill-1" fill="#808080"></path>
+            </g>
+        </g>
+    </g>
+</svg>

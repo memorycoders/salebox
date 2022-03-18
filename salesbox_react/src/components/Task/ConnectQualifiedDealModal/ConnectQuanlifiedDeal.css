@@ -1,0 +1,13 @@
+.row{
+  cursor: pointer;
+  border-bottom: 1px solid rgba(34,36,38,.15);
+  padding: 5px;
+}
+.row:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  font-weight: 600 !important;
+  opacity: 1;
+}
+.row:last-child{
+  border-bottom: none;
+}

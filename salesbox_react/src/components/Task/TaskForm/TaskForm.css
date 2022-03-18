@@ -1,0 +1,107 @@
+@import "variables.css";
+.label {
+  width: 110px !important;
+  min-width: 110px !important;
+  padding-top: 1.5%;
+  /* padding-left: 1.36%; */
+  font-weight: 700;
+  font-size: var(--normal-text);
+}
+.organis {
+  width: 75% !important;
+}
+.span {
+  position: absolute;
+  bottom: 3px;
+  right: 4%;
+  font-weight: 400;
+  font-size: 12px;
+}
+.spanNote {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.noteForm {
+  position: relative;
+  font-size: var(--normal-text) !important;
+}
+.noteForm textarea {
+  font-size: var(--normal-text) !important;
+}
+.dropdownWrapper {
+  display: "flex";
+  flex: 1;
+  flex-direction: "column";
+}
+.required {
+  color: red;
+  display: inline-block;
+  margin: 0px 2px;
+  font-size: var(--normal-text);
+}
+.updatefieldsModal {
+  width: 700px !important;
+  height: auto !important;
+}
+.formField {
+  max-width: 100% !important;
+  padding-right: 0px !important;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+@media (min-width: 700px) {
+  .span {
+    right: 4%;
+  }
+  .spanNote {
+    right: 4%;
+  }
+  .focusDropdown {
+    width: 100% !important;
+  }
+  .dropdownForm {
+    width: 100% !important;
+  }
+  .formField {
+    max-width: 100% !important;
+  }
+}
+@media (min-width: 1300px) {
+  .span {
+    right: 4%;
+  }
+  .spanNote {
+    right: 4%;
+  }
+  .focusDropdown {
+    width: 100% !important;
+  }
+  .dropdownForm {
+    width: 100% !important;
+  }
+  .formField {
+    max-width: 100% !important;
+  }
+}
+
+.containerTaskForm {
+  display: flex;
+}
+
+.customFieldForm {
+  padding:0px 18px;
+}
+
+.customFieldContent {
+   background-color: #fff;
+}
+
+.normalForm {
+  background-color: #fff;
+  flex: 1;
+  padding: 0px 10px 0px 0px;
+}

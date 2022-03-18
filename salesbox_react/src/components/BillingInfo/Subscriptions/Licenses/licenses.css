@@ -1,0 +1,68 @@
+.numberLice {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  align-items: center;
+  margin-right: 10px;
+  span {
+    font-size: 60px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.remove {
+  font-size: 60px;
+  color: #ee8267;
+  transform: translateY(-4px);
+  cursor: pointer;
+}
+.add {
+  font-size: 60px;
+  color: #a9ce31;
+  cursor: pointer;
+}
+
+.add:hover {
+  color: #a9ce31;
+}
+
+.remove:hover {
+  color: #ee8267;
+}
+
+.listAddOne {
+  display: flex;
+  min-height: 40px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  font-size: 11px;
+  &.Title {
+    font-weight: bold;
+
+    &:hover {
+      background-color: transparent;
+    }
+    margin-bottom: 2px;
+    min-height: 28px;
+  }
+}
+
+.addOne {
+  padding: 2px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.activated {
+  padding: 2px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

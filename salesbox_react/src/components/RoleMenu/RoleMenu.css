@@ -1,0 +1,49 @@
+@import 'variables.css';
+:global(.ui.menu .item):local(.avatar) {
+    padding: 0 0.66666667em;
+}
+
+.avatar {
+    height: 36px !important;
+    background-color: #fff !important;
+}
+
+/* .roleMenu:hover {
+    background-color: #f2f2f2 !important;
+} */
+
+.roleMenu {
+    background-color: #fff !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    cursor: pointer;
+}
+.container {
+  position: relative;
+  margin-left: 5px;
+  text-align: center;
+  color: red;
+}
+.nameOfImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #eeeeee;
+  /* text-transform: uppercase; */
+}
+.blankItems{
+  /* width: 20px; */
+  border-color: #fff !important;
+  width: 32px !important;
+}
+.menu {
+  /* padding: 2px !important; */
+  width: 210px;
+}
+.tab {
+  font-size: 11px !important;
+  /* font-weight: 500 !important; */
+}
+

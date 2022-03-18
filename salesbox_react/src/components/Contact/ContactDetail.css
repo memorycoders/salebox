@@ -1,0 +1,91 @@
+@import 'variables.css';
+
+:root {
+  --image-size: 96px;
+}
+
+.pane {
+  width: var(--pane-width);
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.centerImage {
+  position: absolute;
+  left: 50%;
+  top: -4px;
+  margin-left: calc(-1 * var(--image-size) / 2);
+  width: var(--image-size);
+  height: var(--image-size);
+  border-radius: calc(var(--image-size) / 2);
+  border-width: 4px;
+  border-color: var(--page-background-color);
+  background-color: var(--grey);
+  border-style: solid;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  overflow: hidden;
+  padding: 5px;
+  &.yellow {
+    background-color: var(--yellow);
+  }
+  &.red {
+    background-color: var(--red);
+  }
+  &.green {
+    background-color: var(--green);
+  }
+  & > img {
+    border-radius: 50%;
+    width: calc(var(--image-size) -18px);
+    height: calc(var(--image-size) -18px);
+  }
+}
+
+.heading {
+  text-align: center;
+  color: white;
+  font-size: var(--font-size-h3);
+  line-height: calc(var(--font-size-h3) * var(--golden-ratio));
+  margin-bottom: 4px;
+}
+
+.subHeading {
+  text-align: center;
+  color: white;
+  font-size: var(--font-size-h5);
+  line-height: calc(var(--font-size-h5) * var(--golden-ratio));
+}
+
+.contactDetails {
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  & > ul {
+    padding: 16px 8px;
+    margin: 0;
+    list-style-type: none;
+  }
+  & a {
+    color: inherit;
+    &:hover {
+      color: #777;
+    }
+  }
+}
+
+.controls {
+  padding: 4px 0px;
+  display: flex;
+  align-items: flex-end;
+  & .date {
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin: 0px 4px;
+  }
+  & .buttons {
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+}

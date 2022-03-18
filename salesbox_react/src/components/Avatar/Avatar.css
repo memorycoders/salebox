@@ -1,0 +1,45 @@
+@import 'variables.css';
+
+.wrapper {
+  border-style: solid solid solid solid;
+  border-color: rgb(200, 200, 200, 0.0);
+  border-width: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  /* &.NONE {
+    border-color: transparent;
+  } */
+  &.YELLOW {
+    border-color: #f8c168 !important;
+  }
+  &.GREEN {
+    border-color: #A9D231;
+  }
+  &.RED {
+    border-color: var(--red);
+  }
+  &.BLUE {
+    border-color: var(--blue);
+  }
+  &.BLUE {
+    border-color: var(--blue);
+  }
+}
+.avatar {
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgba(200, 200, 200, 0.2);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  i {
+    margin-right: 0px !important;
+  }
+}
+

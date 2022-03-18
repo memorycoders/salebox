@@ -1,0 +1,61 @@
+.clearPaddingRight {
+  padding-right: 0 !important;
+}
+.action {
+  background: #f3f4f4;
+  cursor: pointer;
+}
+.iconAdd {
+  height: 20px;
+}
+.title {
+  border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+  margin-bottom: 10px;
+}
+.title h4 {
+  display: inline-block !important;
+}
+.title img {
+  float: right;
+  margin: 5px 20px 0 0;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 4px;
+  height: 24px;
+}
+.title img:hover{
+  background-color: #f0f0f0;
+
+}
+
+.circleButtonTaskDetail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  margin-right: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.circleButtonTaskDetailCheck {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  margin-right: 5px;
+  background-color: #203847;
+  cursor: pointer;
+}
+
+.detailIconSize {
+  height: var(--detail-icon-size);
+  width: var(--detail-icon-size);
+}
+.actions{
+  text-align: right;
+}

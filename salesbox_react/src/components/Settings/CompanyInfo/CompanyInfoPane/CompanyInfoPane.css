@@ -1,0 +1,71 @@
+@import 'variables.css';
+
+.container {
+  padding: 10px;
+  padding-right: 0;
+}
+.row {
+  padding: 0 !important;
+}
+.label {
+  font-weight: 500;
+  width: 100px;
+}
+.notSetasDone,
+.setDone,
+.btn {
+  height: var(--list-icon-size);
+  width: var(--list-icon-size);
+  min-height: var(--list-icon-size);
+  min-width: var(--list-icon-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #f3f4f4;
+  cursor: pointer;
+}
+.notSetasDone {
+  background-color: #f3f4f4;
+  /* margin-right: 7px; */
+  div {
+    background: url('../../../../../public/Check.svg');
+    height: 11px;
+    background-size: 100% 100%;
+    width: 11px;
+    min-height: 11px;
+    min-width: 11px;
+  }
+}
+
+.setDone {
+  background-color: #1a3848;
+  /* margin-right: 7px; */
+  div {
+    background: url('../../../../../public/CheckHistory.svg');
+    height: 11px;
+    background-size: 100% 100%;
+    width: 11px;
+    min-height: 11px;
+    min-width: 11px;
+  }
+}
+.btnDoneDiv {
+  display: flex;
+  justify-content: center;
+}
+.btnDone {
+  font-size: var(--normal-text) !important;
+  font-weight: 500 !important;
+  border-radius: 5px !important;
+  padding: 0.5em 1em !important;
+  min-width: 75px;
+  height: var(--button) !important;
+  max-height: 28px !important;
+  min-height: 28px !important;
+  background-color: #1a3848 !important;
+  color: #fff !important;
+  margin-top: 14px !important;
+  width: 200px !important;
+  border: 1px solid #1a3848;
+}

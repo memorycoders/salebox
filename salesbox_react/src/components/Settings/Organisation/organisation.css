@@ -1,0 +1,332 @@
+@import 'variables.css';
+
+.secondary {
+  align-items: flex-start;
+  min-width: 100%;
+  margin-left: 0px !important;
+  padding-top: 10px !important;
+  padding-right: 30px !important;
+}
+
+.title {
+  font-size: var(--big-text);
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 7px 0.6rem 0px 0.9rem;
+  margin-top: 1px !important;
+}
+
+.bgMore {
+  background-color: #f3f4f4;
+  margin-left: 70px !important;
+}
+
+.notSetasDone,
+.setDone,
+.bgMore {
+  height: var(--list-icon-size);
+  width: var(--list-icon-size);
+  min-height: var(--list-icon-size);
+  min-width: var(--list-icon-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.vewContent {
+  /* margin-left: 0px !important; */
+}
+
+.itemDivider {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.viewAccodion {
+  /* padding-bottom: 0px !important;
+  padding-top: 0px !important; */
+  border-bottom-color: #d6d6d6 !important;
+  border-width: 0px 0px 1px !important;
+  border-style: solid !important;
+}
+
+.viewChildAccodion {
+  margin-left: 30px !important;
+  border-top-color: #d6d6d6 !important;
+  border-width: 1px 0px 0px !important;
+  border-style: solid !important;
+  padding: 10px 50px 10px 0px !important;
+}
+
+.discProfile {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.itemBlue {
+  background-color: #2f83eb;
+}
+
+.itemGreen {
+  background-color: #a9d231;
+}
+
+.itemRed {
+  background-color: #ed684d;
+}
+
+.itemYellow {
+  background-color: #f5b341;
+}
+
+.textEmail {
+  margin-bottom: 0px !important;
+  font-size: 11px;
+  margin-top: 2px;
+  align-items: center;
+  display: flex;
+}
+
+.textNumberuser {
+  font-size: 11px;
+  margin: 0;
+}
+
+.numberUserActive {
+  color: #d56772;
+}
+
+.commonModaltitle {
+  font-size: var(--large-text);
+}
+
+.commonCloseButton {
+  color: #1a3848 !important;
+  background-color: #fff !important;
+}
+
+.commonCloseButton:hover {
+  background-color: #e6e6e6 !important;
+}
+
+.commonCloseButton:focus {
+  background-color: #e6e6e6 !important;
+}
+
+.commonButton {
+  border: 1px solid #1a3848 !important;
+  font-size: var(--normal-text) !important;
+  font-weight: 500 !important;
+  border-radius: 5px !important;
+  padding: 0.5em 1em !important;
+  min-width: 75px;
+  height: var(--button) !important;
+  max-height: 28px !important;
+  min-height: 28px !important;
+}
+
+.commonDoneButton {
+  color: #ffffff !important;
+  background-color: #1a3848 !important;
+}
+
+.commonDoneButton:hover {
+  background-color: #1a3848c4 !important;
+}
+
+.commonDoneButton:focus {
+  background-color: #1a3848c4 !important;
+}
+
+.error {
+  font-size: 12px;
+  color: var(--red);
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
+.viewActionsOrga {
+  height: auto !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10 35 10 0;
+}
+
+.viewItemUser {
+  border-bottom-color: #d6d6d6 !important;
+  border-width: 0px 0px 1px !important;
+  border-style: solid !important;
+  padding: 0px !important;
+  height: 40px !important;
+  /* height: 40px !important; */
+  /* align-items: center !important; */
+  /* display: flex !important; */
+  /* justify-content: center !important; */
+}
+
+.titleItemUser {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.dropdownUser {
+  /* border-color: transparent !important; */
+}
+
+.viewItemAction {
+  display: grid !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.textViewAction {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: 3px;
+}
+
+.editTaskModal {
+  width: 600px !important;
+}
+
+.label {
+  width: 110px !important;
+  min-width: 110px !important;
+  padding-top: 1.5%;
+  /* padding-left: 1.36%; */
+  font-weight: 700;
+  font-size: var(--normal-text);
+  margin-left: 10px;
+}
+
+.formField {
+  max-width: 100% !important;
+  padding-right: 0px !important;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+.required {
+  color: red;
+  display: inline-block;
+  margin: 0px 2px;
+  font-size: var(--normal-text);
+}
+
+.iconColorView {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 10/2px !important;
+  margin-top: 1px !important;
+}
+
+.viewDropdownSelect > .text {
+  font-size: 15px !important;
+}
+
+.inputWraper {
+  width: 502px;
+  div {
+    div {
+      input {
+        height: 28px !important;
+        font-size: 11px !important;
+      }
+    }
+  }
+}
+
+.viewCheckbox {
+  margin-top: 1.5%;
+}
+
+.inputField {
+  height: 28px !important;
+  .ui.input {
+    input {
+      height: 28px !important;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .span {
+    right: 4%;
+  }
+  .spanNote {
+    right: 4%;
+  }
+  .focusDropdown {
+    width: 100% !important;
+  }
+  .dropdownForm {
+    width: 100% !important;
+  }
+  .formField {
+    max-width: 100% !important;
+  }
+}
+@media (min-width: 1300px) {
+  .span {
+    right: 4%;
+  }
+  .spanNote {
+    right: 4%;
+  }
+  .focusDropdown {
+    width: 100% !important;
+  }
+  .dropdownForm {
+    width: 100% !important;
+  }
+  .formField {
+    max-width: 100% !important;
+  }
+}
+
+.noteForm {
+  position: relative;
+  font-size: var(--normal-text) !important;
+}
+.noteForm textarea {
+  font-size: var(--normal-text) !important;
+}
+
+.spanNote {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-weight: 400;
+  font-size: 12px;
+}
+.button {
+  font-size: var(--normal-text) !important;
+  font-weight: 500 !important;
+  border-radius: 5px !important;
+  padding: 0.5em 1em !important;
+  min-width: 75px;
+  height: var(--button) !important;
+  max-height: 28px !important;
+  min-height: 28px !important;
+  background-color: #1a3848 !important;
+  color: #fff !important;
+  margin-top: 14px !important;
+  /* width: 100px !important; */
+  border: 1px solid #1a3848;
+  margin: 0 5px !important;
+}
+.description{
+  padding: 10px;
+  word-break: normal;
+  padding-right: 20px;
+}

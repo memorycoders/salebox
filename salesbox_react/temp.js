@@ -1,0 +1,1 @@
+{"firstName":"fn1","lastName":"ln1","discProfile":"NONE","type":null,"industry":null,"mediaType":"MANUAL","email":null,"mainEmailType":null,"phone":null,"mainPhoneType":null,"additionalEmailList":[],"additionalPhoneList":[],"relationship":"YELLOW","participantList":[]}

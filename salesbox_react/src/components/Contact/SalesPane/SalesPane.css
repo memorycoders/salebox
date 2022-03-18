@@ -1,0 +1,41 @@
+.circle {
+    height: 19px;
+    width: 19px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i {
+        margin: 0px !important;
+        margin-left: 1px !important;
+        font-size: 14px !important;
+    }
+}
+.circleGreen {
+  height: 19px;
+    width: 19px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i {
+        margin: 0px !important;
+        margin-left: 0px !important;
+        font-size: 14px !important;
+    }
+}
+@media (min-width: 1344px) {
+  .circleGreen {
+    height: 19px;
+    width: 19px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i {
+        margin: 0px !important;
+        margin-left: -1px !important;
+        font-size: 14px !important;
+    }
+}
+}

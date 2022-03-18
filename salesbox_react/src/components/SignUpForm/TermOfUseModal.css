@@ -1,0 +1,39 @@
+@import 'variables.css';
+
+.root {
+
+}
+
+.tos {
+  border-radius: 20px !important;
+}
+
+.tos > i.icon {
+  /* font-size: 2rem !important;
+  top: 0.5rem !important;
+  right: 1rem !important; */
+}
+
+.header {
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+  border-bottom: 0px !important;
+  text-align: left;
+  background: #14313d !important;
+  color: #fff !important;
+}
+
+.content {
+  height: 500px;
+  width: 360px;
+  font-size: 14px !important;
+}
+
+.content p {
+  font-size: 14px;
+}
+
+.action {
+  border-bottom-left-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+}

@@ -1,0 +1,94 @@
+.description {
+  width: 100%;
+  font-size: 11px !important;
+}
+
+.rowItem {
+  padding-bottom: 3px !important;
+  padding-top: 3px !important;
+}
+
+.rowTag {
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+  margin-bottom: 5px;
+}
+
+.action {
+  background: #e5e5e5 !important;
+  cursor: pointer;
+}
+.viewItemDraggable:hover{
+  overflow-x: hidden;
+  overflow-y: overlay !important;
+}
+.commonButton {
+  border: 1px solid #1a3848 !important;
+  font-size: var(--normal-text) !important;
+  font-weight: 500 !important;
+  border-radius: 5px !important;
+  /* padding: 2px 8px !important; */
+  padding: 0px !important;
+  min-width: 75px !important;
+  height: var(--button) !important;
+  height: 20px !important;
+}
+
+.commonDoneButton {
+  color: #fff !important;
+  background-color: #1a3848 !important;
+}
+
+.commonDoneButton:hover {
+  background-color: #1a3848c4 !important;
+}
+.tagItem {
+  margin: 0 5px 5px 0 !important;
+  font-size: 11px !important;
+  border-radius: 10px !important;
+  background-color: #1a3848 !important;
+  color: #fff !important;
+  font-weight: 400 !important;
+  padding: 0.4em 0.833em !important;
+}
+.detailTagLabel {
+  font-size: var(--normal-text) !important;
+  display: inline-block;
+  margin: 2px !important;
+  background-color: #1a3848 !important;
+  color: #fff !important;
+  font-weight: 400 !important;
+}
+.listTag {
+  display: flex;
+  flex-wrap: wrap;
+}
+.iconList {
+  background: #f0f0f0 none;
+  border-radius: 12px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3px;
+}
+.iconList:hover {
+  background-color: #f0f0f0;
+  border: 1px solid #f0f0f0;
+}
+
+.iconItem {
+  margin: -3px 0 0 0 !important;
+}
+
+.starButton {
+  background: gray;
+  padding: 6px !important;
+}
+.starButton .star {
+  background: url('../../../../../public/myStar.svg');
+  width: 12px;
+  background-size: 100% 100%;
+  height: 12px;
+}

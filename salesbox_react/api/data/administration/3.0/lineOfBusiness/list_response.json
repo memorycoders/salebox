@@ -1,0 +1,105 @@
+{
+  "lineOfBusinessDTOList": [{
+    "uuid": "df5a78d4-6fa7-4bbb-a0e8-00f86ec84082",
+    "name": "Apple",
+    "salesMethodDTO": null,
+    "numberOfProducts": 2,
+    "numberActiveProducts": 2
+  }, {
+    "uuid": "5037f5bf-1f67-4b22-981c-07dc3edee6c1",
+    "name": "Consulting",
+    "salesMethodDTO": {
+      "uuid": "15d9af8f-eeb8-4804-9939-d767002746b6",
+      "name": "Faser - Auto(Old)",
+      "rating": 0.0,
+      "privacyType": "0",
+      "price": 0.0,
+      "using": false,
+      "editable": true,
+      "notificationTime": 2,
+      "notificationStatus": null,
+      "loseMeetingRatio": 0,
+      "downloaded": false,
+      "totalPercent": null,
+      "hoursPerQuote": null,
+      "hoursPerContract": null,
+      "travellingHoursPerAppointment": null,
+      "keyCode": null,
+      "mode": null,
+      "manualProgress": null,
+      "salesMethodVersion": 0,
+      "deleted": null,
+      "activityDTOList": []
+    },
+    "numberOfProducts": 3,
+    "numberActiveProducts": 3
+  }, {
+    "uuid": "6e8ce92e-5c8c-4716-aff6-6a992a37db3a",
+    "name": "FortNox",
+    "salesMethodDTO": null,
+    "numberOfProducts": 34,
+    "numberActiveProducts": 34
+  }, {
+    "uuid": "7e3ea4c5-6a3e-4f2c-bc64-6f1d7895a262",
+    "name": "Sales platform",
+    "salesMethodDTO": {
+      "uuid": "15d9af8f-eeb8-4804-9939-d767002746b6",
+      "name": "Faser - Auto(Old)",
+      "rating": 0.0,
+      "privacyType": "0",
+      "price": 0.0,
+      "using": false,
+      "editable": true,
+      "notificationTime": 2,
+      "notificationStatus": null,
+      "loseMeetingRatio": 0,
+      "downloaded": false,
+      "totalPercent": null,
+      "hoursPerQuote": null,
+      "hoursPerContract": null,
+      "travellingHoursPerAppointment": null,
+      "keyCode": null,
+      "mode": null,
+      "manualProgress": null,
+      "salesMethodVersion": 0,
+      "deleted": null,
+      "activityDTOList": []
+    },
+    "numberOfProducts": 5,
+    "numberActiveProducts": 5
+  }, {
+    "uuid": "a9e65e1a-9e55-47a4-bd87-d8f26fb6715d",
+    "name": "Samsung",
+    "salesMethodDTO": null,
+    "numberOfProducts": 1,
+    "numberActiveProducts": 1
+  }, {
+    "uuid": "53a20de6-0355-469d-bc68-fc078fdd6e80",
+    "name": "TP_Export",
+    "salesMethodDTO": {
+      "uuid": "fdc5db63-72e7-4d09-a1d8-83a0166b489f",
+      "name": "Dynamic - Automatic",
+      "rating": 4.0,
+      "privacyType": "4",
+      "price": 0.0,
+      "using": true,
+      "editable": true,
+      "notificationTime": 2,
+      "notificationStatus": null,
+      "loseMeetingRatio": 0,
+      "downloaded": false,
+      "totalPercent": null,
+      "hoursPerQuote": null,
+      "hoursPerContract": null,
+      "travellingHoursPerAppointment": null,
+      "keyCode": "SOLUTION_SELLING_PRIVATE_SECTOR",
+      "mode": null,
+      "manualProgress": null,
+      "salesMethodVersion": 0,
+      "deleted": null,
+      "activityDTOList": []
+    },
+    "numberOfProducts": 0,
+    "numberActiveProducts": 0
+  }]
+}

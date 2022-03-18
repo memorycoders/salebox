@@ -1,0 +1,31 @@
+@import 'variables.css';
+
+.discProfile {
+  line-height: 24px;
+  font-weight: 700;
+  margin-top: var(--default-padding);
+  .color {
+    margin-right: calc(var(--default-padding) / 2);
+    border-radius: 2px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+
+    &.RED {
+      background-color: var(--red);
+    }
+    &.YELLOW {
+      background-color: var(--yellow);
+    }
+    &.BLUE {
+      background-color: var(--blue);
+    }
+    &.GREEN {
+      background-color: #A9D231;
+    }
+  }
+}
+.description {
+  font-size: 11px;
+}

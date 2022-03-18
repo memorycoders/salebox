@@ -1,0 +1,134 @@
+.fieldGroup {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding-left: 0 !important;
+}
+.fieldGroupMargin {
+  margin: 0 5px !important;
+}
+.row {
+  padding-top: 0 !important ;
+}
+.label {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+}
+.description {
+  width: 100%;
+  font-size: 11px !important;
+}
+.commonButton {
+  border: 1px solid #1a3848 !important;
+  font-size: var(--normal-text) !important;
+  font-weight: 500 !important;
+  border-radius: 5px !important;
+  /* padding: 2px 8px !important; */
+  padding: 0px !important;
+  min-width: 75px !important;
+  height: var(--button) !important;
+  height: 20px !important;
+  color: #fff !important;
+  background-color: #1a3848 !important;
+}
+
+.commonButton:hover {
+  background-color: #1a3848c4 !important;
+}
+.inputForm {
+  max-height: 28px !important;
+  height: 28px !important;
+  min-height: 28px !important;
+  font-size: 11px !important;
+  font-weight: 400 !important;
+  width: 100%;
+}
+.requiredField {
+  color: red;
+  position: absolute;
+  left: 65px;
+  top: 0px;
+  font-size: 11px;
+}
+.addTagIcon {
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 4px;
+  height: 24px;
+}
+.addTagIcon:hover {
+  background-color: #f0f0f0;
+}
+.listTag {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tagHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tagHeader > p {
+  margin: 0;
+}
+.tagItem {
+  margin: 0 5px 5px 0 !important;
+  font-size: 11px !important;
+  border-radius: 10px !important;
+  background-color: #1a3848 !important;
+  color: #fff !important;
+  font-weight: 400 !important;
+  padding: 0.4em 0.833em !important;
+}
+.errorMessage {
+  color: #ed684e !important;
+  font-size: 11px;
+  position: absolute;
+}
+.fieldHasValidate {
+  width: calc(100% - 100px);
+}
+.fieldNotHasValidate {
+  width: calc(100% - 100px) !important;
+}
+.commonButton {
+  border: 1px solid #1a3848 !important;
+  font-size: var(--normal-text) !important;
+  font-weight: 500 !important;
+  border-radius: 5px !important;
+  padding: 0.5em 1em !important;
+  min-width: 75px;
+  height: var(--button) !important;
+  max-height: 28px !important;
+  min-height: 28px !important;
+}
+
+.commonDoneButton {
+  color: #fff !important;
+  background-color: #1a3848 !important;
+}
+
+.commonDoneButton:hover {
+  background-color: #1a3848c4 !important;
+}
+
+.competencesExper * {
+  font-size: 11px;
+}
+
+.dropdown {
+  border: none !important;
+}
+
+.detailTagLabelContainer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+}
+
+.detailTagLabel {
+  font-size: var(--normal-text) !important;
+  display: inline-block;
+  margin: 2px !important;
+}

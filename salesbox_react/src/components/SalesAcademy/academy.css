@@ -1,0 +1,112 @@
+@import 'variables.css';
+
+.listItem {
+  /* display: flex;
+  flex-wrap: wrap; */
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 280px);
+  justify-content: space-between;
+}
+.listItemLess {
+  display: flex;
+  flex-wrap: wrap;
+/*
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 280px);
+  justify-content: space-between; */
+}
+.subContainer {
+  height: calc(100% - 50px);
+  overflow: hidden;
+}
+.subContainer:hover {
+  overflow-y: overlay;
+}
+.videoDuration {
+  color: #fff;
+  background-color: #283742;
+  padding: 2px 6px;
+  position: absolute;
+  bottom: 42px;
+  right: 0;
+  margin: 0;
+}
+.containerItem {
+  position: relative;
+  flex: 0 1;
+  justify-content: flex-start;
+  margin: 0 20px 20px 0;
+}
+.labelVideoItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 0;
+  cursor: pointer;
+}
+.progressDiv {
+  position: absolute;
+  width: 260px;
+  bottom: 12px;
+}
+.buttonPlayVideoDiv {
+  position: absolute !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  top: 80px;
+}
+.buttonPlayVideo {
+  width: 8.5em;
+  height: 5em;
+  cursor: pointer;
+}
+.labelVideoItem > span {
+  background-color: grey;
+  color: #fff;
+  padding: 2px;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  margin-right: 10px;
+  font-size: 9px !important;
+}
+.labelVideoItem > p {
+  font-weight: 700 !important;
+}
+.divButton {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+}
+.button {
+  border: 1px solid #1a3848 !important;
+  font-size: var(--normal-text) !important;
+  font-weight: 500 !important;
+  border-radius: 5px !important;
+  padding: 0.25em 1em !important;
+  height: var(--button) !important;
+  max-height: 18px !important;
+  min-height: 18px !important;
+  min-width: 130px;
+  color: #fff !important;
+  background-color: #1a3848 !important;
+  margin: 0 !important;
+}
+.button:hover {
+  background-color: #1a3848c4 !important;
+}
+.videWrapper {
+  width: 100%;
+  height: 120px;
+  border-radius: 10px;
+}
+.leaderBoardItem {
+  padding: 5px 0 !important;
+  cursor: pointer;
+}

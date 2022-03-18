@@ -1,0 +1,16 @@
+{
+  "queryString": {
+    "sessionKey": "5c602528-9816-4fcb-b9ff-8c7a2f2baa39",
+    "token": "208f1859-2c62-4d57-bdc9-736edf3d93d8",
+    "enterpriseID": "ed00b3e4-ecbe-4f01-9585-3ccc2dc693b7"
+  },
+  "methods": ["OPTION", "POST"],
+  "payload": {
+    "customFilter": "recent",
+    "roleFilterType": "Person",
+    "roleFilterValue": "d43cc38a-883b-44df-a8ec-2ff707859bca",
+    "orderBy": "closedSales",
+    "searchFieldDTOList": [],
+    "ftsTerms": ""
+  }
+}

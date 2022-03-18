@@ -1,0 +1,9 @@
+@border: none;
+@borderRadius: 0;
+
+@invertedBoxShadow: 1px 3px 10px 2px rgba(240, 240, 240, 0.75);
+
+@boxShadow:
+  1px 3px 3px 0px rgba(240, 240, 240, 0.2),
+  1px 3px 15px 2px rgba(240, 240, 240, 0.2)
+;

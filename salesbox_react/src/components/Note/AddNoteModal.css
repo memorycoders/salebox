@@ -1,0 +1,9 @@
+.noteModalHeader {
+    background-color: #feb766 !important;
+    color: #fff !important;
+}
+
+.noteModalContainer {
+    /* width: 600px !important; */
+    height: 250px !important;
+}

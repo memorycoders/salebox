@@ -1,0 +1,66 @@
+@import 'variables.css';
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.header {
+  flex-grow: 0;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.body {
+  flex-grow: 1;
+  flex-shrink: 0;
+  background-color: #fff;
+  flex-basis: auto;
+  position: relative;
+  z-index: 2;
+  height: calc(100% - 56px);
+}
+.sbBody {
+  display: flex;
+  border-top: 1px solid #f1f1f1;
+  height: 100%;
+
+  .sbLeftMenu {
+    padding-top: 20px;
+    flex-basis: 14.5rem;
+    flex-grow: 1;
+    border-right: 1px solid #f1f1f1;
+  }
+  .sbContent {
+    /* padding-top: 20px; */
+    position: relative;
+    flex-grow: 999;
+    
+  }
+  &.collapseMenu {
+    .sbLeftMenu {
+      flex-basis: 3rem;
+    }
+  }
+}
+.hideMenu {
+  .sbLeftMenu {
+    display: none;
+  }
+}
+.hoverMenu {
+  .sbLeftMenu {
+    position: absolute;
+    background:white;
+    z-index: 1001;
+    height: 100vh;
+    width: 14.5rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  }
+  .sbContent {
+    margin-left: 61.5px;
+  }
+}
+

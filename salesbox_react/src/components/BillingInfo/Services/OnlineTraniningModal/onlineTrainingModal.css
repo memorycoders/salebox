@@ -1,0 +1,17 @@
+.form {
+}
+.formGroup {
+}
+.labelForm {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  width: 110px !important;
+  padding-left: 0 !important;
+}
+.wraper {
+  width: 100%;
+}
+.errorForm {
+  font-size: 11px !important;
+  color: #ed684e;
+}

@@ -1,0 +1,59 @@
+@import 'variables.css';
+
+.container {
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 8px;
+  display: flex;
+  width: calc(100%);
+  flex-direction: column;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.list {
+  position: relative;
+  flex-grow: 1;
+}
+
+.left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transition: right 0s;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  transition-delay: 0s;
+  &.collapsed {
+    right: calc(var(--pane-width));
+    transition-delay: calc(var(--transition-duration) * 1.1);
+  }
+}
+
+.detail {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transition: width var(--transition-duration) ease-in-out;
+  background-color: var(--page-background-color);
+  z-index: 2;
+  &.active {
+    transition-delay: calc(var(--transition-duration) * 1.1);
+    width: var(--pane-width);
+  }
+}
+

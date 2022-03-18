@@ -1,0 +1,188 @@
+@import 'variables.css';
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.step {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  border-right: 1px solid #eee;
+  justify-items: flex;
+  align-items: center;
+  span {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+    background-color: #aeaeae;
+    color: #fff;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+}
+
+.notBorderRight {
+  border-right: none !important;
+}
+
+.actionBtn {
+  margin-left: 20px;
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.margin {
+  margin-right: 20px !important;
+}
+.btn {
+  font-size: var(--normal-text) !important;
+  font-weight: 500 !important;
+  border-radius: 5px !important;
+  padding: 0.5em 1em !important;
+  min-width: 70px;
+  height: 28px !important;
+  height: var(--button) !important;
+  max-height: 28px !important;
+  min-height: 28px !important;
+  background-color: #1a3848 !important;
+  color: #fff !important;
+  margin-top: 14px;
+}
+
+.btnActive {
+  background-color: #1a3848c4 !important;
+}
+
+.btnLabel {
+  /* margin-top: 5px !important;
+  margin-bottom: 5px;
+  padding: 0.5em 1em !important;
+  padding-bottom: 0.6em !important;
+  height: auto !important;
+  font-size: 10px !important;
+  min-height: inherit !important; */
+  padding-top: 8px !important;
+}
+
+.columMap {
+  margin-left: 20px;
+  width: 70%;
+  height: 300px;
+}
+
+.notCenter {
+  align-items: baseline !important;
+}
+
+.notBorder {
+  border-bottom: none !important;
+}
+
+.listItem {
+  display: flex;
+  min-height: 40px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #c0c1c2;
+  padding-left: 4px;
+  font-size: 10px;
+  &.Title {
+    font-weight: bold;
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: var(--border-color);
+    margin-bottom: 2px;
+    min-height: 28px;
+  }
+}
+
+.mapColumn {
+  padding: 2px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+
+.salesBox {
+  padding: 2px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+
+.columnActions {
+  padding: 2px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown {
+  width: 75%;
+}
+
+.bgMore {
+  height: var(--list-icon-size);
+  width: var(--list-icon-size);
+  min-height: var(--list-icon-size);
+  min-width: var(--list-icon-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #f3f4f4;
+  cursor: pointer;
+}
+
+.action {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnAccount {
+  background-color: #5F6A7C !important;
+}
+
+.btnContact {
+  background-color:rgb(97, 153, 139) !important;
+}
+.vericalScroll{
+  overflow: hidden scroll;
+  height: 95%;
+}
+.importing {
+  text-align: center;
+}
+.fTitleImporting {
+  display: inline-block;
+}
+.lineImporting {
+  width: 100%;
+  height: 1px;
+  display: inline-block;
+  background: gray;
+  margin: 5px 0;
+}
+.sTitleImporting {
+  margin-bottom: 1rem !important;
+}

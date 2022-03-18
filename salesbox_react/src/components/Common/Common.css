@@ -1,0 +1,15 @@
+
+@import 'variables.css';
+.BG_ACTIVITIES_TASKS, .BG_ACTIVITIES_APPOINTMENTS {
+    color: white !important;
+    background-color: var(--activity) !important;
+
+}
+.BG_DELEGATION_LEADS, .BG_DELEGATION_TASKS {
+    color: white !important;
+    background-color: var(--delegation) !important;
+}
+.BG_PIPELINE_LEADS, .BG_LEAD_TASK, .BG_LEAD_NOTE {
+    color: white !important;
+    background-color: var(--pipeline) !important;
+}

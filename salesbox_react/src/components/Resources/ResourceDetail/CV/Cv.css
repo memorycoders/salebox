@@ -1,0 +1,161 @@
+.description {
+  width: 100%;
+  font-size: 11px !important;
+}
+
+.rowItem {
+  padding-bottom: 3px !important;
+  padding-top: 3px !important;
+}
+
+.rowTag {
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+  margin-bottom: 5px;
+  /* margin-top: -15px; */
+}
+
+.action {
+  background: #e5e5e5 !important;
+  cursor: pointer;
+}
+
+.commonButton {
+  border: 1px solid #1a3848 !important;
+  font-size: var(--normal-text) !important;
+  font-weight: 500 !important;
+  border-radius: 5px !important;
+  /* padding: 2px 8px !important; */
+  padding: 0px !important;
+  min-width: 75px !important;
+  height: var(--button) !important;
+  height: 20px !important;
+}
+
+.commonDoneButton {
+  color: #fff !important;
+  background-color: #1a3848 !important;
+}
+
+.commonDoneButton:hover {
+  background-color: #1a3848c4 !important;
+}
+.tagItem {
+  margin: 0 5px 5px 0 !important;
+  font-size: 11px !important;
+  border-radius: 10px !important;
+  background-color: #1a3848 !important;
+  color: #fff !important;
+  font-weight: 400 !important;
+  padding: 0.4em 0.833em !important;
+}
+.listTag {
+  display: flex;
+  flex-wrap: wrap;
+}
+.detailTagLabel {
+  font-size: var(--normal-text) !important;
+  display: inline-block;
+  margin: 2px !important;
+  background-color: #1a3848 !important;
+  color: #fff !important;
+  font-weight: 400 !important;
+}
+.iconList {
+  background: #f3f4f4 none;
+  border-radius: 12px;
+  width: 24px !important;
+  height: 24px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  /* margin-right: 3px; */
+}
+.iconList:hover {
+  background-color: #cacbcd;
+  border: 1px solid #cacbcd;
+}
+
+.iconItem {
+  margin-left: 3px !important;
+  border-width: 0px !important;
+  font-size: 15px !important;
+}
+
+.starButton {
+  background: #f3f4f4 !important;
+  padding: 4px !important;
+}
+.starButton .star {
+  background: url('../../../../../public/myStar.svg');
+  width: 15px !important;
+  height: 15px !important;
+  background-size: cover !important;
+}
+
+.starButtonActive {
+  background: rgb(253, 245, 232) !important;
+  padding: 4px !important;
+}
+.starButtonActive .star {
+  background: url('../../../../../public/myStar_active.png');
+  width: 15px !important;
+  height: 15px !important;
+  background-size: cover !important;
+}
+
+._form {
+  padding-right: 1rem;
+  padding-left: 0.43rem;
+  font-size: var(--normal-text);
+}
+._form ._label {
+  width: 110px !important;
+  min-width: 110px !important;
+  padding-top: 7px;
+  padding-left: 1.36%;
+  font-weight: 700;
+  font-size: var(--normal-text) !important;
+}
+._form ._input {
+  width: 100%;
+  font-size: var(--normal-text) !important;
+}
+._form input {
+  font-size: var(--normal-text);
+  height: 28px;
+  line-height: 28px;
+}
+.inputWraper100 {
+  width: 100% !important;
+  margin-left: 5px !important;
+}
+
+.requiredField {
+  color: red;
+  /* position: absolute; */
+  /* left: 65px;
+  top: 0px; */
+  margin-left: 5px;
+  font-size: 11px;
+}
+
+.iconEyeCheck {
+  background: #aad041 none;
+  border-radius: 12px;
+  width: 24px !important;
+  height: 24px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.iconEyeUnCheck {
+  background:#eb6953 none;
+  border-radius: 12px;
+  width: 24px !important;
+  height: 24px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}

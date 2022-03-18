@@ -1,0 +1,22 @@
+.header {
+    display: flex !important;
+    justify-content: space-between !important;
+}
+.add {
+    padding-left: 35px;
+    font-size: 35px;
+    font-weight: 700;
+}
+.closeDiv {
+    padding-right: 50px;
+}
+.close {
+    background-color: #ffffff;
+}
+
+.addTaskModal {
+    width: 60% !important;
+    min-width: 500px !important;
+    max-width: 700px !important;
+    height: auto !important;
+}

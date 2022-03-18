@@ -1,0 +1,11 @@
+@import 'variables.css';
+
+.top {
+  position: fixed;
+  top: 40px;
+  width: 150px;
+  right: 10px;
+  left: calc(50% - 100px);
+  /* margin-left: calc(var(--pane-width) / -2); */
+  z-index: 1001;
+}

@@ -1,0 +1,35 @@
+@import 'variables.css';
+
+.error {
+  font-size: calc(var(--font-size-base) - 2px);
+  color: var(--red);
+}
+.countryDropdown {
+  /* width: 95% !important; */
+  width: 100% !important;
+  div {
+    span {
+      font-size: 14px !important;
+    }
+  }
+}
+.countryPhoneDropdown {
+  div {
+    span {
+      font-size: 14px !important;
+    }
+  }
+}
+.industryDropdown {
+  display: flex;
+  justify-content: space-between;
+}
+.faqIcon {
+  margin-top: 9px !important;
+  margin-left: 9px !important;
+}
+.preload {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}

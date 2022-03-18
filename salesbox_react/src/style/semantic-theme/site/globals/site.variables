@@ -1,0 +1,31 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+@primaryColor   : #173849;
+@secondaryColor : @olive;
+@red            : #db2828;
+@orange         : #f8c168;
+@yellow         : #f8c168;
+@olive          : #cdcd00;
+@green          : #4e9b89;
+@teal           : #008080;
+@blue           : #68BDD4;
+@violet         : #EE82EE;
+@purple         : #7d7fbc;
+@pink           : #FFD1DC;
+@brown          : #a4867c;
+@grey           : #5F6A7B;
+@black          : #13313c;
+
+@relativeBorderRadius: 2px;
+@absoluteBorderRadius: 2px;
+@solidBorderColor    : rgba(240, 240, 240, 0.75);
+@borderColor         : rgba(230, 230, 230, 0.75);
+@internalBorderColor : rgba(240, 240, 240, 0.75);
+
+@defaultBorderRadius: @absoluteBorderRadius;
+@fontName          : 'Open Sans';
+
+@emSize   : 11px;
+@fontSize : @emSize;

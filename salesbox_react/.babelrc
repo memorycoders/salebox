@@ -1,0 +1,35 @@
+{
+  "compact": true,
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "modules": false,
+        "targets": {
+          "browsers": ["last 2 versions", "ie >= 9"]
+        }
+      }
+    ],
+    "@babel/preset-react",
+    "@babel/preset-flow"
+  ],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./src"]
+    }],
+    "@babel/plugin-proposal-optional-chaining",
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-proposal-class-properties",
+    ["oxygen-i18n", {
+      "throttleTime": 2500,
+      "statsFile": "./tmp/stats.json",
+      "bundleFile": "./tmp/messages.json"
+    }],
+    "react-imported-component/babel"
+  ],
+  "env": {
+    "test": {
+      "plugins": ["@babel/plugin-transform-modules-commonjs"]
+    }
+  }
+}

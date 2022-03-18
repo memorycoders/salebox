@@ -1,0 +1,196 @@
+{
+  "workDataWorkDataDTOList": [{
+    "uuid": "1009cd95-7914-402f-9841-5dfed564e349",
+    "type": "ORDER_ROW_TYPE",
+    "name": "Order rows type",
+    "value": "START/END",
+    "changeable": true
+  }, {
+    "uuid": "c3979f64-74ac-4782-9ff3-6f0d9208f85d",
+    "type": "WARNINGS",
+    "name": "Gap analysis threshold",
+    "value": "80",
+    "changeable": true
+  }, {
+    "uuid": "fc70b7a6-7f50-4a36-aa43-c221dfcf36ba",
+    "type": "WARNINGS",
+    "name": "Meeting",
+    "value": "85",
+    "changeable": true
+  }, {
+    "uuid": "3c179e02-b8a8-4f89-a451-e2cb8f4bb117",
+    "type": "WARNINGS",
+    "name": "Profit",
+    "value": "85",
+    "changeable": true
+  }, {
+    "uuid": "cacfdca8-aa5b-4287-b686-2269ca1602f4",
+    "type": "WARNINGS",
+    "name": "Margin",
+    "value": "80",
+    "changeable": true
+  }, {
+    "uuid": "6ad9c0dd-d0a6-48b9-9839-19ae0195e4ba",
+    "type": "WARNINGS",
+    "name": "Order value",
+    "value": "85",
+    "changeable": true
+  }, {
+    "uuid": "8bebdafb-86d0-4daa-9e55-ba9fa0cac225",
+    "type": "WARNINGS",
+    "name": "Revenue",
+    "value": "85",
+    "changeable": true
+  }, {
+    "uuid": "7ca6452c-5250-4e25-a130-f8bc2589d4d1",
+    "type": "FISCAL_YEAR",
+    "name": "Book-to-bill",
+    "value": "1",
+    "changeable": true
+  }, {
+    "uuid": "d75da8f9-2194-4365-963b-97e25d882a57",
+    "type": "FISCAL_YEAR",
+    "name": "Margin",
+    "value": "0",
+    "changeable": true
+  }, {
+    "uuid": "e2a428b8-ceaa-418b-b6ca-7359b96293e1",
+    "type": "FISCAL_YEAR",
+    "name": "Start M/D",
+    "value": "01-01",
+    "changeable": true
+  }, {
+    "uuid": "e4db3b47-a875-4110-a84c-dcdcb8e5d71e",
+    "type": "WORK_LOAD",
+    "name": "Meetings/deal",
+    "value": "5",
+    "changeable": true
+  }, {
+    "uuid": "064c4340-22e9-4722-a818-30e20e0aeebb",
+    "type": "WORK_LOAD",
+    "name": "Median deal size",
+    "value": null,
+    "changeable": true
+  }, {
+    "uuid": "9754b035-5823-4859-aa1d-e9a1f0822a2a",
+    "type": "WORK_LOAD",
+    "name": "Median deal time",
+    "value": null,
+    "changeable": true
+  }, {
+    "uuid": "ee6ef5d0-0c78-457e-9b1c-544678666f0c",
+    "type": "WORK_LOAD",
+    "name": "Calls/meeting",
+    "value": "5",
+    "changeable": true
+  }, {
+    "uuid": "4b3d9122-c5be-4b32-8b80-c597e7befd76",
+    "type": "WORK_LOAD",
+    "name": "Picks/call",
+    "value": "5",
+    "changeable": true
+  }, {
+    "uuid": "e6cda9eb-d969-414e-940b-164b2729e0d6",
+    "type": "WORK_LOAD",
+    "name": "Hours/meeting",
+    "value": "1",
+    "changeable": true
+  }, {
+    "uuid": "dce3378a-0a2a-4c1f-bea9-3f75219f41b2",
+    "type": "WORK_LOAD",
+    "name": "Median lead time",
+    "value": "120",
+    "changeable": true
+  }, {
+    "uuid": "ec0a7303-21ab-4813-9848-68504f5316a2",
+    "type": "WORK_LOAD",
+    "name": "Minutes/call",
+    "value": "10",
+    "changeable": true
+  }, {
+    "uuid": "88c0a523-77b9-4e8a-ab06-e20fc8ceb88d",
+    "type": "WORK_LOAD",
+    "name": "Minutes/pick",
+    "value": "5",
+    "changeable": true
+  }, {
+    "uuid": "47974e10-a8db-44f3-a46e-77be4d6a5c19",
+    "type": "WORK_LOAD",
+    "name": "Notification day",
+    "value": "2",
+    "changeable": true
+  }, {
+    "uuid": "3f617d13-57d5-44da-bcb1-3ab0289ac5a1",
+    "type": "WORK_LOAD",
+    "name": "Currency",
+    "value": "USD",
+    "changeable": true
+  }, {
+    "uuid": "baf91b3f-1460-46ff-ba3c-8f495de1b06c",
+    "type": "WORK_LOAD",
+    "name": "Hours/contract",
+    "value": "2",
+    "changeable": true
+  }, {
+    "uuid": "fb7a6ba3-5e8f-4375-986d-61b86799b145",
+    "type": "WORK_LOAD",
+    "name": "Hours/quote",
+    "value": "2",
+    "changeable": true
+  }, {
+    "uuid": "9a4e63a5-b3be-4594-b449-3d49d1216180",
+    "type": "WORK_LOAD",
+    "name": "Travelling hours/meeting",
+    "value": "2",
+    "changeable": true
+  }, {
+    "uuid": "ddff404f-9a88-43c4-a241-bd9da42af165",
+    "type": "WORK_LOAD",
+    "name": "Hours/workday",
+    "value": "8",
+    "changeable": true
+  }, {
+    "uuid": "4f0cdc32-de03-4c1c-8e66-b64fc6c2b0b8",
+    "type": "WORK_LOAD",
+    "name": "No workdays/week",
+    "value": "5",
+    "changeable": true
+  }, {
+    "uuid": "b1309326-f5cc-4839-92f6-edfee6abaa57",
+    "type": "TARGET",
+    "name": "Median deal size",
+    "value": "200000",
+    "changeable": true
+  }, {
+    "uuid": "ff720cd9-4440-44a5-a593-ce0c0250d47c",
+    "type": "TARGET",
+    "name": "Appointments per week",
+    "value": "5",
+    "changeable": true
+  }, {
+    "uuid": "936a1e8b-8579-4834-ac58-2be7333ec628",
+    "type": "TARGET",
+    "name": "Dials per week",
+    "value": "125",
+    "changeable": true
+  }, {
+    "uuid": "a817bbc0-a853-4db0-8af9-6299ae9e99d8",
+    "type": "TARGET",
+    "name": "Calls per week",
+    "value": "25",
+    "changeable": true
+  }, {
+    "uuid": "d104821b-24f7-4421-a13c-7b4f023a0dfd",
+    "type": "TARGET",
+    "name": "Send quotes per week",
+    "value": "3",
+    "changeable": true
+  }, {
+    "uuid": "85f5c7f3-5c8b-4e70-9b75-922a90499f85",
+    "type": "TARGET",
+    "name": "Send contracts per week",
+    "value": "1",
+    "changeable": true
+  }],
+  "hasChangeCurrency": false
+}

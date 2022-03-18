@@ -1,0 +1,8 @@
+.account {
+}
+.title {
+  border-bottom: 1px solid rgb(212, 212, 213) !important;
+  i {
+    float: right !important;
+  }
+}

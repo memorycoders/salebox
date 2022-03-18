@@ -1,0 +1,43 @@
+<div class="input-holder dropdown sb-dropdown-wrapper" >
+    <input type="text" class="input-text" style="width: 90%" placeholder="" ng-model="searchText" ng-keydown="checkClickInside($event)" ng-change="onChangeSearchText()"
+           ng-trim="false" ng-model-options="{ debounce: 500 }" />
+    <i class="fa fa-caret-down" ng-click="toggleDisplayProductTagOptions($event)" ng-if="!isEmptyProductTagOptions()"></i>
+    <ul class="dropdown-menu dropdown-menu-right scroll-field-product-tag display-block custom-scroll-bar" style="overflow-x: hidden;">
+        <li ng-if="isSearching">Loading...</li>
+        <li>
+            <div class="scrollingDiv dropdown-fix-height">
+                <table class="table" >
+                    <tr ng-repeat="product in productTagOptions" ng-click="onSelect(product)" class="dropdown-item">
+                        <td >
+                            {{formatTag(product.name)}}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </li>
+    </ul>
+    <script data-remove="false" data-concat="false"  type="text/javascript-lazy">
+        $(".scrollingDiv").perfectScrollbar();
+    </script>
+</div>
+<div >
+    <div class="element-list-input input-dropdown">
+    <span ng-repeat="cfValDTO in customField.customFieldValueDTOList">
+        <label class="label label-default" title="{{cfValDTO.value}}">
+               {{formatTag(cfValDTO.value)}}&emsp;<span ng-click="onRemoveProduct(cfValDTO)">&times;</span>
+        </label>
+    </span>
+    </div>
+</div>
+<style>
+    .display-none {
+        display: none !important;
+    }
+    .display-block{
+        display: block !important;
+    }
+</style>
+
+
+
+

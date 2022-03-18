@@ -1,0 +1,57 @@
+.editNoteModal {
+    width: 550px !important;
+}
+
+.subjectContainer, .contentContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.contentContainer {
+
+    margin-top: 15px;
+}
+
+.input, .inputContent {
+    flex: 1;
+    display: flex;
+    margin-left: 10px;
+    color: rgba(0,0,0,.87) !important;
+    font-weight: 400 !important;
+}
+
+.inputContent {
+    padding: 5px;
+     color: rgba(0,0,0,.87) !important;
+    border: 1px solid rgba(34,36,38,.15) !important;
+    border-radius: .28571429rem !important;
+}
+
+.inputContent:focus {
+    border-color: #85b7d9 !important;
+    outline: none !important;
+}
+
+.rest {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+}
+
+.title {
+    width: 45px;
+}
+
+.error {
+    font-size: 9px;
+    color: var(--red);
+    position: absolute;
+    bottom: -12px;
+    left: 55px;
+    display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+  }

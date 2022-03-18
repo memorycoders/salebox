@@ -1,0 +1,18 @@
+.label {
+  font-weight: normal !important;
+  width: 130px !important;
+}
+.btnCard {
+  background-color: #173849;
+  color: #fff;
+  font-size: 11px;
+  border-radius: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.btnCard:hover {
+  color: #fff;
+}

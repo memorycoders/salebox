@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="20px" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Notes</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design-System" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-64.000000, -1677.000000)">
+            <g id="Notes" transform="translate(60.000000, 1675.000000)">
+                <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                <path d="M14,2 C14.738,2 15.376,2.405 15.723,3 L15.723,3 L18,3 C19.104,3 20,3.896 20,5 L20,5 L20,20 C20,21.104 19.104,22 18,22 L18,22 L6,22 C4.896,22 4,21.104 4,20 L4,20 L4,5 C4,3.896 4.896,3 6,3 L6,3 L8.277,3 C8.623,2.405 9.262,2 10,2 L10,2 Z M8.277,5 L6,5 L6,20 L18,20 L18,5 L15.723,5 C15.376,5.595 14.738,6 14,6 L14,6 L10,6 C9.262,6 8.623,5.595 8.277,5 L8.277,5 Z M14.9981,12 C15.5511,12 15.9981,12.448 15.9981,13 C15.9981,13.552 15.5511,14 14.9981,14 L14.9981,14 L8.9981,14 C8.4451,14 7.9981,13.552 7.9981,13 C7.9981,12.448 8.4451,12 8.9981,12 L8.9981,12 Z M14.9981,8 C15.5511,8 15.9981,8.448 15.9981,9 C15.9981,9.552 15.5511,10 14.9981,10 L14.9981,10 L8.9981,10 C8.4451,10 7.9981,9.552 7.9981,9 C7.9981,8.448 8.4451,8 8.9981,8 L8.9981,8 Z" id="Combined-Shape" fill="#808080"></path>
+            </g>
+        </g>
+    </g>
+</svg>

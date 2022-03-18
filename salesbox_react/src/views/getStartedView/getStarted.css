@@ -1,0 +1,110 @@
+@import 'variables.css';
+
+
+.progressBar {
+  align-items: center;
+  width: 100%;
+  padding: 1%;
+}
+.text {
+  font-size: 13;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.number {
+  height: 30;
+  width: 30;
+}
+.number2 {
+  width: 27;
+  height: 27;
+}
+.numberHeader {
+  display: flex;
+  justify-content: center;
+}
+.title {
+  font-size: 13;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.subtitle {
+  font-size: 11;
+  font-weight: 300;
+  display: flex;
+  justify-content: left;
+  margin-top: 10px;
+  margin-left: 35px;
+}
+.img {
+  /* margin-right: 7px; */
+    height: 10px;
+    background-size: 100% 100%;
+    width: 10px;
+    min-height: 10px;
+    min-width: 10px;
+    cursor: pointer;
+}
+.done {
+  background-color: #a9ce31;
+  margin-top: 12px;
+  background-size: 100% 100%;
+  border-radius: 50% !important;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 35px;
+
+}
+.notdone {
+  background-color: #f3f4f4;
+  margin-top: 12px;
+  background-size: 100% 100%;
+  border-radius: 50% !important;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 35px;
+
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.blank{
+  height: 100px;
+}
+.addNoteButton {
+  position: absolute;
+  bottom: 50px;
+  height: 24px;
+  width: 70%;
+  border-radius: 8px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #1A3848 !important;
+  cursor: pointer;
+  margin-left: 30px;
+  font-size: 11px !important;
+}
+.headerPopup {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contentPopup {
+  margin-bottom: 15px;
+}

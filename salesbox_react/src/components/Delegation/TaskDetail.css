@@ -1,0 +1,46 @@
+@import './delegation.variables.css';
+
+:root {
+  --image-size: 96px;
+}
+
+.pane {
+  width: 30%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.header {
+  min-height: calc(var(--image-size) * 2);
+  background-color: var(--orange);
+  position: relative;
+  margin-top: calc(var(--image-size) / 2 - 8px);
+  padding-top: calc(var(--image-size) / 2 + 16px);
+  color: #FFF;
+}
+
+.centerImage {
+  position: absolute;
+  left: 50%;
+  top: -4px;
+  margin-left: calc(-1 * var(--image-size) / 2);
+  width: var(--image-size);
+  height: var(--image-size);
+  border-radius: calc(var(--image-size) / 2);
+  border-width: 4px;
+  border-color: var(--page-background-color);
+  background-color: var(--orange);
+  border-style: solid;
+}
+
+.heading {
+  text-align: center;
+  color: white;
+  font-size: var(--font-size-h2);
+}
+
+.controls {
+  text-align: right;
+  padding: 4px 0px;
+}

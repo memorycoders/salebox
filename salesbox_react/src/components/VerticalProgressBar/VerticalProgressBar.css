@@ -1,0 +1,19 @@
+@import 'variables.css';
+:root {
+  --border-color: #EEEEEE;
+}
+
+.bar {
+  border: solid 1px var(--border-color);
+  background-color: var(--border-color);
+  position: relative;
+  height: 48px;
+  width: 8px;
+  margin-left: calc(var(--default-padding) / 4);
+  .progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}

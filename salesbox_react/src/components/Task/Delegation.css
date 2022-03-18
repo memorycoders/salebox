@@ -1,0 +1,19 @@
+@import "variables.css";
+.delegationHeaderModal {
+}
+.delegateFormLabel {
+  text-align: left !important;
+  width: inherit !important;
+  position: relative;
+  font-size: var(--normal-text);
+}
+
+.mutilActionModal {
+  width: 50% !important;
+  max-width: 600px !important;
+}
+
+.mutilChangeModal {
+  width: 60% !important;
+  max-width: 700px !important;
+}

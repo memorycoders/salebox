@@ -1,0 +1,93 @@
+
+:root {
+  --font-size-base: 14px;
+  --font-size-h1: 28px;
+  --font-size-h2: 24px;
+  --font-size-h3: 20px;
+  --font-size-h4: 16px;
+  --font-size-h5: 14px;
+
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.11);
+  --shadow-2: 0 2px 6px 0 rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 5px 14px 0 rgba(0, 0, 0, 0.08);
+  --shadow-4: 0 2px 24px 0 rgba(0, 0, 0, 0.07);
+
+  --page-background-color: #FAFAFA;
+
+  /* Foundation Colors */
+  --red: #eb6953;
+  --orange: #f8c168;
+  --yellow: #f8c168;
+  --olive: #cdcd00;
+  --green: #aad041;
+  --teal: #008080;
+  --blue: #68BDD4;
+  --violet: #EE82EE;
+  --purple: #7d7fbc;
+  --pink: #FFD1DC;
+  --brown: #a4867c;
+  --grey: #5F6A7B;
+  --black: #13313c;
+
+  /* Salesbox Colors */
+  --contact: rgb(97, 153, 139);
+  --account: #5F6A7B;
+  --appointment: #CDA02D;
+  --delegation: #7d7fbc;
+  --activity: #f8c168 !important;
+  --opportunity: #EF8367;
+  --call-list: #a4867c;
+  --campaign: #68BDD4;
+  --insight: #4689c8;
+  --task: #f8c168;
+  --pipeline: #66c18c;
+  --lead: #66c18c;
+  --resource: #66c18c;
+
+  /* filter color */
+
+  --sale: #d56772;
+  --internal: #8bc3da;
+  --external: #8cc290;
+  --issue: #e6d760;
+  --collaboration:#d885d9;
+
+  --yellowunqualified: #f4b24e;
+  --greenqualified: #aacd40;
+
+  --transition-duration : 150ms;
+  --pane-width: 340px;
+  --golden-ratio: 1.61803398875;
+
+  --default-padding: 16px;
+  --border-color: rgba(240, 240, 240, 0.75);
+
+  --hover-color: rgba(0, 0, 0, 0.05);
+
+  --light-text-color: rgba(255, 255, 255, 0.9);
+
+  /* Semantic UI Colors */
+  --danger-color: color-mod(red alpha(75%));
+  --warning-color: color-mod(orange alpha(75%));
+  --success-color: color-mod(green alpha(75%));
+  --purple-highlight-color: color-mod(var(--purple) alpha(25%));
+  --menu-width: 300px;
+  --menu-margin-left: 10px;
+
+  /* TEXT SIZE FINNAL */
+
+  --normal-text: 11px;
+  --memium-text: 13px;
+  --large-text: 16px;
+  --big-text: 22px;
+
+  /* ICON SIZE FINNAL */
+  --header-icon-size: 18px;
+  --left-menu-icon-size: 18px;
+  --detail-icon-size: 15px;
+  --list-icon-size: 24px;
+
+  /* BUTTON, INPUT FINNAL SIZE */
+
+  --button: 28px;
+}

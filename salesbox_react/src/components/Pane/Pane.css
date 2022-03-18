@@ -1,0 +1,18 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  position: relative;
+  &.horizontal {
+    min-height: auto;
+    flex-direction: column;
+  }
+
+  &.grows {
+    flex-grow: 1;
+  }
+
+  &.shrinks {
+    flex-shirnk: 1;
+  }
+}

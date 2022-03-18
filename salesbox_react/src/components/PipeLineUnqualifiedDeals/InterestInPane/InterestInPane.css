@@ -1,0 +1,24 @@
+.textBold {
+  font-weight: 600;
+  text-align: left !important;
+  word-wrap: break-word !important;
+}
+.interestTable {
+  border: none !important;
+
+  td {
+    font-size: var(--normal-text);
+    padding: 0.7em 0.7em;
+  }
+}
+.focusLine {
+  height: 100%;
+  width: 4px;
+  /* height: 51px; */
+  /* background: red; */
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  display: flex;
+  flex: 1;
+}

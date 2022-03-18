@@ -1,0 +1,92 @@
+@import 'variables.css';
+
+.viewHeader {
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+  padding-bottom: 0px !important;
+}
+
+.pageRights {
+  background-color: #ffffff;
+  margin-top: 20px !important;
+  border-top-right-radius: 10px !important;
+  border-top-left-radius: 10px !important;
+  margin-left: 2px !important;
+  margin-right: 2px !important;
+}
+
+.viewActivity {
+  background-color: #ffffff;
+  margin-top: 50px !important;
+  border-top-right-radius: 10px !important;
+  border-top-left-radius: 10px !important;
+  margin-left: 2px !important;
+  margin-right: 2px !important;
+}
+
+.textHeader {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  opacity: 1 !important;
+}
+
+.itemInput input {
+  text-align: center !important;
+}
+
+.nameItem {
+  /* color: #58585a !important; */
+  font-size: 11px !important;
+  /* font-weight: 600 !important; */
+}
+
+.buttonDone {
+  padding: 3px 80px !important;
+  background-color: #aacf36 !important;
+}
+
+.itemBackground {
+  background-color: #f9f9f9 !important;
+}
+
+.itemTarget {
+  border-bottom-color: #d2d2d2 !important;
+  border-width: 0px 0px 0.5px !important;
+  border-style: solid !important;
+  margin-right: 15px !important;
+  margin-left: 15px !important;
+}
+
+.itemTarget:hover {
+  cursor: pointer;
+  background-color: #f0f0f0 !important;
+}
+
+.itemInRow:hover {
+  background-color: #dddddd !important;
+}
+
+.btnDone {
+  /* border: 1px solid #1a3848 !important; */
+  font-size: var(--normal-text) !important;
+  font-weight: 500 !important;
+  border-radius: 5px !important;
+  padding: 0.5em 1em !important;
+  min-width: 75px;
+  height: var(--button) !important;
+  max-height: 28px !important;
+  min-height: 28px !important;
+  /* color: #fff !important;
+  background-color: #1a3848 !important; */
+  background-color: #1a3848 !important;
+  color: #fff !important;
+  /* width: 200px !important; */
+}
+
+.chevron {
+  background-color: transparent !important;
+}

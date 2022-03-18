@@ -1,0 +1,367 @@
+@import 'variables.css';
+.root {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+.left {
+  color: #ffffff;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-right: 30px;
+}
+
+.center {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.right {
+  background-color: white;
+  color: #ffffff;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px 0px 0px;
+}
+
+.profileDropdown {
+  width: 320px;
+}
+
+.dropdownMenu {
+  margin: 0 !important;
+}
+
+.avatar {
+  position: absolute;
+  top: 0px;
+  right: 24px;
+  width: 100px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.menuContainer {
+  margin-right: 8px;
+  margin-left: 6px;
+}
+.preload {
+  /* display: none; */
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.menuButton {
+  background-color: #fff;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 50% !important;
+  background-size: 100% 100%;
+  width: 36px;
+  height: 36px;
+}
+
+.menuButton:hover {
+  background-color: #f2f2f2 !important;
+}
+
+.menuActive {
+  background-color: #f2f2f2;
+}
+
+.menuLogo {
+  margin-left: var(--menu-margin-left);
+  align-items: center;
+  display: flex;
+  .iconMenu {
+    display: inline-block;
+    background: url('../../../public/Menu.svg');
+    background-size: 100% 100%;
+    width: 18px;
+    height: 18px;
+    /* margin-right: 20px;
+        margin-left: 10px; */
+  }
+  .logo {
+    display: inline-block;
+    background: url('../../../public/salesbox-logo-menu.svg');
+    background-size: 100% 100%;
+    width: 130px;
+    height: 28px;
+    margin-bottom: 4px;
+    margin-left: -10px;
+  }
+  .freshDesk {
+    display: inline-block;
+    background: url('../../../public/freshdesk.svg');
+    background-size: 100% 100%;
+    width: 120px;
+    height: 20px;
+    margin-bottom: 0px;
+    margin-left: -50px;
+  }
+}
+
+.setting {
+  background-color: #fff !important;
+  width: 65px;
+}
+
+.profile:hover {
+  background-color: #f2f2f2 !important;
+}
+
+.profile {
+  background-color: #fff !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 50% !important;
+  background-size: 100% 100%;
+  width: 50px;
+  height: 50px;
+}
+
+.iconTask {
+  background: url('../../../public/Tasks.svg');
+  background-size: 100% 100%;
+  width: 30px;
+  height: 30px;
+}
+
+.freeSearchContainer {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.freeSearch {
+  background: rgb(243, 244, 244);
+  border-radius: 40px;
+  padding: 0px 0;
+  display: flex;
+}
+
+.inputSearch {
+  margin-right: 0px;
+  width: 360px;
+  height: 36px !important;
+  input {
+    border-color: transparent !important;
+    background: rgb(243, 244, 244) !important;
+    border-top-right-radius: 60px !important;
+    border-bottom-right-radius: 60px !important;
+    cursor: pointer !important;
+  }
+}
+
+.searchIcon {
+  background: rgb(31, 56, 71);
+  color: white;
+  height: 100%;
+  height: 36px !important;
+  width: 36px !important;
+  opacity: 0.85 !important;
+  border-radius: 50% !important;
+  cursor: pointer !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px !important;
+  margin: 0 !important;
+}
+
+.searchIcon:before {
+  text-align: center;
+  top: 50% !important;
+  left: 25% !important;
+  margin-top: 0 !important;
+  width: 18px !important;
+}
+
+.searchIcon:hover,
+.searchIcon:active {
+  background: rgb(31, 56, 71);
+  color: white;
+  height: 100%;
+  opacity: 1 !important;
+  border-radius: 30px !important;
+  cursor: pointer !important;
+}
+
+.typesSearch {
+  border-right: 1px solid rgb(220, 220, 220);
+  padding: 0 10px 0 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  /* float: left; */
+}
+
+.iconContact {
+  -webkit-mask-image: url(../../../public/Contacts.svg);
+  mask-image: url(../../../public/Contacts.svg);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.ic_activities {
+  -webkit-mask-image: url('../../../public/Tasks.svg');
+  mask-image: url('../../../public/Tasks.svg');
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.ic_pipeline {
+  -webkit-mask-image: url(../../../public/Filter.svg);
+  mask-image: url(../../../public/Filter.svg);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+.ic_product {
+  -webkit-mask-image: url(../../../public/Unqualified_deals.svg);
+  mask-image: url(../../../public/Unqualified_deals.svg);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+.ic_deal {
+  -webkit-mask-image: url(../../../public/Qualified_deals.svg);
+  mask-image: url(../../../public/Qualified_deals.svg);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.ic_order {
+  -webkit-mask-image: url(../../../public/Notes.svg);
+  mask-image: url(../../../public/Notes.svg);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.ic_delegation {
+  -webkit-mask-image: url(../../../public/Delegation.svg);
+  mask-image: url(../../../public/Delegation.svg);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.ic_accounts {
+  -webkit-mask-image: url(../../../public/Accounts.svg);
+  mask-image: url(../../../public/Accounts.svg);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.ic_contacts {
+  -webkit-mask-image: url(../../../public/Contacts.svg);
+  mask-image: url(../../../public/Contacts.svg);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.ic_call-lists {
+  -webkit-mask-image: url('../../../public/Call lists.svg');
+  mask-image: url('../../../public/Call lists.svg');
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.ic_campaigns {
+  -webkit-mask-image: url('../../../public/Campaigns.svg');
+  mask-image: url('../../../public/Campaigns.svg');
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.ic_insights {
+  -webkit-mask-image: url('../../../public/Insights.svg');
+  mask-image: url('../../../public/Insights.svg');
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+.ic_resources {
+  -webkit-mask-image: url('../../../public/Resource.png');
+  mask-image: url('../../../public/Resource.png');
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+.ic_recruitment {
+  -webkit-mask-image: url('../../../public/Recruitment-1.png');
+  mask-image: url('../../../public/Recruitment-1.png');
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+.iconSearch {
+  background: #14313e;
+  width: var(--header-icon-size);
+  height: var(--header-icon-size);
+  margin-left: 8px;
+}
+
+.advancedSearchContainer {
+  height: 36px;
+  width: 36px;
+  min-height: 36px;
+  min-width: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-left: 5px;
+  .advancedSearch {
+    background: url('../../../public/Advanced\ search.svg');
+    background-size: 100% 100%;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+}
+
+.advancedSearchContainer:hover {
+  background-color: #eeeeee !important;
+}
+
+.settingIcon {
+  width: var(--header-icon-size);
+  height: var(--header-icon-size);
+}
+.faqIcon {
+  /* padding-top: 1px; */
+  width: 27px;
+  height: 27px;
+}
+.noneBar {
+  display: none;
+}
+.iconClearSearch {
+  cursor: pointer;
+  position: absolute;
+  top: 11px;
+  right: 42px;
+}
+.iconClear {
+  border: none !important;
+}
+.btnRemoveRow {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  height: 100%;
+}
+.btnRemoveRow i {
+  border: none !important;
+}
+.btnRemoveRow:hover {
+  background-color: none !important;
+}

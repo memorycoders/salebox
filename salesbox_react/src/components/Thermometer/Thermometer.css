@@ -1,0 +1,140 @@
+@import 'variables.css';
+
+:root {
+  --thermometer-border: rgba(0, 0, 0, 0.9);
+  --thermometer-color: rgba(200, 30, 0, 1);
+}
+
+.thermometer{
+  margin: 2px 8px 20px 8px;
+  width: 10;
+  height: 48px;
+  display: block;
+  font: bold 12px/44px helvetica, arial, sans-serif;
+  border-radius: 10px 10px 0 0;
+  border: 1px solid var(--thermometer-border);
+  border-bottom: none;
+  position: absolute;
+  box-shadow: inset 0 0 0 1px #fff;
+  color: var(--thermometer-border);
+
+  &.empty {
+
+  }
+  &.quarter {
+    background: linear-gradient(top, #fff 0%, #fff 75%, rgba(100, 30, 0, 1) 75%, rgba(100, 30, 0, 1) 100%);
+  }
+  &.full {
+    background: linear-gradient(top, #fff 0%, #fff 0%, rgba(100, 30, 0, 1) 0%, rgba(100, 30, 0, 1) 100%);
+  }
+
+  &:before{
+    content: ' ';
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    top: 45px;
+    left: -4px;
+    z-index: -1;
+    background: rgba(100, 30, 0, 1);
+    border-radius: 44px;
+    border: 1px solid var(--thermometer-border);
+    box-shadow:inset 0 0 0 1px #fff;
+  }
+
+  &:after{
+    content: ' ';
+    width: 8px;
+    height: 5px;
+    display: block;
+    position: absolute;
+    top: 43px;
+    left: 0px;
+    background: rgba(100, 30, 0, 1);
+    border-style: none solid none solid;
+    border-color: #FFFFFF;
+    border-width: 1px;
+  }
+}
+
+.clockThrtmometer {
+  font-size: 37px !important;
+}
+
+.thermonterContainer {
+  display: inline-flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.thermometerContainer {
+  display: flex;
+  height: 60px;
+  bottom: 0px;
+  left: calc(50% + 15px);
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lineThermometer {
+  height: 47px;
+  width: 12px;
+  background-color: #fff;
+  border: 1px solid #9d9d9c;
+  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+}
+
+.lineProgressThermometer {
+  width: 12px;
+  background-color: #9d9d9c;
+  z-index: 2;
+}
+
+.circleThermometer {
+  width: 20px;
+  position: absolute;
+  top: 75%;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #9d9d9c;
+}
+
+.thermometerContainerSmall {
+  display: flex;
+  height: 30px;
+  bottom: 0px;
+  left: calc(50% + 8px);
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lineThermometerSmall {
+  height: 23px;
+  width: 8px;
+  background-color: #fff;
+  border: 1px solid #9d9d9c;
+  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+}
+
+.lineProgressThermometerSmall {
+  width: 12px;
+  background-color: #9d9d9c;
+  z-index: 2;
+}
+
+.circleThermometerSmall {
+  width: 12px;
+  position: absolute;
+  top: 70%;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #9d9d9c;
+}

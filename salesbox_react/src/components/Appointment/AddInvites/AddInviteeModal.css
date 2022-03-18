@@ -1,0 +1,7 @@
+.formLabel {
+  text-align: left !important;
+  width: inherit !important;
+  position: relative;
+  font-size: var(--normal-text);
+  font-weight: 400;
+}

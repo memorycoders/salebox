@@ -1,0 +1,152 @@
+.progress {
+  padding: 8px;
+  text-align: center;
+}
+
+.award {
+  height:  128px;
+  &.fade {
+    opacity:  0.3;
+  }
+}
+
+.workload {
+  & .label {
+    display: flex;
+    & span {
+      flex-grow: 1;
+    }
+    & strong {
+      flex-grow: 0;
+      text-align:  right;
+    }
+  }
+}
+
+.rightAlign {
+  text-align: right;
+}
+
+.listItem {
+  display:  flex;
+  align-items: center;
+
+  .animal {
+    flex-grow: 0;
+    flex-shrink: 0;
+    > img {
+      height:  48px;
+    }
+  }
+  .content {
+    flex-grow: 1;
+    flex-shrink: 0;
+    text-align: center;
+  }
+  .count {
+    width:  48px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+:global(.ui.list):local(.records):global( > .item > .content) {
+  line-height: 200%;
+}
+
+.pipeline {
+  display: flex;
+  .column {
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-align: center;
+    width: 25%;
+    padding: 4px;
+    .legend {
+      margin-top: 16px;
+      font-size: 80%;
+      line-height:  125%;
+    }
+  }
+}
+
+.sales {
+  display: flex;
+  .column {
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-align: center;
+    width: 25%;
+    padding: 4px;
+    .legend {
+      margin-top: 16px;
+      font-size: 110%;
+      line-height:  125%;
+    }
+  }
+}
+
+.operations {
+  display: flex;
+  .column {
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-align: center;
+    width: 25%;
+    padding: 4px;
+    .chart {
+      height: 320px;
+    }
+    .legend {
+      margin-top: 16px;
+      font-size: 110%;
+      line-height:  125%;
+    }
+  }
+}
+
+.forecast {
+  height: 320px;
+  position: relative;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.chartName {
+  position: absolute;
+  top: 0px;
+}
+
+.chartNote {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+
+.minichart {
+  height: 196px;
+}
+
+.chart {
+  height: 256px;
+}
+
+.greatJob {
+  display: flex;
+  align-items: center;
+}
+
+.greatJobButton {
+  background-color: rgb(169,206,69);
+  color: #fff;
+  font-weight: 600;
+  padding: 2px 5px;
+  margin-left: 5px;
+  border-radius: 2px;
+}

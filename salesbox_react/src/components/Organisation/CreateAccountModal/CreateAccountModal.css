@@ -1,0 +1,12 @@
+.modal {
+    width: 900px !important;
+}
+.modalCustomField {
+  width: 1100px !important;
+}
+.appointmentModal {
+   width: 800px !important;
+}
+.confirmModal {
+  width: 500px !important;
+}

@@ -1,0 +1,11 @@
+.dropdownWrapper {
+  width: 502px;
+  div {
+    div {
+      input {
+        height: 28px !important;
+        font-size: 11px !important;
+      }
+    }
+  }
+}

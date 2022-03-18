@@ -1,0 +1,13 @@
+@import 'variables.css';
+
+.updateStatusFormLabel {
+  text-align: left !important;
+  width: inherit !important;
+  font-size: var(--normal-text);
+  font-weight: bold;
+}
+
+.mutilActionModal {
+  width: 50% !important;
+  max-width: 600px !important;
+}

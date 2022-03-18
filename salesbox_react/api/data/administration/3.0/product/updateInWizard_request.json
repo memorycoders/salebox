@@ -1,0 +1,13 @@
+{
+  "queryString": {
+    "token": "aba66576-46f5-46c1-934d-6eddebdce4b8",
+    "enterpriseID": "f93daf1c-618c-4541-8390-76607b2fdc29"
+  },
+  "payload": {
+    "lineOfBusinessId": "1aff2986-b2b5-48ee-852c-105a848213db",
+    "margin": 0,
+    "measurementTypeId": "18bab9ae-7b9f-4dfb-853a-fc6247d008fc",
+    "name": "test-product",
+    "price": 0
+  }
+}

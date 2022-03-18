@@ -1,0 +1,128 @@
+.qualified-sales-container {
+  position: relative;
+  border-bottom: 1px solid #f0f0f0;
+  // margin-left: 10px;
+  .qualified-sales-wrapper {
+    display: flex;
+    margin: 5px 12px 0px 12px;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
+
+    .sales-process-wrapper {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 7px;
+      margin-bottom: -1px;
+      &.active {
+        border-bottom: 2px solid #ee8267;
+        .process-name {
+          font-weight: bold;
+        }
+      }
+      cursor: pointer;
+      margin-right: 4%;
+      .process-name {
+        white-space: nowrap;
+        overflow: hidden;
+        // text-overflow: ellipsis;
+        font-weight: 600;
+        margin-bottom: 3px;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .circle-button {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    cursor: pointer;
+    i {
+      margin: 0px !important;
+      height: unset !important;
+      color: rgb(128, 128, 128);
+    }
+  }
+
+  .circle-button:active {
+    opacity: 1;
+  }
+
+  .circle-button-right {
+    position: absolute;
+    right: 17px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    cursor: pointer;
+    i {
+      margin: 0px !important;
+      height: unset !important;
+      color: rgb(128, 128, 128);
+    }
+  }
+
+  .circle-button-right:active {
+    opacity: 1;
+  }
+
+  .circle-button-right-order {
+    position: absolute;
+    right: 25px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    cursor: pointer;
+    i {
+      margin: 0px !important;
+      height: unset !important;
+      color: rgb(128, 128, 128);
+    }
+  }
+
+  .circle-button-right-order:active {
+    opacity: 1;
+  }
+
+  .width-full {
+    display: flex;
+    align-items: center;
+    margin-right: 10px !important;
+  }
+}
+.wrapper-srcoll {
+  display: flex;
+  width: 95%;
+  overflow: hidden;
+  flex-wrap: wrap;
+  height: 42px;
+}
+.wrapper-srcoll-detail {
+  display: flex;
+  width: 88%;
+  overflow: hidden;
+  flex-wrap: wrap;
+  height: 42px;
+}
+.wrapper-srcoll-order {
+  display: flex;
+  width: 82%;
+  overflow: hidden;
+  flex-wrap: wrap;
+  height: 42px;
+}

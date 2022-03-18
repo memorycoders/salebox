@@ -1,0 +1,25 @@
+.focusContainer {
+ /* height: 100%; */
+ position: relative;
+     width: 308px;
+}
+
+.focusLine {
+    height: 100%;
+    width: 4px;
+    /* height: 51px; */
+    /* background: red; */
+    border-radius: 5px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    display: flex;
+    flex: 1;
+}
+
+.wrapperClassNameFocus {
+    position: relative;
+    display: flex;
+    border-radius: 4px;
+    width: 308px;
+}

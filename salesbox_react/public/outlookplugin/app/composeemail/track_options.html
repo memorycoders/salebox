@@ -1,0 +1,88 @@
+﻿<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="fontawesome">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/jquery.datetimepicker.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="../../css/sb-icon.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/variables.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+
+    <script src="../../Scripts/jquery.fabric.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery-ui.js" type="text/javascript"></script>
+    <script src="../../Scripts/d3.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery.datetimepicker.min.js" type="text/javascript"></script>
+
+
+    <script src="../app.js" type="text/javascript"></script>
+    <script src="../logic/globaladdin.js" type="text/javascript"></script>
+    <script src="../trackemail.js" type="text/javascript"></script>
+</head>
+<body class="">
+
+    <div id="salesbox-plugin" class="container-fluid">
+        <div class="panel panel-default add-panel">
+
+            <div class="panel-heading" style="margin-top: -20px;">
+                <div class="heading-wrapper"></div>
+            </div>
+
+            <div class="backheader backHeaderBg blueText">
+                <a href="../composeemail.html" class="back-button">
+                    <div class="formBack">
+                        <i class="fa  fa-angle-left" title="back" aria-hidden="true"></i>
+                    </div>
+                    Back
+                </a>
+            </div>
+
+            <div class="formheader greyTitleBg greyTitle borderBottom">
+                Tracking options
+            </div>
+
+            <div class="panel-body">
+                <div class="panel-body">
+                    <button class="loginbutton" type="button" id="trackContent" name="submit">Tracking Content</button>
+                    <button class="loginbutton" type="button" id="trackUrl" name="submit">Tracking URL</button>
+                    <button class="loginbutton" type="button" id="trackAttacment" name="submit">Tracking Attachment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+        $("#salesbox-plugin").css({
+            height: $(window).height() - $("#salesbox-plugin").offset().top
+        });
+        $(window).on('resize', function () {
+            $("#salesbox-plugin").css({
+                height: $(window).height() - $("#salesbox-plugin").offset().top
+            });
+        });
+
+    });
+
+    // $('#taskdate').datepicker({
+    //   dateFormat : 'mm/dd/yy',
+    // });
+    $('#taskdate').datetimepicker({
+      format:'d M Y H:i',
+	  minDate: 0,
+    });
+    $('#tasknote').keyup(function () {
+    var char = 200 - $(this).val().length;
+    if (char < 0) {
+        char = 0;
+    }
+    $('#remainingchar').text(char);
+    });
+    </script>
+
+</body>
+</html>

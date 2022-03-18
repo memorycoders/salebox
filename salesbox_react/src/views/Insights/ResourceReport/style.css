@@ -1,0 +1,76 @@
+.rsr_container {
+  background: rgb(240, 240, 240);
+  height: calc(100% - 10px);
+}
+.rsr_text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center !important;
+  padding-left: 5px !important;
+  padding-top: 5px !important;
+}
+.rsr_title {
+  display: flex;
+  margin-bottom: 2px;
+}
+.rsr_week {
+  flex: 1;
+  text-align: center;
+  padding: 4px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.rsr_font_bold {
+  font-weight: bold;
+}
+.rsr_week_first {
+  flex: 4;
+  text-align: center;
+  font-weight: bold;
+  padding-left: 5px;
+}
+.rsr_month {
+  flex: 1 !important;
+  cursor: pointer;
+  /* text-align: center;
+  padding: 0 !important; */
+}
+.rsr_week_first_body {
+  flex: 4;
+  padding-left: 5px;
+}
+.rsr_body {
+  background: white;
+  height: 97%;
+}
+.rsr_red {
+  background: rgb(235, 136, 115);
+}
+.rsr_yellow {
+  background: rgb(239, 193, 123);
+}
+.rsr_green {
+  background: rgb(178, 205, 89);
+}
+.iconFilterContainer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.iconFilter {
+  margin-right: 10px;
+  background: url('../../../../public/new_filter.svg');
+  background-size: 100% 100%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+
+}
+.popup {
+  font-size: 11px;
+  padding: 10px;
+}

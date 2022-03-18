@@ -1,0 +1,147 @@
+@import 'variables.css';
+
+.row {
+  display: flex;
+  align-items: center;
+
+  .iconButton {
+    padding: 2px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .type {
+    padding: 2px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 150px;
+  }
+
+  .input {
+    padding: 2px;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+
+  .title {
+    padding: 2px;
+    padding-left: 10px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    font-size: 11px;
+  }
+}
+
+.buttonContainer {
+  margin: 16px 0 0 0;
+  padding: 2px;
+}
+.container {
+  /* overflow-y: scroll;
+  overflow-x: hidden; */
+}
+.notSetasDone,
+.setDone,
+.btn {
+  height: var(--list-icon-size);
+  width: var(--list-icon-size);
+  min-height: var(--list-icon-size);
+  min-width: var(--list-icon-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #f3f4f4;
+  cursor: pointer;
+}
+.notSetasDone {
+  background-color: #f3f4f4;
+  /* margin-right: 7px; */
+  div {
+    background: url('../../../public/Check.svg');
+    height: 11px;
+    background-size: 100% 100%;
+    width: 11px;
+    min-height: 11px;
+    min-width: 11px;
+  }
+}
+
+.setDone {
+  background-color: #1a3848;
+  /* margin-right: 7px; */
+  div {
+    background: url('../../../public/CheckHistory.svg');
+    height: 11px;
+    background-size: 100% 100%;
+    width: 11px;
+    min-height: 11px;
+    min-width: 11px;
+  }
+}
+.inputForm {
+  max-height: 28px !important;
+  min-height: 28px !important;
+  height: 28px !important;
+  font-size: 11px !important;
+}
+.inputFormPassword {
+}
+.inputLabel {
+  text-align: left !important;
+  width: 100px !important;
+}
+.inputLabelPassword {
+  text-align: left !important;
+  width: 150px !important;
+}
+.inputLabelAutomaticReminder {
+  padding-left: 38px !important;
+  text-align: left !important;
+  width: auto !important;
+  font-size: 11px !important;
+}
+.inputLabelAutomaticReminder1 {
+  display: flex;
+  justify-content: space-between;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+}
+.borderPaneSetting {
+  border: none;
+  border-bottom: 1px solid rgb(212, 212, 213);
+}
+.btnDone {
+  /* border: 1px solid #1a3848 !important; */
+  font-size: var(--normal-text) !important;
+  font-weight: 500 !important;
+  border-radius: 5px !important;
+  padding: 0.5em 1em !important;
+  min-width: 75px;
+  height: var(--button) !important;
+  max-height: 28px !important;
+  min-height: 28px !important;
+  /* color: #fff !important;
+  background-color: #1a3848 !important; */
+  background-color: #1a3848 !important;
+  color: #fff !important;
+  margin-top: 14px !important;
+  width: 200px !important;
+}
+.infoIcon_auto {
+  background: url('../../../public/info.svg');
+  background-size: 100% 100%;
+  height: var(--list-icon-size);
+  width: var(--list-icon-size);
+  min-width: var(--list-icon-size);
+  max-width: var(--list-icon-size);
+  max-height: var(--list-icon-size);
+  min-height: var(--list-icon-size);
+  height: 15px;
+  width: 15px;
+  min-width: 15px;
+  /* margin-left: -38px !important; */
+  margin-top: -4px !important;
+}

@@ -1,0 +1,106 @@
+@import 'variables.css';
+:root {
+  --image-size: 96px;
+}
+
+.header {
+  min-height: calc(var(--image-size) * 2);
+  background-color: var(--grey);
+  position: relative;
+  padding-top: calc(var(--image-size) / 2 + 16px);
+  color: #FFF;
+  &:global(.contact) {
+    background-color: var(--contact);
+  }
+
+  &:global(.account) {
+    background-color: var(--account);
+  }
+
+  &:global(.activity) {
+    background-color: var(--activity);
+  }
+
+  &:global(.task) {
+    background-color: var(--task);
+  }
+
+  &:global(.appointment) {
+    background-color: var(--appointment);
+  }
+
+  &:global(.delegation) {
+    background-color: var(--delegation);
+  }
+
+  &:global(.opportunity) {
+    background-color: var(--opportunity);
+  }
+
+  &:global(.call-list) {
+    background-color: var(--call-list);
+  }
+
+  &:global(.campaign) {
+    background-color: var(--campaign);
+  }
+
+  &:global(.insight) {
+    background-color: var(--insight);
+  }
+
+  &:global(.pipeline) {
+    background-color: var(--pipeline);
+  }
+
+  &:global(.lead) {
+    background-color: var(--lead);
+  }
+
+}
+
+.heading {
+  text-align: center;
+  color: white;
+  font-size: var(--font-size-h3);
+  line-height: calc(var(--font-size-h3) * var(--golden-ratio));
+  margin-bottom: 4px;
+}
+
+.subHeading {
+  text-align: center;
+  color: white;
+  font-size: var(--font-size-h5);
+  line-height: calc(var(--font-size-h5) * var(--golden-ratio));
+}
+
+.contactDetails {
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  & > ul {
+    padding: 16px 8px;
+    margin: 0;
+    list-style-type: none;
+  }
+  & a {
+    color: inherit;
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+}
+
+.centerImage {
+  position: absolute;
+  left: 50%;
+  top: -4px;
+  margin-left: calc(-1 * var(--image-size) / 2);
+  width: var(--image-size);
+  height: var(--image-size);
+  border-radius: calc(var(--image-size) / 2);
+  border-width: 4px;
+  border-color: var(--page-background-color);
+  border-style: solid;
+}
+
+

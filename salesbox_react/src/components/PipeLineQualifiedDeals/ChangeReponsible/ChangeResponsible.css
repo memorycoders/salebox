@@ -1,0 +1,12 @@
+.error {
+    font-size: 11px;
+    color: var(--red);
+    position: absolute;
+    bottom: -15px;
+    display: inline-block;
+    max-width: 100%;
+    left: 0px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+  }
